@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #A5D7E8;
+}
+
+nav {
+    background-color: #0B2447;
+    height: 75px;
+    width: 100%;
+}
+
+.container {
+    width: 70%;
+    align-items: center;
+    margin: auto;
+    height: 100%;
+}
+
+.hidden{
+    display: none;
+}
+
+nav ul{
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+    flex-basis: 20%;
+    text-align: center;
+}
+
+nav ul li a{
+    position: relative;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 20px;
+    color: #576CBC;
+    margin: 0;
+    transition-property: all;
+    transition-duration: .25s;
+}
+
+nav ul li a:hover{
+
+    color: #0B2447;
+    background: #576CBC;
+    border-radius: 10px;
+}
+
+nav ul li a:active{
+
+    color: #0B2447;
+    background: #A5D7E8;
+    transform: scale(1.1)
+}
+
+/* GAMES.HTML*/
+.game-link{
+    text-decoration: none;
+    text-align: center;
+    color: #0B2447;
+}
+
+.games-div {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    top: 100px;
+    gap: 100px;
+}
+
+.game{
+    background-color: #576CBC;
+    height: 325px;
+    border-radius: 25px;
+    border: 3px dotted #19376D;
+
+    transition-property: all;
+    transition-duration: .25s;
+}
+
+
+.game:hover {
+    box-shadow: -5px 5px  20px #19376D;
+    transform: scale(1.1);
+    border-radius: 50px;
+    background-color: #19376D;
+    color: #A5D7E8;
+}
+
+.game:active {
+    box-shadow: -10px 10px  10px #19376D;
+    transform: scale(1.2);
+    background: #A5D7E8;
+    border-radius: 150px;
+    font-size: 13px;
+}
+
+.game img{
+    margin: 20px;
+    margin-top: 45px;
+    margin-bottom: 35px;
+    width: 150px;
+    border-radius: 25px;
+    padding: 5px;
+	
+}
+.gamecontainer{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 700px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0;
+}
+
+iframe {
+    position: relative;
+    top: -50px;
+    margin: auto;
+    border: 25px double #2B2E4A;
+    width: 70%;
+    height: 75%;
+}
+
+.fullscreen-button {
+    position: absolute;
+    left: 70%;
+    top: 82.5%;
+    width: 200px;
+    height: 60px;
+    border: 0;
+    background-color: #2B2E4A;
+    font-size: 25px;
+    color: #903749;
+    transition-duration: .3s;
+}
+
+.fullscreen-button:hover {
+    background-color: #903749;
+    color: #2B2E4A;
+    cursor: pointer;
+    transform: scale(1.1);
+}

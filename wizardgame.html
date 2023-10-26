@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gamestyle.css">
+    <title>Wizard Game</title>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="gamesindex.html">Home</a>
+                </li>
+                <li>
+                    <a href="wizardgame.html">Wizard Game</a>
+                </li>
+                <li>
+                    <a href="pirategame.html">Pirate Game</a>
+                </li>
+                <li>
+                    <a href="index.html">Main Site</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="gamecontainer">
+        <iframe src="Wizard Game/index.html" title="game" id="embededGame"></iframe>
+
+        <button class="fullscreen-button" onclick="goFullscreen('embededGame'); return false">Fullscreen</button>
+ 
+        <script>
+        function goFullscreen(id) {
+            var element = document.getElementById(id);
+            if (element.mozRequestFullScreen) {
+            element.mozRequestFullScreen();
+            } else if (element.webkitRequestFullScreen) {
+            element.webkitRequestFullScreen();
+            }
+        }
+        </script>
+    </div>
+</body>
+</html>
