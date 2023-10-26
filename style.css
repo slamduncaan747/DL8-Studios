@@ -133,8 +133,8 @@ iframe {
     top: -50px;
     margin: auto;
     border: 25px double #2B2E4A;
-    width: 70%;
-    height: 75%;
+    width: 960px;
+    height: 600px;
 }
 
 .fullscreen-button {
