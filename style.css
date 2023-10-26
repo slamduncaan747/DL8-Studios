@@ -135,6 +135,7 @@ iframe {
     border: 25px double #2B2E4A;
     width: 960px;
     height: 600px;
+    scrolling: "no";
 }
 
 .fullscreen-button {
