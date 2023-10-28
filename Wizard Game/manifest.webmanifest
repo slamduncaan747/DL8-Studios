@@ -1,0 +1,12 @@
+{
+  "name": "wizard game",
+  "short_name": "wizard game",
+  "id": "com.example.gamename",
+  "description": "d",
+  "orientation": "landscape",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "black",
+  "categories": ["games", "entertainment"],
+  "icons": []
+}
