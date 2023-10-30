@@ -133,27 +133,33 @@ iframe {
     top: -50px;
     margin: auto;
     border: 25px double #2B2E4A;
-    width: 960px;
-    height: 600px;
-    scrolling: "no";
+    width: 1040px;
+    height: 590px;
+
+    
+    overflow: hidden;
+    margin-top: 100px;
 }
 
 .fullscreen-button {
     position: absolute;
-    left: 70%;
-    top: 82.5%;
+    left: 84%;
+    top: 80%;
     width: 200px;
+    margin: 25px;
     height: 60px;
+    margin-bottom: 0px;
     border: 0;
     background-color: #2B2E4A;
     font-size: 25px;
-    color: #903749;
+    color: #576CBC;
     transition-duration: .3s;
+
 }
 
 .fullscreen-button:hover {
-    background-color: #903749;
+    background-color: #576CBC;
     color: #2B2E4A;
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.15);
 }
