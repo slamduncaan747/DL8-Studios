@@ -11,6 +11,10 @@ body{
     background-color: #A5D7E8;
 }
 
+h1{
+    color: #0B2447;
+}
+
 nav {
     background-color: #0B2447;
     height: 75px;
