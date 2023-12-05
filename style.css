@@ -49,22 +49,6 @@ body{
     background-color: #576CBC;
 }
 
-.showcase50 {
-    display: inline-flex;
-    grid-template-columns: 1fr 1fr;
-}
-.showcase50child {
-    width: 45%;
-    align-items: center;
-    margin: auto;
-    height: 500px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    border-radius: 25px;
-    padding: 10px;
-    background-color: #576CBC;
-}
-
 .showcase h1{
     color: #0B2447;
     font-size: 64px;
