@@ -1,8 +1,5 @@
 gdjs.pixelartpracticeCode = {};
 
-gdjs.pixelartpracticeCode.conditionTrue_0 = {val:false};
-gdjs.pixelartpracticeCode.condition0IsTrue_0 = {val:false};
-
 
 gdjs.pixelartpracticeCode.eventsList0 = function(runtimeScene) {
 

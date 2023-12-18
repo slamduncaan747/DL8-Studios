@@ -107,41 +107,33 @@ gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects2=
 gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObstacleObjects1= [];
 gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObstacleObjects2= [];
 
-gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.condition1IsTrue_0 = {val:false};
-gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.condition2IsTrue_0 = {val:false};
-gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.conditionTrue_1 = {val:false};
-gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.condition0IsTrue_1 = {val:false};
-gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.condition1IsTrue_1 = {val:false};
-gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.condition2IsTrue_1 = {val:false};
 
-
-gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.mapOfGDgdjs_46evtsExt_95_95Bounce_95_95Bounce_46Bounce_46prototype_46BounceOffContext_46GDObstacleObjects1Objects = Hashtable.newFrom({"Obstacle": gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObstacleObjects1});
+gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.mapOfGDgdjs_9546evtsExt_9595_9595Bounce_9595_9595Bounce_9546Bounce_9546prototype_9546BounceOffContext_9546GDObstacleObjects1Objects = Hashtable.newFrom({"Obstacle": gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObstacleObjects1});
 gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 /* Reuse gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects1 */
 
-gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.condition0IsTrue_0.val = false;
-{
-{gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.conditionTrue_1 = gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.condition0IsTrue_0;
-gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects1_1final.length = 0;gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.condition0IsTrue_1.val = false;
-gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.condition1IsTrue_1.val = false;
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects1_1final.length = 0;
+let isConditionTrue_1 = false;
+isConditionTrue_0 = false;
 {
 gdjs.copyArray(gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects1, gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects2);
 
-for(var i = 0, k = 0, l = gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects2.length;i<l;++i) {
+for (var i = 0, k = 0, l = gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects2[i].getX() != (gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getOldX()) ) {
-        gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.condition0IsTrue_1.val = true;
+        isConditionTrue_1 = true;
         gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects2[k] = gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects2.length = k;if( gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.condition0IsTrue_1.val ) {
-    gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.conditionTrue_1.val = true;
-    for(var j = 0, jLen = gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects2.length;j<jLen;++j) {
+gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects2.length = k;
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+    for (let j = 0, jLen = gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects2.length; j < jLen ; ++j) {
         if ( gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects1_1final.indexOf(gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects2[j]) === -1 )
             gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects1_1final.push(gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects2[j]);
     }
@@ -150,16 +142,17 @@ gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects2.
 {
 gdjs.copyArray(gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects1, gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects2);
 
-for(var i = 0, k = 0, l = gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects2.length;i<l;++i) {
+for (var i = 0, k = 0, l = gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects2[i].getY() != (gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getOldY()) ) {
-        gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.condition1IsTrue_1.val = true;
+        isConditionTrue_1 = true;
         gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects2[k] = gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects2.length = k;if( gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.condition1IsTrue_1.val ) {
-    gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.conditionTrue_1.val = true;
-    for(var j = 0, jLen = gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects2.length;j<jLen;++j) {
+gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects2.length = k;
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+    for (let j = 0, jLen = gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects2.length; j < jLen ; ++j) {
         if ( gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects1_1final.indexOf(gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects2[j]) === -1 )
             gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects1_1final.push(gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects2[j]);
     }
@@ -169,7 +162,7 @@ gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects2.
 gdjs.copyArray(gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects1_1final, gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects1);
 }
 }
-}if (gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.condition0IsTrue_0.val) {
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects1 */
 {for(var i = 0, len = gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setNormalAngle(gdjs.toDegrees(Math.atan2((gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects1[i].getY()) - (gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getOldY()), (gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects1[i].getX()) - (gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getOldX()))));
@@ -197,6 +190,7 @@ gdjs.copyArray(gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GD
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects1);
 gdjs.copyArray(eventsFunctionContext.getObjects("Obstacle"), gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObstacleObjects1);
@@ -213,7 +207,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Obstacle"), gdjs.evtsExt__Bounc
     gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setOldForceLength((gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects1[i].getAverageForce().getLength()));
 }
 }{for(var i = 0, len = gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects1[i].separateFromObjectsList(gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.mapOfGDgdjs_46evtsExt_95_95Bounce_95_95Bounce_46Bounce_46prototype_46BounceOffContext_46GDObstacleObjects1Objects, true);
+    gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects1[i].separateFromObjectsList(gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.mapOfGDgdjs_9546evtsExt_9595_9595Bounce_9595_9595Bounce_9546Bounce_9546prototype_9546BounceOffContext_9546GDObstacleObjects1Objects, true);
 }
 }
 { //Subevents
@@ -303,41 +297,33 @@ gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDOb
 gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObstacleObjects1= [];
 gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObstacleObjects2= [];
 
-gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.condition1IsTrue_0 = {val:false};
-gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.condition2IsTrue_0 = {val:false};
-gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.conditionTrue_1 = {val:false};
-gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.condition0IsTrue_1 = {val:false};
-gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.condition1IsTrue_1 = {val:false};
-gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.condition2IsTrue_1 = {val:false};
 
-
-gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.mapOfGDgdjs_46evtsExt_95_95Bounce_95_95Bounce_46Bounce_46prototype_46BounceOffSpecificAngleContext_46GDObstacleObjects1Objects = Hashtable.newFrom({"Obstacle": gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObstacleObjects1});
+gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.mapOfGDgdjs_9546evtsExt_9595_9595Bounce_9595_9595Bounce_9546Bounce_9546prototype_9546BounceOffSpecificAngleContext_9546GDObstacleObjects1Objects = Hashtable.newFrom({"Obstacle": gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObstacleObjects1});
 gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 /* Reuse gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects1 */
 
-gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.condition0IsTrue_0.val = false;
-{
-{gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.conditionTrue_1 = gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.condition0IsTrue_0;
-gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects1_1final.length = 0;gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.condition0IsTrue_1.val = false;
-gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.condition1IsTrue_1.val = false;
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects1_1final.length = 0;
+let isConditionTrue_1 = false;
+isConditionTrue_0 = false;
 {
 gdjs.copyArray(gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects1, gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects2);
 
-for(var i = 0, k = 0, l = gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects2.length;i<l;++i) {
+for (var i = 0, k = 0, l = gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects2[i].getX() != (gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getOldX()) ) {
-        gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.condition0IsTrue_1.val = true;
+        isConditionTrue_1 = true;
         gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects2[k] = gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects2.length = k;if( gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.condition0IsTrue_1.val ) {
-    gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.conditionTrue_1.val = true;
-    for(var j = 0, jLen = gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects2.length;j<jLen;++j) {
+gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects2.length = k;
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+    for (let j = 0, jLen = gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects2.length; j < jLen ; ++j) {
         if ( gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects1_1final.indexOf(gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects2[j]) === -1 )
             gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects1_1final.push(gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects2[j]);
     }
@@ -346,16 +332,17 @@ gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDOb
 {
 gdjs.copyArray(gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects1, gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects2);
 
-for(var i = 0, k = 0, l = gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects2.length;i<l;++i) {
+for (var i = 0, k = 0, l = gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects2[i].getY() != (gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getOldY()) ) {
-        gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.condition1IsTrue_1.val = true;
+        isConditionTrue_1 = true;
         gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects2[k] = gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects2.length = k;if( gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.condition1IsTrue_1.val ) {
-    gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.conditionTrue_1.val = true;
-    for(var j = 0, jLen = gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects2.length;j<jLen;++j) {
+gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects2.length = k;
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+    for (let j = 0, jLen = gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects2.length; j < jLen ; ++j) {
         if ( gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects1_1final.indexOf(gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects2[j]) === -1 )
             gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects1_1final.push(gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects2[j]);
     }
@@ -365,7 +352,7 @@ gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDOb
 gdjs.copyArray(gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects1_1final, gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects1);
 }
 }
-}if (gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.condition0IsTrue_0.val) {
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects1 */
 {for(var i = 0, len = gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setNormalAngle((typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("NormalAngle")) || 0 : 0));
@@ -393,6 +380,7 @@ gdjs.copyArray(gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAn
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects1);
 gdjs.copyArray(eventsFunctionContext.getObjects("Obstacle"), gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObstacleObjects1);
@@ -409,7 +397,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Obstacle"), gdjs.evtsExt__Bounc
     gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setOldForceLength((gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects1[i].getAverageForce().getLength()));
 }
 }{for(var i = 0, len = gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects1[i].separateFromObjectsList(gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.mapOfGDgdjs_46evtsExt_95_95Bounce_95_95Bounce_46Bounce_46prototype_46BounceOffSpecificAngleContext_46GDObstacleObjects1Objects, true);
+    gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects1[i].separateFromObjectsList(gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.mapOfGDgdjs_9546evtsExt_9595_9595Bounce_9595_9595Bounce_9546Bounce_9546prototype_9546BounceOffSpecificAngleContext_9546GDObstacleObjects1Objects, true);
 }
 }
 { //Subevents
@@ -498,21 +486,19 @@ gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffVerticallyContext.GDObjec
 gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffVerticallyContext.GDObstacleObjects1= [];
 gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffVerticallyContext.GDObstacleObjects2= [];
 
-gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffVerticallyContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffVerticallyContext.condition0IsTrue_0 = {val:false};
 
-
-gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffVerticallyContext.mapOfGDgdjs_46evtsExt_95_95Bounce_95_95Bounce_46Bounce_46prototype_46BounceOffVerticallyContext_46GDObstacleObjects1Objects = Hashtable.newFrom({"Obstacle": gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffVerticallyContext.GDObstacleObjects1});
+gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffVerticallyContext.mapOfGDgdjs_9546evtsExt_9595_9595Bounce_9595_9595Bounce_9546Bounce_9546prototype_9546BounceOffVerticallyContext_9546GDObstacleObjects1Objects = Hashtable.newFrom({"Obstacle": gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffVerticallyContext.GDObstacleObjects1});
 gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffVerticallyContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffVerticallyContext.GDObjectObjects1);
 gdjs.copyArray(eventsFunctionContext.getObjects("Obstacle"), gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffVerticallyContext.GDObstacleObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffVerticallyContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffVerticallyContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).BounceOffSpecificAngle(gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffVerticallyContext.mapOfGDgdjs_46evtsExt_95_95Bounce_95_95Bounce_46Bounce_46prototype_46BounceOffVerticallyContext_46GDObstacleObjects1Objects, 90, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+    gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffVerticallyContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).BounceOffSpecificAngle(gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffVerticallyContext.mapOfGDgdjs_9546evtsExt_9595_9595Bounce_9595_9595Bounce_9546Bounce_9546prototype_9546BounceOffVerticallyContext_9546GDObstacleObjects1Objects, 90, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
 }}
 
@@ -597,21 +583,19 @@ gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffHorizontallyContext.GDObj
 gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffHorizontallyContext.GDObstacleObjects1= [];
 gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffHorizontallyContext.GDObstacleObjects2= [];
 
-gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffHorizontallyContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffHorizontallyContext.condition0IsTrue_0 = {val:false};
 
-
-gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffHorizontallyContext.mapOfGDgdjs_46evtsExt_95_95Bounce_95_95Bounce_46Bounce_46prototype_46BounceOffHorizontallyContext_46GDObstacleObjects1Objects = Hashtable.newFrom({"Obstacle": gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffHorizontallyContext.GDObstacleObjects1});
+gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffHorizontallyContext.mapOfGDgdjs_9546evtsExt_9595_9595Bounce_9595_9595Bounce_9546Bounce_9546prototype_9546BounceOffHorizontallyContext_9546GDObstacleObjects1Objects = Hashtable.newFrom({"Obstacle": gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffHorizontallyContext.GDObstacleObjects1});
 gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffHorizontallyContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffHorizontallyContext.GDObjectObjects1);
 gdjs.copyArray(eventsFunctionContext.getObjects("Obstacle"), gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffHorizontallyContext.GDObstacleObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffHorizontallyContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffHorizontallyContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).BounceOffSpecificAngle(gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffHorizontallyContext.mapOfGDgdjs_46evtsExt_95_95Bounce_95_95Bounce_46Bounce_46prototype_46BounceOffHorizontallyContext_46GDObstacleObjects1Objects, 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+    gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffHorizontallyContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).BounceOffSpecificAngle(gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffHorizontallyContext.mapOfGDgdjs_9546evtsExt_9595_9595Bounce_9595_9595Bounce_9546Bounce_9546prototype_9546BounceOffHorizontallyContext_9546GDObstacleObjects1Objects, 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
 }}
 

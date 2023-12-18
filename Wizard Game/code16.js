@@ -1,4 +1,6 @@
 gdjs.level1leaderboardCode = {};
+gdjs.level1leaderboardCode.GDLeftArrowButtonObjects1= [];
+gdjs.level1leaderboardCode.GDLeftArrowButtonObjects2= [];
 gdjs.level1leaderboardCode.GDGrassPlatformObjects1= [];
 gdjs.level1leaderboardCode.GDGrassPlatformObjects2= [];
 gdjs.level1leaderboardCode.GDdirtObjects1= [];
@@ -117,17 +119,6 @@ gdjs.level1leaderboardCode.GDNewObject7Objects1= [];
 gdjs.level1leaderboardCode.GDNewObject7Objects2= [];
 gdjs.level1leaderboardCode.GDtheleaderboardObjects1= [];
 gdjs.level1leaderboardCode.GDtheleaderboardObjects2= [];
-gdjs.level1leaderboardCode.GDLeftArrowButtonObjects1= [];
-gdjs.level1leaderboardCode.GDLeftArrowButtonObjects2= [];
-
-gdjs.level1leaderboardCode.conditionTrue_0 = {val:false};
-gdjs.level1leaderboardCode.condition0IsTrue_0 = {val:false};
-gdjs.level1leaderboardCode.condition1IsTrue_0 = {val:false};
-gdjs.level1leaderboardCode.condition2IsTrue_0 = {val:false};
-gdjs.level1leaderboardCode.conditionTrue_1 = {val:false};
-gdjs.level1leaderboardCode.condition0IsTrue_1 = {val:false};
-gdjs.level1leaderboardCode.condition1IsTrue_1 = {val:false};
-gdjs.level1leaderboardCode.condition2IsTrue_1 = {val:false};
 
 
 gdjs.level1leaderboardCode.eventsList0 = function(runtimeScene) {
@@ -137,9 +128,9 @@ gdjs.level1leaderboardCode.eventsList0 = function(runtimeScene) {
 {
 
 
-const keyIteratorReference2 = runtimeScene.getVariables().get("i");
-const valueIteratorReference2 = runtimeScene.getVariables().get("doc");
-const iterableReference2 = runtimeScene.getVariables().get("FetchedData").getChild("docs");
+const keyIteratorReference2 = runtimeScene.getScene().getVariables().get("i");
+const valueIteratorReference2 = runtimeScene.getScene().getVariables().get("doc");
+const iterableReference2 = runtimeScene.getScene().getVariables().get("FetchedData").getChild("docs");
 if(!iterableReference2.isPrimitive()) {
 for(
     const iteratorKey2 in 
@@ -166,15 +157,14 @@ for(
     } else console.warn("Cannot identify type: ", type);
 gdjs.copyArray(runtimeScene.getObjects("theleaderboard"), gdjs.level1leaderboardCode.GDtheleaderboardObjects2);
 
-gdjs.level1leaderboardCode.condition0IsTrue_0.val = false;
-{
-{gdjs.level1leaderboardCode.conditionTrue_1 = gdjs.level1leaderboardCode.condition0IsTrue_0;
-gdjs.level1leaderboardCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(29896940);
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(31403980);
 }
-}if (gdjs.level1leaderboardCode.condition0IsTrue_0.val)
+if (isConditionTrue_0)
 {
 {for(var i = 0, len = gdjs.level1leaderboardCode.GDtheleaderboardObjects2.length ;i < len;++i) {
-    gdjs.level1leaderboardCode.GDtheleaderboardObjects2[i].setString(gdjs.level1leaderboardCode.GDtheleaderboardObjects2[i].getString() + (gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("i")) + 1) + "," + gdjs.evtTools.variable.getVariableString(runtimeScene.getVariables().get("doc").getChild("data").getChild("name")) + "---" + gdjs.evtTools.variable.getVariableString(runtimeScene.getVariables().get("doc").getChild("data").getChild("times")) + gdjs.evtTools.string.newLine()));
+    gdjs.level1leaderboardCode.GDtheleaderboardObjects2[i].setString(gdjs.level1leaderboardCode.GDtheleaderboardObjects2[i].getString() + (gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("i")) + 1) + "," + gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().get("doc").getChild("data").getChild("name")) + "---" + gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().get("doc").getChild("data").getChild("times")) + gdjs.evtTools.string.newLine()));
 }
 }}
 }
@@ -183,16 +173,17 @@ gdjs.level1leaderboardCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().
 }
 
 
-};gdjs.level1leaderboardCode.mapOfGDgdjs_46level1leaderboardCode_46GDLeftArrowButtonObjects1Objects = Hashtable.newFrom({"LeftArrowButton": gdjs.level1leaderboardCode.GDLeftArrowButtonObjects1});
+};gdjs.level1leaderboardCode.mapOfGDgdjs_9546level1leaderboardCode_9546GDLeftArrowButtonObjects1Objects = Hashtable.newFrom({"LeftArrowButton": gdjs.level1leaderboardCode.GDLeftArrowButtonObjects1});
 gdjs.level1leaderboardCode.eventsList2 = function(runtimeScene) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 {gdjs.evtTools.firebaseTools.firestore.startQuery("speedruns", "level1times");
 }{gdjs.evtTools.firebaseTools.firestore.queryOrderBy("speedruns", "times", "desc");
-}{gdjs.evtTools.firebaseTools.firestore.watchQuery("speedruns", runtimeScene.getVariables().get("FetchedData"), runtimeScene.getVariables().get("status"));
+}{gdjs.evtTools.firebaseTools.firestore.watchQuery("speedruns", runtimeScene.getScene().getVariables().get("FetchedData"), runtimeScene.getScene().getVariables().get("status"));
 }}
 
 }
@@ -201,11 +192,11 @@ gdjs.level1leaderboardCode.eventsList2 = function(runtimeScene) {
 {
 
 
-gdjs.level1leaderboardCode.condition0IsTrue_0.val = false;
-{
-gdjs.level1leaderboardCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableString(runtimeScene.getVariables().get("status")) == "ok";
-}if (gdjs.level1leaderboardCode.condition0IsTrue_0.val) {
-{runtimeScene.getVariables().get("status").setString("");
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().get("status")) == "ok";
+if (isConditionTrue_0) {
+{runtimeScene.getScene().getVariables().get("status").setString("");
 }
 { //Subevents
 gdjs.level1leaderboardCode.eventsList1(runtimeScene);} //End of subevents
@@ -218,15 +209,14 @@ gdjs.level1leaderboardCode.eventsList1(runtimeScene);} //End of subevents
 
 gdjs.copyArray(runtimeScene.getObjects("LeftArrowButton"), gdjs.level1leaderboardCode.GDLeftArrowButtonObjects1);
 
-gdjs.level1leaderboardCode.condition0IsTrue_0.val = false;
-gdjs.level1leaderboardCode.condition1IsTrue_0.val = false;
-{
-gdjs.level1leaderboardCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.level1leaderboardCode.mapOfGDgdjs_46level1leaderboardCode_46GDLeftArrowButtonObjects1Objects, runtimeScene, true, false);
-}if ( gdjs.level1leaderboardCode.condition0IsTrue_0.val ) {
-{
-gdjs.level1leaderboardCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
-}}
-if (gdjs.level1leaderboardCode.condition1IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.level1leaderboardCode.mapOfGDgdjs_9546level1leaderboardCode_9546GDLeftArrowButtonObjects1Objects, runtimeScene, true, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+}
+if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "levels", false);
 }}
 
@@ -238,6 +228,8 @@ if (gdjs.level1leaderboardCode.condition1IsTrue_0.val) {
 gdjs.level1leaderboardCode.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
+gdjs.level1leaderboardCode.GDLeftArrowButtonObjects1.length = 0;
+gdjs.level1leaderboardCode.GDLeftArrowButtonObjects2.length = 0;
 gdjs.level1leaderboardCode.GDGrassPlatformObjects1.length = 0;
 gdjs.level1leaderboardCode.GDGrassPlatformObjects2.length = 0;
 gdjs.level1leaderboardCode.GDdirtObjects1.length = 0;
@@ -356,8 +348,6 @@ gdjs.level1leaderboardCode.GDNewObject7Objects1.length = 0;
 gdjs.level1leaderboardCode.GDNewObject7Objects2.length = 0;
 gdjs.level1leaderboardCode.GDtheleaderboardObjects1.length = 0;
 gdjs.level1leaderboardCode.GDtheleaderboardObjects2.length = 0;
-gdjs.level1leaderboardCode.GDLeftArrowButtonObjects1.length = 0;
-gdjs.level1leaderboardCode.GDLeftArrowButtonObjects2.length = 0;
 
 gdjs.level1leaderboardCode.eventsList2(runtimeScene);
 

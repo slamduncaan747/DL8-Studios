@@ -1,4 +1,16 @@
 gdjs.settingsCode = {};
+gdjs.settingsCode.GDtextObjects1= [];
+gdjs.settingsCode.GDtextObjects2= [];
+gdjs.settingsCode.GDNewObjectObjects1= [];
+gdjs.settingsCode.GDNewObjectObjects2= [];
+gdjs.settingsCode.GDNewObject2Objects1= [];
+gdjs.settingsCode.GDNewObject2Objects2= [];
+gdjs.settingsCode.GDNewObject4Objects1= [];
+gdjs.settingsCode.GDNewObject4Objects2= [];
+gdjs.settingsCode.GDNewObject3Objects1= [];
+gdjs.settingsCode.GDNewObject3Objects2= [];
+gdjs.settingsCode.GDLeftArrowButtonObjects1= [];
+gdjs.settingsCode.GDLeftArrowButtonObjects2= [];
 gdjs.settingsCode.GDGrassPlatformObjects1= [];
 gdjs.settingsCode.GDGrassPlatformObjects2= [];
 gdjs.settingsCode.GDdirtObjects1= [];
@@ -117,44 +129,28 @@ gdjs.settingsCode.GDNewObject7Objects1= [];
 gdjs.settingsCode.GDNewObject7Objects2= [];
 gdjs.settingsCode.GDtheleaderboardObjects1= [];
 gdjs.settingsCode.GDtheleaderboardObjects2= [];
-gdjs.settingsCode.GDtextObjects1= [];
-gdjs.settingsCode.GDtextObjects2= [];
-gdjs.settingsCode.GDNewObjectObjects1= [];
-gdjs.settingsCode.GDNewObjectObjects2= [];
-gdjs.settingsCode.GDNewObject2Objects1= [];
-gdjs.settingsCode.GDNewObject2Objects2= [];
-gdjs.settingsCode.GDNewObject4Objects1= [];
-gdjs.settingsCode.GDNewObject4Objects2= [];
-gdjs.settingsCode.GDNewObject3Objects1= [];
-gdjs.settingsCode.GDNewObject3Objects2= [];
-gdjs.settingsCode.GDLeftArrowButtonObjects1= [];
-gdjs.settingsCode.GDLeftArrowButtonObjects2= [];
-
-gdjs.settingsCode.conditionTrue_0 = {val:false};
-gdjs.settingsCode.condition0IsTrue_0 = {val:false};
-gdjs.settingsCode.condition1IsTrue_0 = {val:false};
-gdjs.settingsCode.condition2IsTrue_0 = {val:false};
 
 
-gdjs.settingsCode.mapOfGDgdjs_46settingsCode_46GDLeftArrowButtonObjects1Objects = Hashtable.newFrom({"LeftArrowButton": gdjs.settingsCode.GDLeftArrowButtonObjects1});
-gdjs.settingsCode.mapOfGDgdjs_46settingsCode_46GDLeftArrowButtonObjects1Objects = Hashtable.newFrom({"LeftArrowButton": gdjs.settingsCode.GDLeftArrowButtonObjects1});
-gdjs.settingsCode.mapOfGDgdjs_46settingsCode_46GDGreenSmallTree2Objects1Objects = Hashtable.newFrom({"GreenSmallTree2": gdjs.settingsCode.GDGreenSmallTree2Objects1});
+gdjs.settingsCode.mapOfGDgdjs_9546settingsCode_9546GDLeftArrowButtonObjects1Objects = Hashtable.newFrom({"LeftArrowButton": gdjs.settingsCode.GDLeftArrowButtonObjects1});
+gdjs.settingsCode.mapOfGDgdjs_9546settingsCode_9546GDLeftArrowButtonObjects1Objects = Hashtable.newFrom({"LeftArrowButton": gdjs.settingsCode.GDLeftArrowButtonObjects1});
+gdjs.settingsCode.mapOfGDgdjs_9546settingsCode_9546GDGreenSmallTree2Objects1Objects = Hashtable.newFrom({"GreenSmallTree2": gdjs.settingsCode.GDGreenSmallTree2Objects1});
 gdjs.settingsCode.eventsList0 = function(runtimeScene) {
 
 {
 
 gdjs.copyArray(runtimeScene.getObjects("NewObject3"), gdjs.settingsCode.GDNewObject3Objects1);
 
-gdjs.settingsCode.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.settingsCode.GDNewObject3Objects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.settingsCode.GDNewObject3Objects1.length;i<l;++i) {
     if ( gdjs.settingsCode.GDNewObject3Objects1[i].getBehavior("ToggleSwitch").IsChecked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
-        gdjs.settingsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.settingsCode.GDNewObject3Objects1[k] = gdjs.settingsCode.GDNewObject3Objects1[i];
         ++k;
     }
 }
-gdjs.settingsCode.GDNewObject3Objects1.length = k;}if (gdjs.settingsCode.condition0IsTrue_0.val) {
+gdjs.settingsCode.GDNewObject3Objects1.length = k;
+if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().get("buttonsize").setNumber(2);
 }}
 
@@ -165,16 +161,17 @@ gdjs.settingsCode.GDNewObject3Objects1.length = k;}if (gdjs.settingsCode.conditi
 
 gdjs.copyArray(runtimeScene.getObjects("NewObject3"), gdjs.settingsCode.GDNewObject3Objects1);
 
-gdjs.settingsCode.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.settingsCode.GDNewObject3Objects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.settingsCode.GDNewObject3Objects1.length;i<l;++i) {
     if ( !(gdjs.settingsCode.GDNewObject3Objects1[i].getBehavior("ToggleSwitch").IsChecked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined))) ) {
-        gdjs.settingsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.settingsCode.GDNewObject3Objects1[k] = gdjs.settingsCode.GDNewObject3Objects1[i];
         ++k;
     }
 }
-gdjs.settingsCode.GDNewObject3Objects1.length = k;}if (gdjs.settingsCode.condition0IsTrue_0.val) {
+gdjs.settingsCode.GDNewObject3Objects1.length = k;
+if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().get("buttonsize").setNumber(1);
 }}
 
@@ -185,15 +182,14 @@ gdjs.settingsCode.GDNewObject3Objects1.length = k;}if (gdjs.settingsCode.conditi
 
 gdjs.copyArray(runtimeScene.getObjects("LeftArrowButton"), gdjs.settingsCode.GDLeftArrowButtonObjects1);
 
-gdjs.settingsCode.condition0IsTrue_0.val = false;
-gdjs.settingsCode.condition1IsTrue_0.val = false;
-{
-gdjs.settingsCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.settingsCode.mapOfGDgdjs_46settingsCode_46GDLeftArrowButtonObjects1Objects, runtimeScene, true, false);
-}if ( gdjs.settingsCode.condition0IsTrue_0.val ) {
-{
-gdjs.settingsCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
-}}
-if (gdjs.settingsCode.condition1IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.settingsCode.mapOfGDgdjs_9546settingsCode_9546GDLeftArrowButtonObjects1Objects, runtimeScene, true, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+}
+if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.popScene(runtimeScene);
 }}
 
@@ -204,15 +200,14 @@ if (gdjs.settingsCode.condition1IsTrue_0.val) {
 
 gdjs.copyArray(runtimeScene.getObjects("LeftArrowButton"), gdjs.settingsCode.GDLeftArrowButtonObjects1);
 
-gdjs.settingsCode.condition0IsTrue_0.val = false;
-gdjs.settingsCode.condition1IsTrue_0.val = false;
-{
-gdjs.settingsCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.settingsCode.mapOfGDgdjs_46settingsCode_46GDLeftArrowButtonObjects1Objects, runtimeScene, true, false);
-}if ( gdjs.settingsCode.condition0IsTrue_0.val ) {
-{
-gdjs.settingsCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
-}}
-if (gdjs.settingsCode.condition1IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.settingsCode.mapOfGDgdjs_9546settingsCode_9546GDLeftArrowButtonObjects1Objects, runtimeScene, true, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+}
+if (isConditionTrue_0) {
 }
 
 }
@@ -222,15 +217,14 @@ if (gdjs.settingsCode.condition1IsTrue_0.val) {
 
 gdjs.copyArray(runtimeScene.getObjects("GreenSmallTree2"), gdjs.settingsCode.GDGreenSmallTree2Objects1);
 
-gdjs.settingsCode.condition0IsTrue_0.val = false;
-gdjs.settingsCode.condition1IsTrue_0.val = false;
-{
-gdjs.settingsCode.condition0IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
-}if ( gdjs.settingsCode.condition0IsTrue_0.val ) {
-{
-gdjs.settingsCode.condition1IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.settingsCode.mapOfGDgdjs_46settingsCode_46GDGreenSmallTree2Objects1Objects, runtimeScene, true, false);
-}}
-if (gdjs.settingsCode.condition1IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.settingsCode.mapOfGDgdjs_9546settingsCode_9546GDGreenSmallTree2Objects1Objects, runtimeScene, true, false);
+}
+if (isConditionTrue_0) {
 {gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getGame().getVariables().get("level1"), true);
 }{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getGame().getVariables().get("level2"), true);
 }{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getGame().getVariables().get("level3"), true);
@@ -246,16 +240,17 @@ if (gdjs.settingsCode.condition1IsTrue_0.val) {
 
 gdjs.copyArray(runtimeScene.getObjects("NewObject4"), gdjs.settingsCode.GDNewObject4Objects1);
 
-gdjs.settingsCode.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.settingsCode.GDNewObject4Objects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.settingsCode.GDNewObject4Objects1.length;i<l;++i) {
     if ( gdjs.settingsCode.GDNewObject4Objects1[i].getBehavior("ToggleSwitch").IsChecked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
-        gdjs.settingsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.settingsCode.GDNewObject4Objects1[k] = gdjs.settingsCode.GDNewObject4Objects1[i];
         ++k;
     }
 }
-gdjs.settingsCode.GDNewObject4Objects1.length = k;}if (gdjs.settingsCode.condition0IsTrue_0.val) {
+gdjs.settingsCode.GDNewObject4Objects1.length = k;
+if (isConditionTrue_0) {
 {gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(8), true);
 }}
 
@@ -266,16 +261,17 @@ gdjs.settingsCode.GDNewObject4Objects1.length = k;}if (gdjs.settingsCode.conditi
 
 gdjs.copyArray(runtimeScene.getObjects("NewObject4"), gdjs.settingsCode.GDNewObject4Objects1);
 
-gdjs.settingsCode.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.settingsCode.GDNewObject4Objects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.settingsCode.GDNewObject4Objects1.length;i<l;++i) {
     if ( !(gdjs.settingsCode.GDNewObject4Objects1[i].getBehavior("ToggleSwitch").IsChecked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined))) ) {
-        gdjs.settingsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.settingsCode.GDNewObject4Objects1[k] = gdjs.settingsCode.GDNewObject4Objects1[i];
         ++k;
     }
 }
-gdjs.settingsCode.GDNewObject4Objects1.length = k;}if (gdjs.settingsCode.condition0IsTrue_0.val) {
+gdjs.settingsCode.GDNewObject4Objects1.length = k;
+if (isConditionTrue_0) {
 {gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(8), false);
 }}
 
@@ -285,6 +281,7 @@ gdjs.settingsCode.GDNewObject4Objects1.length = k;}if (gdjs.settingsCode.conditi
 {
 
 
+let isConditionTrue_0 = false;
 {
 }
 
@@ -296,6 +293,18 @@ gdjs.settingsCode.GDNewObject4Objects1.length = k;}if (gdjs.settingsCode.conditi
 gdjs.settingsCode.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
+gdjs.settingsCode.GDtextObjects1.length = 0;
+gdjs.settingsCode.GDtextObjects2.length = 0;
+gdjs.settingsCode.GDNewObjectObjects1.length = 0;
+gdjs.settingsCode.GDNewObjectObjects2.length = 0;
+gdjs.settingsCode.GDNewObject2Objects1.length = 0;
+gdjs.settingsCode.GDNewObject2Objects2.length = 0;
+gdjs.settingsCode.GDNewObject4Objects1.length = 0;
+gdjs.settingsCode.GDNewObject4Objects2.length = 0;
+gdjs.settingsCode.GDNewObject3Objects1.length = 0;
+gdjs.settingsCode.GDNewObject3Objects2.length = 0;
+gdjs.settingsCode.GDLeftArrowButtonObjects1.length = 0;
+gdjs.settingsCode.GDLeftArrowButtonObjects2.length = 0;
 gdjs.settingsCode.GDGrassPlatformObjects1.length = 0;
 gdjs.settingsCode.GDGrassPlatformObjects2.length = 0;
 gdjs.settingsCode.GDdirtObjects1.length = 0;
@@ -414,18 +423,6 @@ gdjs.settingsCode.GDNewObject7Objects1.length = 0;
 gdjs.settingsCode.GDNewObject7Objects2.length = 0;
 gdjs.settingsCode.GDtheleaderboardObjects1.length = 0;
 gdjs.settingsCode.GDtheleaderboardObjects2.length = 0;
-gdjs.settingsCode.GDtextObjects1.length = 0;
-gdjs.settingsCode.GDtextObjects2.length = 0;
-gdjs.settingsCode.GDNewObjectObjects1.length = 0;
-gdjs.settingsCode.GDNewObjectObjects2.length = 0;
-gdjs.settingsCode.GDNewObject2Objects1.length = 0;
-gdjs.settingsCode.GDNewObject2Objects2.length = 0;
-gdjs.settingsCode.GDNewObject4Objects1.length = 0;
-gdjs.settingsCode.GDNewObject4Objects2.length = 0;
-gdjs.settingsCode.GDNewObject3Objects1.length = 0;
-gdjs.settingsCode.GDNewObject3Objects2.length = 0;
-gdjs.settingsCode.GDLeftArrowButtonObjects1.length = 0;
-gdjs.settingsCode.GDLeftArrowButtonObjects2.length = 0;
 
 gdjs.settingsCode.eventsList0(runtimeScene);
 

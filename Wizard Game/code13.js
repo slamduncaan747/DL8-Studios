@@ -1,4 +1,18 @@
 gdjs.signup2Code = {};
+gdjs.signup2Code.GDusernameObjects1= [];
+gdjs.signup2Code.GDusernameObjects2= [];
+gdjs.signup2Code.GDpasswordObjects1= [];
+gdjs.signup2Code.GDpasswordObjects2= [];
+gdjs.signup2Code.GDusernameoutputObjects1= [];
+gdjs.signup2Code.GDusernameoutputObjects2= [];
+gdjs.signup2Code.GDpasswordoutputObjects1= [];
+gdjs.signup2Code.GDpasswordoutputObjects2= [];
+gdjs.signup2Code.GDNewObject2Objects1= [];
+gdjs.signup2Code.GDNewObject2Objects2= [];
+gdjs.signup2Code.GDNewObjectObjects1= [];
+gdjs.signup2Code.GDNewObjectObjects2= [];
+gdjs.signup2Code.GDgoObjects1= [];
+gdjs.signup2Code.GDgoObjects2= [];
 gdjs.signup2Code.GDGrassPlatformObjects1= [];
 gdjs.signup2Code.GDGrassPlatformObjects2= [];
 gdjs.signup2Code.GDdirtObjects1= [];
@@ -117,37 +131,19 @@ gdjs.signup2Code.GDNewObject7Objects1= [];
 gdjs.signup2Code.GDNewObject7Objects2= [];
 gdjs.signup2Code.GDtheleaderboardObjects1= [];
 gdjs.signup2Code.GDtheleaderboardObjects2= [];
-gdjs.signup2Code.GDusernameObjects1= [];
-gdjs.signup2Code.GDusernameObjects2= [];
-gdjs.signup2Code.GDpasswordObjects1= [];
-gdjs.signup2Code.GDpasswordObjects2= [];
-gdjs.signup2Code.GDusernameoutputObjects1= [];
-gdjs.signup2Code.GDusernameoutputObjects2= [];
-gdjs.signup2Code.GDpasswordoutputObjects1= [];
-gdjs.signup2Code.GDpasswordoutputObjects2= [];
-gdjs.signup2Code.GDNewObject2Objects1= [];
-gdjs.signup2Code.GDNewObject2Objects2= [];
-gdjs.signup2Code.GDNewObjectObjects1= [];
-gdjs.signup2Code.GDNewObjectObjects2= [];
-gdjs.signup2Code.GDgoObjects1= [];
-gdjs.signup2Code.GDgoObjects2= [];
-
-gdjs.signup2Code.conditionTrue_0 = {val:false};
-gdjs.signup2Code.condition0IsTrue_0 = {val:false};
-gdjs.signup2Code.condition1IsTrue_0 = {val:false};
-gdjs.signup2Code.condition2IsTrue_0 = {val:false};
 
 
-gdjs.signup2Code.mapOfGDgdjs_46signup2Code_46GDNewObjectObjects1Objects = Hashtable.newFrom({"NewObject": gdjs.signup2Code.GDNewObjectObjects1});
-gdjs.signup2Code.mapOfGDgdjs_46signup2Code_46GDNewObjectObjects1Objects = Hashtable.newFrom({"NewObject": gdjs.signup2Code.GDNewObjectObjects1});
-gdjs.signup2Code.mapOfGDgdjs_46signup2Code_46GDNewObject2Objects1Objects = Hashtable.newFrom({"NewObject2": gdjs.signup2Code.GDNewObject2Objects1});
-gdjs.signup2Code.mapOfGDgdjs_46signup2Code_46GDNewObject2Objects1Objects = Hashtable.newFrom({"NewObject2": gdjs.signup2Code.GDNewObject2Objects1});
-gdjs.signup2Code.mapOfGDgdjs_46signup2Code_46GDgoObjects1Objects = Hashtable.newFrom({"go": gdjs.signup2Code.GDgoObjects1});
+gdjs.signup2Code.mapOfGDgdjs_9546signup2Code_9546GDNewObjectObjects1Objects = Hashtable.newFrom({"NewObject": gdjs.signup2Code.GDNewObjectObjects1});
+gdjs.signup2Code.mapOfGDgdjs_9546signup2Code_9546GDNewObjectObjects1Objects = Hashtable.newFrom({"NewObject": gdjs.signup2Code.GDNewObjectObjects1});
+gdjs.signup2Code.mapOfGDgdjs_9546signup2Code_9546GDNewObject2Objects1Objects = Hashtable.newFrom({"NewObject2": gdjs.signup2Code.GDNewObject2Objects1});
+gdjs.signup2Code.mapOfGDgdjs_9546signup2Code_9546GDNewObject2Objects1Objects = Hashtable.newFrom({"NewObject2": gdjs.signup2Code.GDNewObject2Objects1});
+gdjs.signup2Code.mapOfGDgdjs_9546signup2Code_9546GDgoObjects1Objects = Hashtable.newFrom({"go": gdjs.signup2Code.GDgoObjects1});
 gdjs.signup2Code.eventsList0 = function(runtimeScene) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(runtimeScene.getObjects("password"), gdjs.signup2Code.GDpasswordObjects1);
 gdjs.copyArray(runtimeScene.getObjects("passwordoutput"), gdjs.signup2Code.GDpasswordoutputObjects1);
@@ -167,10 +163,10 @@ gdjs.copyArray(runtimeScene.getObjects("usernameoutput"), gdjs.signup2Code.GDuse
 {
 
 
-gdjs.signup2Code.condition0IsTrue_0.val = false;
-{
-gdjs.signup2Code.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
-}if (gdjs.signup2Code.condition0IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("password"), gdjs.signup2Code.GDpasswordObjects1);
 gdjs.copyArray(runtimeScene.getObjects("username"), gdjs.signup2Code.GDusernameObjects1);
 {for(var i = 0, len = gdjs.signup2Code.GDusernameObjects1.length ;i < len;++i) {
@@ -187,6 +183,7 @@ gdjs.copyArray(runtimeScene.getObjects("username"), gdjs.signup2Code.GDusernameO
 {
 
 
+let isConditionTrue_0 = false;
 {
 }
 
@@ -197,15 +194,14 @@ gdjs.copyArray(runtimeScene.getObjects("username"), gdjs.signup2Code.GDusernameO
 
 gdjs.copyArray(runtimeScene.getObjects("NewObject"), gdjs.signup2Code.GDNewObjectObjects1);
 
-gdjs.signup2Code.condition0IsTrue_0.val = false;
-gdjs.signup2Code.condition1IsTrue_0.val = false;
-{
-gdjs.signup2Code.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.signup2Code.mapOfGDgdjs_46signup2Code_46GDNewObjectObjects1Objects, runtimeScene, true, false);
-}if ( gdjs.signup2Code.condition0IsTrue_0.val ) {
-{
-gdjs.signup2Code.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
-}}
-if (gdjs.signup2Code.condition1IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.signup2Code.mapOfGDgdjs_9546signup2Code_9546GDNewObjectObjects1Objects, runtimeScene, true, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+}
+if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("username"), gdjs.signup2Code.GDusernameObjects1);
 {for(var i = 0, len = gdjs.signup2Code.GDusernameObjects1.length ;i < len;++i) {
     gdjs.signup2Code.GDusernameObjects1[i].activate(true);
@@ -219,15 +215,14 @@ gdjs.copyArray(runtimeScene.getObjects("username"), gdjs.signup2Code.GDusernameO
 
 gdjs.copyArray(runtimeScene.getObjects("NewObject"), gdjs.signup2Code.GDNewObjectObjects1);
 
-gdjs.signup2Code.condition0IsTrue_0.val = false;
-gdjs.signup2Code.condition1IsTrue_0.val = false;
-{
-gdjs.signup2Code.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.signup2Code.mapOfGDgdjs_46signup2Code_46GDNewObjectObjects1Objects, runtimeScene, true, true);
-}if ( gdjs.signup2Code.condition0IsTrue_0.val ) {
-{
-gdjs.signup2Code.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
-}}
-if (gdjs.signup2Code.condition1IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.signup2Code.mapOfGDgdjs_9546signup2Code_9546GDNewObjectObjects1Objects, runtimeScene, true, true);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+}
+if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("username"), gdjs.signup2Code.GDusernameObjects1);
 {for(var i = 0, len = gdjs.signup2Code.GDusernameObjects1.length ;i < len;++i) {
     gdjs.signup2Code.GDusernameObjects1[i].activate(false);
@@ -241,15 +236,14 @@ gdjs.copyArray(runtimeScene.getObjects("username"), gdjs.signup2Code.GDusernameO
 
 gdjs.copyArray(runtimeScene.getObjects("NewObject2"), gdjs.signup2Code.GDNewObject2Objects1);
 
-gdjs.signup2Code.condition0IsTrue_0.val = false;
-gdjs.signup2Code.condition1IsTrue_0.val = false;
-{
-gdjs.signup2Code.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.signup2Code.mapOfGDgdjs_46signup2Code_46GDNewObject2Objects1Objects, runtimeScene, true, false);
-}if ( gdjs.signup2Code.condition0IsTrue_0.val ) {
-{
-gdjs.signup2Code.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
-}}
-if (gdjs.signup2Code.condition1IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.signup2Code.mapOfGDgdjs_9546signup2Code_9546GDNewObject2Objects1Objects, runtimeScene, true, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+}
+if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("password"), gdjs.signup2Code.GDpasswordObjects1);
 {for(var i = 0, len = gdjs.signup2Code.GDpasswordObjects1.length ;i < len;++i) {
     gdjs.signup2Code.GDpasswordObjects1[i].activate(true);
@@ -263,15 +257,14 @@ gdjs.copyArray(runtimeScene.getObjects("password"), gdjs.signup2Code.GDpasswordO
 
 gdjs.copyArray(runtimeScene.getObjects("NewObject2"), gdjs.signup2Code.GDNewObject2Objects1);
 
-gdjs.signup2Code.condition0IsTrue_0.val = false;
-gdjs.signup2Code.condition1IsTrue_0.val = false;
-{
-gdjs.signup2Code.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.signup2Code.mapOfGDgdjs_46signup2Code_46GDNewObject2Objects1Objects, runtimeScene, true, true);
-}if ( gdjs.signup2Code.condition0IsTrue_0.val ) {
-{
-gdjs.signup2Code.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
-}}
-if (gdjs.signup2Code.condition1IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.signup2Code.mapOfGDgdjs_9546signup2Code_9546GDNewObject2Objects1Objects, runtimeScene, true, true);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+}
+if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("password"), gdjs.signup2Code.GDpasswordObjects1);
 {for(var i = 0, len = gdjs.signup2Code.GDpasswordObjects1.length ;i < len;++i) {
     gdjs.signup2Code.GDpasswordObjects1[i].activate(false);
@@ -285,18 +278,17 @@ gdjs.copyArray(runtimeScene.getObjects("password"), gdjs.signup2Code.GDpasswordO
 
 gdjs.copyArray(runtimeScene.getObjects("go"), gdjs.signup2Code.GDgoObjects1);
 
-gdjs.signup2Code.condition0IsTrue_0.val = false;
-gdjs.signup2Code.condition1IsTrue_0.val = false;
-{
-gdjs.signup2Code.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.signup2Code.mapOfGDgdjs_46signup2Code_46GDgoObjects1Objects, runtimeScene, true, false);
-}if ( gdjs.signup2Code.condition0IsTrue_0.val ) {
-{
-gdjs.signup2Code.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
-}}
-if (gdjs.signup2Code.condition1IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.signup2Code.mapOfGDgdjs_9546signup2Code_9546GDgoObjects1Objects, runtimeScene, true, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+}
+if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("passwordoutput"), gdjs.signup2Code.GDpasswordoutputObjects1);
 gdjs.copyArray(runtimeScene.getObjects("usernameoutput"), gdjs.signup2Code.GDusernameoutputObjects1);
-{gdjs.evtTools.firebaseTools.auth.signInWithEmail((( gdjs.signup2Code.GDusernameoutputObjects1.length === 0 ) ? "" :gdjs.signup2Code.GDusernameoutputObjects1[0].getString()), (( gdjs.signup2Code.GDpasswordoutputObjects1.length === 0 ) ? "" :gdjs.signup2Code.GDpasswordoutputObjects1[0].getString()), runtimeScene.getVariables().get("ok"));
+{gdjs.evtTools.firebaseTools.auth.signInWithEmail((( gdjs.signup2Code.GDusernameoutputObjects1.length === 0 ) ? "" :gdjs.signup2Code.GDusernameoutputObjects1[0].getString()), (( gdjs.signup2Code.GDpasswordoutputObjects1.length === 0 ) ? "" :gdjs.signup2Code.GDpasswordoutputObjects1[0].getString()), runtimeScene.getScene().getVariables().get("ok"));
 }{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getGame().getVariables().get("getlevel"), true);
 }{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "levels", false);
 }}
@@ -307,6 +299,7 @@ gdjs.copyArray(runtimeScene.getObjects("usernameoutput"), gdjs.signup2Code.GDuse
 {
 
 
+let isConditionTrue_0 = false;
 {
 }
 
@@ -318,6 +311,20 @@ gdjs.copyArray(runtimeScene.getObjects("usernameoutput"), gdjs.signup2Code.GDuse
 gdjs.signup2Code.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
+gdjs.signup2Code.GDusernameObjects1.length = 0;
+gdjs.signup2Code.GDusernameObjects2.length = 0;
+gdjs.signup2Code.GDpasswordObjects1.length = 0;
+gdjs.signup2Code.GDpasswordObjects2.length = 0;
+gdjs.signup2Code.GDusernameoutputObjects1.length = 0;
+gdjs.signup2Code.GDusernameoutputObjects2.length = 0;
+gdjs.signup2Code.GDpasswordoutputObjects1.length = 0;
+gdjs.signup2Code.GDpasswordoutputObjects2.length = 0;
+gdjs.signup2Code.GDNewObject2Objects1.length = 0;
+gdjs.signup2Code.GDNewObject2Objects2.length = 0;
+gdjs.signup2Code.GDNewObjectObjects1.length = 0;
+gdjs.signup2Code.GDNewObjectObjects2.length = 0;
+gdjs.signup2Code.GDgoObjects1.length = 0;
+gdjs.signup2Code.GDgoObjects2.length = 0;
 gdjs.signup2Code.GDGrassPlatformObjects1.length = 0;
 gdjs.signup2Code.GDGrassPlatformObjects2.length = 0;
 gdjs.signup2Code.GDdirtObjects1.length = 0;
@@ -436,20 +443,6 @@ gdjs.signup2Code.GDNewObject7Objects1.length = 0;
 gdjs.signup2Code.GDNewObject7Objects2.length = 0;
 gdjs.signup2Code.GDtheleaderboardObjects1.length = 0;
 gdjs.signup2Code.GDtheleaderboardObjects2.length = 0;
-gdjs.signup2Code.GDusernameObjects1.length = 0;
-gdjs.signup2Code.GDusernameObjects2.length = 0;
-gdjs.signup2Code.GDpasswordObjects1.length = 0;
-gdjs.signup2Code.GDpasswordObjects2.length = 0;
-gdjs.signup2Code.GDusernameoutputObjects1.length = 0;
-gdjs.signup2Code.GDusernameoutputObjects2.length = 0;
-gdjs.signup2Code.GDpasswordoutputObjects1.length = 0;
-gdjs.signup2Code.GDpasswordoutputObjects2.length = 0;
-gdjs.signup2Code.GDNewObject2Objects1.length = 0;
-gdjs.signup2Code.GDNewObject2Objects2.length = 0;
-gdjs.signup2Code.GDNewObjectObjects1.length = 0;
-gdjs.signup2Code.GDNewObjectObjects2.length = 0;
-gdjs.signup2Code.GDgoObjects1.length = 0;
-gdjs.signup2Code.GDgoObjects2.length = 0;
 
 gdjs.signup2Code.eventsList0(runtimeScene);
 

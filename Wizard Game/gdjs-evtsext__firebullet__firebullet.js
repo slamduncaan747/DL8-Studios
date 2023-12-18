@@ -45,6 +45,9 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet = class FireBullet extends gdjs.
   _setHasJustFired(newValue) {
     this._behaviorData.HasJustFired = newValue;
   }
+  _toggleHasJustFired() {
+    this._setHasJustFired(!this._getHasJustFired());
+  }
 }
 
 /**
@@ -78,32 +81,29 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireTowardPositionCont
 gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireTowardPositionContext.GDBulletObjects1= [];
 gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireTowardPositionContext.GDBulletObjects2= [];
 
-gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireTowardPositionContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireTowardPositionContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireTowardPositionContext.condition1IsTrue_0 = {val:false};
 
-
-gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireTowardPositionContext.mapOfGDgdjs_46evtsExt_95_95FireBullet_95_95FireBullet_46FireBullet_46prototype_46FireTowardPositionContext_46GDBulletObjects1Objects = Hashtable.newFrom({"Bullet": gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireTowardPositionContext.GDBulletObjects1});
+gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireTowardPositionContext.mapOfGDgdjs_9546evtsExt_9595_9595FireBullet_9595_9595FireBullet_9546FireBullet_9546prototype_9546FireTowardPositionContext_9546GDBulletObjects1Objects = Hashtable.newFrom({"Bullet": gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireTowardPositionContext.GDBulletObjects1});
 gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireTowardPositionContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireTowardPositionContext.GDObjectObjects1);
 
-gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireTowardPositionContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireTowardPositionContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireTowardPositionContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireTowardPositionContext.GDObjectObjects1[i].timerElapsedTime("FireCooldown", (gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireTowardPositionContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFireCooldown())) ) {
-        gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireTowardPositionContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireTowardPositionContext.GDObjectObjects1[k] = gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireTowardPositionContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireTowardPositionContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireTowardPositionContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireTowardPositionContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireTowardPositionContext.GDObjectObjects1 */
 gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireTowardPositionContext.GDBulletObjects1.length = 0;
 
-{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireTowardPositionContext.mapOfGDgdjs_46evtsExt_95_95FireBullet_95_95FireBullet_46FireBullet_46prototype_46FireTowardPositionContext_46GDBulletObjects1Objects, (typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("XPosition")) || 0 : 0), (typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("YPosition")) || 0 : 0), "");
+{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireTowardPositionContext.mapOfGDgdjs_9546evtsExt_9595_9595FireBullet_9595_9595FireBullet_9546FireBullet_9546prototype_9546FireTowardPositionContext_9546GDBulletObjects1Objects, (typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("XPosition")) || 0 : 0), (typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("YPosition")) || 0 : 0), "");
 }{for(var i = 0, len = gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireTowardPositionContext.GDBulletObjects1.length ;i < len;++i) {
     gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireTowardPositionContext.GDBulletObjects1[i].addForceTowardPosition((typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("TargetXPosition")) || 0 : 0), (typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("TargetYPosition")) || 0 : 0), (typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("Speed")) || 0 : 0), 1);
 }
@@ -201,32 +201,29 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireContext.GDObjectOb
 gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireContext.GDBulletObjects1= [];
 gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireContext.GDBulletObjects2= [];
 
-gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireContext.condition1IsTrue_0 = {val:false};
 
-
-gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireContext.mapOfGDgdjs_46evtsExt_95_95FireBullet_95_95FireBullet_46FireBullet_46prototype_46FireContext_46GDBulletObjects1Objects = Hashtable.newFrom({"Bullet": gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireContext.GDBulletObjects1});
+gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireContext.mapOfGDgdjs_9546evtsExt_9595_9595FireBullet_9595_9595FireBullet_9546FireBullet_9546prototype_9546FireContext_9546GDBulletObjects1Objects = Hashtable.newFrom({"Bullet": gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireContext.GDBulletObjects1});
 gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireContext.GDObjectObjects1);
 
-gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireContext.GDObjectObjects1[i].timerElapsedTime("FireCooldown", (gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFireCooldown())) ) {
-        gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireContext.GDObjectObjects1[k] = gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireContext.GDObjectObjects1 */
 gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireContext.GDBulletObjects1.length = 0;
 
-{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireContext.mapOfGDgdjs_46evtsExt_95_95FireBullet_95_95FireBullet_46FireBullet_46prototype_46FireContext_46GDBulletObjects1Objects, (typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("XPosition")) || 0 : 0), (typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("YPosition")) || 0 : 0), "");
+{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireContext.mapOfGDgdjs_9546evtsExt_9595_9595FireBullet_9595_9595FireBullet_9546FireBullet_9546prototype_9546FireContext_9546GDBulletObjects1Objects, (typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("XPosition")) || 0 : 0), (typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("YPosition")) || 0 : 0), "");
 }{for(var i = 0, len = gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireContext.GDBulletObjects1.length ;i < len;++i) {
     gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireContext.GDBulletObjects1[i].addPolarForce((typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("Angle")) || 0 : 0), (typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("Speed")) || 0 : 0), 1);
 }
@@ -321,16 +318,13 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.HasJustFiredContext = 
 gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.HasJustFiredContext.GDObjectObjects1= [];
 gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.HasJustFiredContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.HasJustFiredContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.HasJustFiredContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.HasJustFiredContext.condition1IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.HasJustFiredContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = false; }}}
 
@@ -341,16 +335,17 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.HasJustFiredContext.ev
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.HasJustFiredContext.GDObjectObjects1);
 
-gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.HasJustFiredContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.HasJustFiredContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.HasJustFiredContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.HasJustFiredContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getHasJustFired() ) {
-        gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.HasJustFiredContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.HasJustFiredContext.GDObjectObjects1[k] = gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.HasJustFiredContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.HasJustFiredContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.HasJustFiredContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.HasJustFiredContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = true; }}}
 
 }
@@ -428,15 +423,13 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.doStepPreEventsContext
 gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.doStepPreEventsContext.GDObjectObjects1= [];
 gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.doStepPreEventsContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.doStepPreEventsContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.doStepPreEventsContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.doStepPreEventsContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.doStepPreEventsContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.doStepPreEventsContext.GDObjectObjects1.length ;i < len;++i) {
@@ -519,15 +512,13 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.onCreatedContext = {};
 gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.onCreatedContext.GDObjectObjects1= [];
 gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.onCreatedContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.onCreatedContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.onCreatedContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.onCreatedContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.onCreatedContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.onCreatedContext.GDObjectObjects1.length ;i < len;++i) {
@@ -610,10 +601,6 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.doStepPostEventsContex
 gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.doStepPostEventsContext.GDObjectObjects1= [];
 gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.doStepPostEventsContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.doStepPostEventsContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.doStepPostEventsContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.doStepPostEventsContext.condition1IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.doStepPostEventsContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
@@ -621,16 +608,17 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.doStepPostEventsContex
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.doStepPostEventsContext.GDObjectObjects1);
 
-gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.doStepPostEventsContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.doStepPostEventsContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.doStepPostEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getHasJustFired() ) {
-        gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.doStepPostEventsContext.GDObjectObjects1[k] = gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.doStepPostEventsContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.doStepPostEventsContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.doStepPostEventsContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.doStepPostEventsContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.doStepPostEventsContext.GDObjectObjects1 */
 {for(var i = 0, len = gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.doStepPostEventsContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.doStepPostEventsContext.GDObjectObjects1[i].resetTimer("FireCooldown");

@@ -1,8 +1,5 @@
 gdjs.WinCreditsCode = {};
 
-gdjs.WinCreditsCode.conditionTrue_0 = {val:false};
-gdjs.WinCreditsCode.condition0IsTrue_0 = {val:false};
-
 
 gdjs.WinCreditsCode.eventsList0 = function(runtimeScene) {
 

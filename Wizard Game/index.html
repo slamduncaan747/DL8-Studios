@@ -33,6 +33,7 @@
 	<script src="AsyncTasksManager.js" crossorigin="anonymous"></script>
 	<script src="inputmanager.js" crossorigin="anonymous"></script>
 	<script src="jsonmanager.js" crossorigin="anonymous"></script>
+	<script src="Model3DManager.js" crossorigin="anonymous"></script>
 	<script src="timemanager.js" crossorigin="anonymous"></script>
 	<script src="polygon.js" crossorigin="anonymous"></script>
 	<script src="runtimeobject.js" crossorigin="anonymous"></script>
@@ -41,9 +42,11 @@
 	<script src="runtimescene.js" crossorigin="anonymous"></script>
 	<script src="scenestack.js" crossorigin="anonymous"></script>
 	<script src="force.js" crossorigin="anonymous"></script>
+	<script src="RuntimeLayer.js" crossorigin="anonymous"></script>
 	<script src="layer.js" crossorigin="anonymous"></script>
-	<script src="RuntimeSceneLayer.js" crossorigin="anonymous"></script>
+	<script src="RuntimeCustomObjectLayer.js" crossorigin="anonymous"></script>
 	<script src="timer.js" crossorigin="anonymous"></script>
+	<script src="runtimewatermark.js" crossorigin="anonymous"></script>
 	<script src="runtimegame.js" crossorigin="anonymous"></script>
 	<script src="variable.js" crossorigin="anonymous"></script>
 	<script src="variablescontainer.js" crossorigin="anonymous"></script>
@@ -81,40 +84,47 @@
 	<script src="howler-sound-manager/howler-sound-manager.js" crossorigin="anonymous"></script>
 	<script src="fontfaceobserver-font-manager/fontfaceobserver.js" crossorigin="anonymous"></script>
 	<script src="fontfaceobserver-font-manager/fontfaceobserver-font-manager.js" crossorigin="anonymous"></script>
-	<script src="Extensions/TiledSpriteObject/tiledspriteruntimeobject.js" crossorigin="anonymous"></script>
-	<script src="Extensions/TiledSpriteObject/tiledspriteruntimeobject-pixi-renderer.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__bounce__bounce.js" crossorigin="anonymous"></script>
-	<script src="Extensions/PlatformBehavior/platformruntimebehavior.js" crossorigin="anonymous"></script>
-	<script src="Extensions/PlatformBehavior/platformerobjectruntimebehavior.js" crossorigin="anonymous"></script>
-	<script src="Extensions/PlatformBehavior/platformtools.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__firebullet__firebullet.js" crossorigin="anonymous"></script>
-	<script src="gdjs-evtsext__turret__turret.js" crossorigin="anonymous"></script>
-	<script src="Extensions/TextObject/textruntimeobject.js" crossorigin="anonymous"></script>
-	<script src="Extensions/TextObject/textruntimeobject-pixi-renderer.js" crossorigin="anonymous"></script>
-	<script src="Extensions/TextEntryObject/textentryruntimeobject.js" crossorigin="anonymous"></script>
-	<script src="Extensions/TextEntryObject/textentryruntimeobject-pixi-renderer.js" crossorigin="anonymous"></script>
-	<script src="Extensions/Lighting/lightruntimeobject.js" crossorigin="anonymous"></script>
-	<script src="Extensions/Lighting/lightruntimeobject-pixi-renderer.js" crossorigin="anonymous"></script>
-	<script src="Extensions/Lighting/lightobstacleruntimebehavior.js" crossorigin="anonymous"></script>
-	<script src="Extensions/PrimitiveDrawing/shapepainterruntimeobject.js" crossorigin="anonymous"></script>
-	<script src="Extensions/PrimitiveDrawing/pixi-graphics-extras/graphics-extras.min.js" crossorigin="anonymous"></script>
-	<script src="Extensions/PrimitiveDrawing/shapepainterruntimeobject-pixi-renderer.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__toggleswitch__toggleswitch.js" crossorigin="anonymous"></script>
-	<script src="Extensions/BitmapText/bitmaptextruntimeobject.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__turret__turret.js" crossorigin="anonymous"></script>
 	<script src="Extensions/BitmapText/bitmaptextruntimeobject-pixi-renderer.js" crossorigin="anonymous"></script>
-	<script src="Extensions/Effects/advanced-bloom-pixi-filter.js" crossorigin="anonymous"></script>
-	<script src="Extensions/Effects/pixi-filters/filter-advanced-bloom.js" crossorigin="anonymous"></script>
-	<script src="Extensions/Effects/pixi-filters/filter-kawase-blur.js" crossorigin="anonymous"></script>
+	<script src="Extensions/BitmapText/bitmaptextruntimeobject.js" crossorigin="anonymous"></script>
 	<script src="Extensions/Firebase/A_firebasejs/A_firebase-base.js" crossorigin="anonymous"></script>
 	<script src="Extensions/Firebase/A_firebasejs/B_firebase-analytics.js" crossorigin="anonymous"></script>
 	<script src="Extensions/Firebase/A_firebasejs/B_firebase-auth.js" crossorigin="anonymous"></script>
+	<script src="Extensions/Firebase/A_firebasejs/B_firebase-firestore.js" crossorigin="anonymous"></script>
 	<script src="Extensions/Firebase/B_firebasetools/C_firebasetools.js" crossorigin="anonymous"></script>
 	<script src="Extensions/Firebase/B_firebasetools/D_analyticstools.js" crossorigin="anonymous"></script>
 	<script src="Extensions/Firebase/B_firebasetools/D_authtools.js" crossorigin="anonymous"></script>
-	<script src="Extensions/SystemInfo/systeminfotools.js" crossorigin="anonymous"></script>
-	<script src="code0.js" crossorigin="anonymous"></script>
-	<script src="Extensions/Firebase/A_firebasejs/B_firebase-firestore.js" crossorigin="anonymous"></script>
 	<script src="Extensions/Firebase/B_firebasetools/D_cloudfirestoretools.js" crossorigin="anonymous"></script>
+	<script src="Extensions/Lighting/lightobstacleruntimebehavior.js" crossorigin="anonymous"></script>
+	<script src="Extensions/Lighting/lightruntimeobject-pixi-renderer.js" crossorigin="anonymous"></script>
+	<script src="Extensions/Lighting/lightruntimeobject.js" crossorigin="anonymous"></script>
+	<script src="Extensions/PlatformBehavior/platformerobjectruntimebehavior.js" crossorigin="anonymous"></script>
+	<script src="Extensions/PlatformBehavior/platformruntimebehavior.js" crossorigin="anonymous"></script>
+	<script src="Extensions/PlatformBehavior/platformtools.js" crossorigin="anonymous"></script>
+	<script src="Extensions/PrimitiveDrawing/pixi-graphics-extras/graphics-extras.min.js" crossorigin="anonymous"></script>
+	<script src="Extensions/PrimitiveDrawing/shapepainterruntimeobject-pixi-renderer.js" crossorigin="anonymous"></script>
+	<script src="Extensions/PrimitiveDrawing/shapepainterruntimeobject.js" crossorigin="anonymous"></script>
+	<script src="Extensions/SystemInfo/systeminfotools.js" crossorigin="anonymous"></script>
+	<script src="Extensions/TextEntryObject/textentryruntimeobject-pixi-renderer.js" crossorigin="anonymous"></script>
+	<script src="Extensions/TextEntryObject/textentryruntimeobject.js" crossorigin="anonymous"></script>
+	<script src="Extensions/TextObject/textruntimeobject-pixi-renderer.js" crossorigin="anonymous"></script>
+	<script src="Extensions/TextObject/textruntimeobject.js" crossorigin="anonymous"></script>
+	<script src="Extensions/TiledSpriteObject/tiledspriteruntimeobject-pixi-renderer.js" crossorigin="anonymous"></script>
+	<script src="Extensions/TiledSpriteObject/tiledspriteruntimeobject.js" crossorigin="anonymous"></script>
+	<script src="object-capabilities/AnimatableBehavior.js" crossorigin="anonymous"></script>
+	<script src="object-capabilities/EffectBehavior.js" crossorigin="anonymous"></script>
+	<script src="object-capabilities/FlippableBehavior.js" crossorigin="anonymous"></script>
+	<script src="object-capabilities/OpacityBehavior.js" crossorigin="anonymous"></script>
+	<script src="object-capabilities/ResizableBehavior.js" crossorigin="anonymous"></script>
+	<script src="object-capabilities/ScalableBehavior.js" crossorigin="anonymous"></script>
+	<script src="object-capabilities/TextContainerBehavior.js" crossorigin="anonymous"></script>
+	<script src="Extensions/Effects/advanced-bloom-pixi-filter.js" crossorigin="anonymous"></script>
+	<script src="Extensions/Effects/pixi-filters/filter-advanced-bloom.js" crossorigin="anonymous"></script>
+	<script src="Extensions/Effects/pixi-filters/filter-kawase-blur.js" crossorigin="anonymous"></script>
+	<script src="code0.js" crossorigin="anonymous"></script>
 	<script src="code1.js" crossorigin="anonymous"></script>
 	<script src="code2.js" crossorigin="anonymous"></script>
 	<script src="code3.js" crossorigin="anonymous"></script>

@@ -183,17 +183,26 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch = class ToggleSwitch exten
   _setChecked(newValue) {
     this._behaviorData.Checked = newValue;
   }
+  _toggleChecked() {
+    this._setChecked(!this._getChecked());
+  }
   _getDisabled() {
     return this._behaviorData.Disabled !== undefined ? this._behaviorData.Disabled : false;
   }
   _setDisabled(newValue) {
     this._behaviorData.Disabled = newValue;
   }
+  _toggleDisabled() {
+    this._setDisabled(!this._getDisabled());
+  }
   _getToggleChanged() {
     return this._behaviorData.ToggleChanged !== undefined ? this._behaviorData.ToggleChanged : false;
   }
   _setToggleChanged(newValue) {
     this._behaviorData.ToggleChanged = newValue;
+  }
+  _toggleToggleChanged() {
+    this._setToggleChanged(!this._getToggleChanged());
   }
   _getInactiveThumbColor() {
     return this._behaviorData.InactiveThumbColor !== undefined ? this._behaviorData.InactiveThumbColor : "255;255;255";
@@ -206,6 +215,9 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch = class ToggleSwitch exten
   }
   _setIsPressed(newValue) {
     this._behaviorData.IsPressed = newValue;
+  }
+  _toggleIsPressed() {
+    this._setIsPressed(!this._getIsPressed());
   }
   _getThumbShadowOffsetY() {
     return this._behaviorData.ThumbShadowOffsetY !== undefined ? this._behaviorData.ThumbShadowOffsetY : Number("4") || 0;
@@ -231,17 +243,26 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch = class ToggleSwitch exten
   _setNeedRedaw(newValue) {
     this._behaviorData.NeedRedaw = newValue;
   }
+  _toggleNeedRedaw() {
+    this._setNeedRedaw(!this._getNeedRedaw());
+  }
   _getIsHovered() {
     return this._behaviorData.IsHovered !== undefined ? this._behaviorData.IsHovered : false;
   }
   _setIsHovered(newValue) {
     this._behaviorData.IsHovered = newValue;
   }
+  _toggleIsHovered() {
+    this._setIsHovered(!this._getIsHovered());
+  }
   _getWasHovered() {
     return this._behaviorData.WasHovered !== undefined ? this._behaviorData.WasHovered : false;
   }
   _setWasHovered(newValue) {
     this._behaviorData.WasHovered = newValue;
+  }
+  _toggleWasHovered() {
+    this._setWasHovered(!this._getWasHovered());
   }
 }
 
@@ -276,19 +297,6 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEvents
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3= [];
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects4= [];
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition1IsTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition2IsTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition3IsTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition4IsTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.conditionTrue_1 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_1 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition1IsTrue_1 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition2IsTrue_1 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition3IsTrue_1 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition4IsTrue_1 = {val:false};
-
 
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
@@ -296,16 +304,17 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEvents
 
 /* Reuse gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2 */
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getThumbOffset() > 0.01 ) {
-        gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;}if (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setNeedRedaw(true);
@@ -321,16 +330,17 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEvents
 
 /* Reuse gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2 */
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getThumbOffset() < (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getTrackWidth()) - 0.01 ) {
-        gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;}if (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setNeedRedaw(true);
@@ -345,17 +355,16 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEvents
 {
 
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-{
-{gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.conditionTrue_1 = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0;
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.conditionTrue_1.val = eventsFunctionContext.getOnceTriggers().triggerOnce(27478940);
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(11048740);
 }
-}if (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val) {
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).ToggleChecked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
-}{runtimeScene.getVariables().get("__ToggleSwitchBehavior").getChild("IsPressed").setNumber(1);
+}{runtimeScene.getScene().getVariables().get("__ToggleSwitchBehavior").getChild("IsPressed").setNumber(1);
 }{for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setIsPressed(true);
 }
@@ -371,16 +380,17 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEvents
 gdjs.copyArray(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2, gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3);
 
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length;i<l;++i) {
     if ( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIsHovered() ) {
-        gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[k] = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[i];
         ++k;
     }
 }
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length = k;}if (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3 */
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length ;i < len;++i) {
     gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setWasHovered(true);
@@ -395,16 +405,17 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEvents
 gdjs.copyArray(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2, gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3);
 
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length;i<l;++i) {
     if ( !(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIsHovered()) ) {
-        gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[k] = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[i];
         ++k;
     }
 }
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length = k;}if (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3 */
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length ;i < len;++i) {
     gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setWasHovered(false);
@@ -417,6 +428,7 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEvents
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2, gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3);
 
@@ -433,25 +445,22 @@ gdjs.copyArray(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.d
 gdjs.copyArray(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2, gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3);
 
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition1IsTrue_0.val = false;
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition2IsTrue_0.val = false;
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition3IsTrue_0.val = false;
-{
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = gdjs.evtTools.input.getMouseX(runtimeScene, (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length === 0 ) ? "" :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[0].getLayer()), 0) >= (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length === 0 ) ? 0 :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[0].getX()) - Math.max((( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length === 0 ) ? 0 :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getHaloRadius()), (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length === 0 ) ? 0 :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getThumbRadius()));
-}if ( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val ) {
-{
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition1IsTrue_0.val = gdjs.evtTools.input.getMouseX(runtimeScene, (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length === 0 ) ? "" :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[0].getLayer()), 0) <= (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length === 0 ) ? 0 :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[0].getX()) + (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length === 0 ) ? 0 :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getTrackWidth()) + Math.max((( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length === 0 ) ? 0 :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getHaloRadius()), (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length === 0 ) ? 0 :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getThumbRadius()));
-}if ( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition1IsTrue_0.val ) {
-{
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition2IsTrue_0.val = gdjs.evtTools.input.getMouseY(runtimeScene, (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length === 0 ) ? "" :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[0].getLayer()), 0) >= (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length === 0 ) ? 0 :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[0].getY()) - (Math.max((( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length === 0 ) ? 0 :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getHaloRadius()), (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length === 0 ) ? 0 :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getThumbRadius())) * 2 - (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length === 0 ) ? 0 :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getTrackHeight())) / 2;
-}if ( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition2IsTrue_0.val ) {
-{
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition3IsTrue_0.val = gdjs.evtTools.input.getMouseY(runtimeScene, (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length === 0 ) ? "" :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[0].getLayer()), 0) <= (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length === 0 ) ? 0 :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[0].getY()) + (Math.max((( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length === 0 ) ? 0 :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getHaloRadius()), (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length === 0 ) ? 0 :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getThumbRadius())) * 2 + (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length === 0 ) ? 0 :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getTrackHeight())) / 2;
-}}
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.getCursorX(runtimeScene, (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length === 0 ) ? "" :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[0].getLayer()), 0) >= (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length === 0 ) ? 0 :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[0].getX()) - Math.max((( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length === 0 ) ? 0 :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getHaloRadius()), (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length === 0 ) ? 0 :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getThumbRadius()));
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.getCursorX(runtimeScene, (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length === 0 ) ? "" :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[0].getLayer()), 0) <= (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length === 0 ) ? 0 :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[0].getX()) + (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length === 0 ) ? 0 :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getTrackWidth()) + Math.max((( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length === 0 ) ? 0 :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getHaloRadius()), (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length === 0 ) ? 0 :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getThumbRadius()));
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.getCursorY(runtimeScene, (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length === 0 ) ? "" :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[0].getLayer()), 0) >= (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length === 0 ) ? 0 :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[0].getY()) - (Math.max((( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length === 0 ) ? 0 :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getHaloRadius()), (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length === 0 ) ? 0 :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getThumbRadius())) * 2 - (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length === 0 ) ? 0 :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getTrackHeight())) / 2;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.getCursorY(runtimeScene, (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length === 0 ) ? "" :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[0].getLayer()), 0) <= (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length === 0 ) ? 0 :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[0].getY()) + (Math.max((( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length === 0 ) ? 0 :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getHaloRadius()), (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length === 0 ) ? 0 :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getThumbRadius())) * 2 + (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length === 0 ) ? 0 :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getTrackHeight())) / 2;
 }
 }
-if (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition3IsTrue_0.val) {
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3 */
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length ;i < len;++i) {
     gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setIsHovered(true);
@@ -466,27 +475,28 @@ if (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEv
 gdjs.copyArray(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2, gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3);
 
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition1IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length;i<l;++i) {
     if ( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIsHovered() ) {
-        gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[k] = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[i];
         ++k;
     }
 }
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length = k;}if ( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length;i<l;++i) {
+gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length;i<l;++i) {
     if ( !(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getWasHovered()) ) {
-        gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[k] = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[i];
         ++k;
     }
 }
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length = k;}}
-if (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition1IsTrue_0.val) {
+gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length = k;
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3 */
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length ;i < len;++i) {
     gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setNeedRedaw(true);
@@ -501,27 +511,28 @@ if (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEv
 gdjs.copyArray(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2, gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3);
 
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition1IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length;i<l;++i) {
     if ( !(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIsHovered()) ) {
-        gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[k] = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[i];
         ++k;
     }
 }
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length = k;}if ( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length;i<l;++i) {
+gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length;i<l;++i) {
     if ( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getWasHovered() ) {
-        gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[k] = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[i];
         ++k;
     }
 }
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length = k;}}
-if (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition1IsTrue_0.val) {
+gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length = k;
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3 */
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3.length ;i < len;++i) {
     gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setNeedRedaw(true);
@@ -542,21 +553,21 @@ if (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEv
 
 /* Reuse gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2 */
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition1IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).IsHoveredOver((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
-        gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;}if ( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val ) {
-{
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
-}}
-if (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition1IsTrue_0.val) {
+gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+}
+if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.eventsList2(runtimeScene, eventsFunctionContext);} //End of subevents
@@ -578,16 +589,17 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEvents
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2);
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getThumbRadius() < (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getTrackHeight()) / 2 ) {
-        gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;}if (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setTrackHeight((gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getThumbRadius()) * 2);
@@ -601,16 +613,17 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEvents
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2);
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getThumbRadius() > (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getTrackWidth()) / 2 ) {
-        gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;}if (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setThumbRadius((gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getTrackWidth()) / 2);
@@ -624,16 +637,17 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEvents
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2);
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getHaloRadius() < (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getThumbRadius()) * 1.5 ) {
-        gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;}if (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).SetHaloRadius((gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getThumbRadius()) * 1.5, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
@@ -647,16 +661,17 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEvents
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2);
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getThumbShadowOffsetX() > (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getThumbRadius()) / 3 ) {
-        gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;}if (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setThumbShadowOffsetX((gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getThumbRadius()) / 3);
@@ -670,16 +685,17 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEvents
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2);
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getThumbShadowOffsetY() > (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getThumbRadius()) / 3 ) {
-        gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;}if (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setThumbShadowOffsetY((gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getThumbRadius()) / 3);
@@ -700,16 +716,17 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEvents
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2);
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( !(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getChecked()) ) {
-        gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;}if (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setThumbOffset(gdjs.evtTools.common.lerp((gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getThumbOffset()), 0, 0.25));
@@ -726,16 +743,17 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEvents
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2);
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getChecked() ) {
-        gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;}if (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setThumbOffset(gdjs.evtTools.common.lerp((gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getThumbOffset()), (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getTrackWidth()), 0.25));
@@ -759,37 +777,36 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEvents
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2);
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition1IsTrue_0.val = false;
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition2IsTrue_0.val = false;
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition3IsTrue_0.val = false;
-{
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = gdjs.evtTools.camera.layerIsVisible(runtimeScene, (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length === 0 ) ? "" :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[0].getLayer()));
-}if ( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.camera.layerIsVisible(runtimeScene, (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length === 0 ) ? "" :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[0].getLayer()));
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].isVisible() ) {
-        gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;}if ( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition1IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
+gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( !(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDisabled()) ) {
-        gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition2IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;}if ( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition2IsTrue_0.val ) {
-{
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition3IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("__ToggleSwitchBehavior").getChild("IsPressed")) == 0;
-}}
+gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("__ToggleSwitchBehavior").getChild("IsPressed")) == 0;
 }
 }
-if (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition3IsTrue_0.val) {
+}
+if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.eventsList3(runtimeScene, eventsFunctionContext);} //End of subevents
@@ -808,12 +825,12 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEvents
 {
 
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-{
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
-}if (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
+if (isConditionTrue_0) {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects1);
-{runtimeScene.getVariables().get("__ToggleSwitchBehavior").getChild("IsPressed").setNumber(0);
+{runtimeScene.getScene().getVariables().get("__ToggleSwitchBehavior").getChild("IsPressed").setNumber(0);
 }{for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setIsPressed(false);
 }
@@ -836,16 +853,17 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleS
 gdjs.copyArray(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects1, gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2);
 
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getInactiveTrackColor() == "" ) {
-        gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;}if (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].setFillColor((gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getActiveThumbColor()));
@@ -860,16 +878,17 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEvents
 gdjs.copyArray(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects1, gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2);
 
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( !(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getInactiveTrackColor() == "") ) {
-        gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;}if (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].setFillColor((gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getInactiveTrackColor()));
@@ -882,6 +901,7 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEvents
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects1, gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2);
 
@@ -906,6 +926,7 @@ gdjs.copyArray(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.d
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects1, gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2);
 
@@ -927,6 +948,7 @@ gdjs.copyArray(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.d
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects1, gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2);
 
@@ -950,16 +972,17 @@ gdjs.copyArray(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.d
 gdjs.copyArray(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects1, gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2);
 
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getActiveTrackColor() == "" ) {
-        gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;}if (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].setFillColor((gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getActiveThumbColor()));
@@ -974,16 +997,17 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEvents
 gdjs.copyArray(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects1, gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2);
 
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( !(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getActiveTrackColor() == "") ) {
-        gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;}if (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].setFillColor((gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getActiveTrackColor()));
@@ -996,6 +1020,7 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEvents
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects1, gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2);
 
@@ -1017,6 +1042,7 @@ gdjs.copyArray(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.d
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects1, gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2);
 
@@ -1038,6 +1064,7 @@ gdjs.copyArray(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.d
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects1, gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2);
 
@@ -1061,16 +1088,17 @@ gdjs.copyArray(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.d
 gdjs.copyArray(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects1, gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2);
 
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIsHovered() ) {
-        gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;}if (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].setFillOpacity((gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getHaloOpacityHover()));
@@ -1101,16 +1129,17 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEvents
 gdjs.copyArray(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects1, gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2);
 
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIsPressed() ) {
-        gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;}if (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].setFillColor((gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getActiveThumbColor()));
@@ -1139,6 +1168,7 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEvents
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects1, gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2);
 
@@ -1156,6 +1186,7 @@ gdjs.copyArray(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.d
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects1, gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2);
 
@@ -1170,6 +1201,7 @@ gdjs.copyArray(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.d
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects1, gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2);
 
@@ -1187,6 +1219,7 @@ gdjs.copyArray(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.d
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects1, gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2);
 
@@ -1208,6 +1241,7 @@ gdjs.copyArray(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.d
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects1, gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2);
 
@@ -1230,16 +1264,17 @@ gdjs.copyArray(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.d
 gdjs.copyArray(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects1, gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2);
 
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getChecked() ) {
-        gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;}if (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].setFillColor((gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getActiveThumbColor()));
@@ -1260,16 +1295,17 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEvents
 gdjs.copyArray(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects1, gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2);
 
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( !(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getChecked()) ) {
-        gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;}if (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].setFillColor((gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getInactiveThumbColor()));
@@ -1295,6 +1331,7 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEvents
 {
 
 
+let isConditionTrue_0 = false;
 {
 /* Reuse gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects1 */
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects1.length ;i < len;++i) {
@@ -1311,16 +1348,17 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEvents
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects1);
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getNeedRedaw() ) {
-        gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects1[k] = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects1 */
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.doStepPostEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setNeedRedaw(false);
@@ -1426,9 +1464,6 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.onCreatedContext
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.onCreatedContext.GDObjectObjects1= [];
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.onCreatedContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.onCreatedContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.onCreatedContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.onCreatedContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
@@ -1442,6 +1477,7 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.onCreatedContext
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.onCreatedContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.onCreatedContext.GDObjectObjects1.length ;i < len;++i) {
@@ -1524,15 +1560,13 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetTrackWidthCon
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetTrackWidthContext.GDObjectObjects1= [];
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetTrackWidthContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetTrackWidthContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetTrackWidthContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetTrackWidthContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetTrackWidthContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetTrackWidthContext.GDObjectObjects1.length ;i < len;++i) {
@@ -1619,15 +1653,13 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetTrackHeightCo
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetTrackHeightContext.GDObjectObjects1= [];
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetTrackHeightContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetTrackHeightContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetTrackHeightContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetTrackHeightContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetTrackHeightContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetTrackHeightContext.GDObjectObjects1.length ;i < len;++i) {
@@ -1714,15 +1746,13 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetThumbOpacityC
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetThumbOpacityContext.GDObjectObjects1= [];
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetThumbOpacityContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetThumbOpacityContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetThumbOpacityContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetThumbOpacityContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetThumbOpacityContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetThumbOpacityContext.GDObjectObjects1.length ;i < len;++i) {
@@ -1809,15 +1839,13 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetInactiveTrack
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetInactiveTrackOpacityContext.GDObjectObjects1= [];
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetInactiveTrackOpacityContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetInactiveTrackOpacityContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetInactiveTrackOpacityContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetInactiveTrackOpacityContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetInactiveTrackOpacityContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetInactiveTrackOpacityContext.GDObjectObjects1.length ;i < len;++i) {
@@ -1904,15 +1932,13 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetActiveTrackOp
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetActiveTrackOpacityContext.GDObjectObjects1= [];
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetActiveTrackOpacityContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetActiveTrackOpacityContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetActiveTrackOpacityContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetActiveTrackOpacityContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetActiveTrackOpacityContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetActiveTrackOpacityContext.GDObjectObjects1.length ;i < len;++i) {
@@ -1999,15 +2025,13 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetHaloOpacityPr
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetHaloOpacityPressedContext.GDObjectObjects1= [];
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetHaloOpacityPressedContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetHaloOpacityPressedContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetHaloOpacityPressedContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetHaloOpacityPressedContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetHaloOpacityPressedContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetHaloOpacityPressedContext.GDObjectObjects1.length ;i < len;++i) {
@@ -2094,15 +2118,13 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetHaloOpacityHo
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetHaloOpacityHoverContext.GDObjectObjects1= [];
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetHaloOpacityHoverContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetHaloOpacityHoverContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetHaloOpacityHoverContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetHaloOpacityHoverContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetHaloOpacityHoverContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetHaloOpacityHoverContext.GDObjectObjects1.length ;i < len;++i) {
@@ -2189,15 +2211,13 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetThumbShadowOf
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetThumbShadowOffsetYContext.GDObjectObjects1= [];
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetThumbShadowOffsetYContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetThumbShadowOffsetYContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetThumbShadowOffsetYContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetThumbShadowOffsetYContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetThumbShadowOffsetYContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetThumbShadowOffsetYContext.GDObjectObjects1.length ;i < len;++i) {
@@ -2284,15 +2304,13 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetThumbShadowOf
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetThumbShadowOffsetXContext.GDObjectObjects1= [];
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetThumbShadowOffsetXContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetThumbShadowOffsetXContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetThumbShadowOffsetXContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetThumbShadowOffsetXContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetThumbShadowOffsetXContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetThumbShadowOffsetXContext.GDObjectObjects1.length ;i < len;++i) {
@@ -2379,15 +2397,13 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetThumbShadowOp
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetThumbShadowOpacityContext.GDObjectObjects1= [];
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetThumbShadowOpacityContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetThumbShadowOpacityContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetThumbShadowOpacityContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetThumbShadowOpacityContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetThumbShadowOpacityContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetThumbShadowOpacityContext.GDObjectObjects1.length ;i < len;++i) {
@@ -2474,15 +2490,13 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetThumbRadiusCo
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetThumbRadiusContext.GDObjectObjects1= [];
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetThumbRadiusContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetThumbRadiusContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetThumbRadiusContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetThumbRadiusContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetThumbRadiusContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetThumbRadiusContext.GDObjectObjects1.length ;i < len;++i) {
@@ -2569,15 +2583,13 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetHaloRadiusCon
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetHaloRadiusContext.GDObjectObjects1= [];
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetHaloRadiusContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetHaloRadiusContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetHaloRadiusContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetHaloRadiusContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetHaloRadiusContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetHaloRadiusContext.GDObjectObjects1.length ;i < len;++i) {
@@ -2664,15 +2676,13 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetActiveTrackCo
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetActiveTrackColorContext.GDObjectObjects1= [];
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetActiveTrackColorContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetActiveTrackColorContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetActiveTrackColorContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetActiveTrackColorContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetActiveTrackColorContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetActiveTrackColorContext.GDObjectObjects1.length ;i < len;++i) {
@@ -2759,15 +2769,13 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetInactiveTrack
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetInactiveTrackColorContext.GDObjectObjects1= [];
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetInactiveTrackColorContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetInactiveTrackColorContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetInactiveTrackColorContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetInactiveTrackColorContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetInactiveTrackColorContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetInactiveTrackColorContext.GDObjectObjects1.length ;i < len;++i) {
@@ -2854,15 +2862,13 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetInactiveThumb
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetInactiveThumbColorContext.GDObjectObjects1= [];
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetInactiveThumbColorContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetInactiveThumbColorContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetInactiveThumbColorContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetInactiveThumbColorContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetInactiveThumbColorContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetInactiveThumbColorContext.GDObjectObjects1.length ;i < len;++i) {
@@ -2949,15 +2955,13 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetActiveThumbCo
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetActiveThumbColorContext.GDObjectObjects1= [];
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetActiveThumbColorContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetActiveThumbColorContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetActiveThumbColorContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetActiveThumbColorContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetActiveThumbColorContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetActiveThumbColorContext.GDObjectObjects1.length ;i < len;++i) {
@@ -3044,17 +3048,13 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedCon
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.GDObjectObjects1= [];
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.condition1IsTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.condition2IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.GDObjectObjects1.length ;i < len;++i) {
@@ -3072,16 +3072,17 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleS
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.GDObjectObjects1);
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getChecked() ) {
-        gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.GDObjectObjects1[k] = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.GDObjectObjects1 */
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setChecked(false);
@@ -3098,27 +3099,28 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedCon
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.GDObjectObjects1);
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.condition0IsTrue_0.val = false;
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.condition1IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.GDObjectObjects1.length;i<l;++i) {
     if ( !(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getChecked()) ) {
-        gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.GDObjectObjects1[k] = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.GDObjectObjects1.length = k;}if ( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.GDObjectObjects1.length;i<l;++i) {
+gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.GDObjectObjects1.length;i<l;++i) {
     if ( !(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getToggleChanged()) ) {
-        gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.GDObjectObjects1[k] = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.GDObjectObjects1.length = k;}}
-if (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.condition1IsTrue_0.val) {
+gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.GDObjectObjects1.length = k;
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.GDObjectObjects1 */
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ToggleCheckedContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setChecked(true);
@@ -3200,25 +3202,17 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetDisabledConte
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetDisabledContext.GDObjectObjects1= [];
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetDisabledContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetDisabledContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetDisabledContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetDisabledContext.condition1IsTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetDisabledContext.conditionTrue_1 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetDisabledContext.condition0IsTrue_1 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetDisabledContext.condition1IsTrue_1 = {val:false};
-
 
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetDisabledContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetDisabledContext.condition0IsTrue_0.val = false;
-{
-{gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetDisabledContext.conditionTrue_1 = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetDisabledContext.condition0IsTrue_0;
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetDisabledContext.conditionTrue_1.val = !(typeof eventsFunctionContext !== 'undefined' ? !!eventsFunctionContext.getArgument("State") : false);
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = !(typeof eventsFunctionContext !== 'undefined' ? !!eventsFunctionContext.getArgument("State") : false);
 }
-}if (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetDisabledContext.condition0IsTrue_0.val) {
+if (isConditionTrue_0) {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetDisabledContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetDisabledContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetDisabledContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setDisabled(false);
@@ -3231,12 +3225,11 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleS
 {
 
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetDisabledContext.condition0IsTrue_0.val = false;
-{
-{gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetDisabledContext.conditionTrue_1 = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetDisabledContext.condition0IsTrue_0;
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetDisabledContext.conditionTrue_1.val = (typeof eventsFunctionContext !== 'undefined' ? !!eventsFunctionContext.getArgument("State") : false);
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (typeof eventsFunctionContext !== 'undefined' ? !!eventsFunctionContext.getArgument("State") : false);
 }
-}if (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetDisabledContext.condition0IsTrue_0.val) {
+if (isConditionTrue_0) {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetDisabledContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetDisabledContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetDisabledContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setDisabled(true);
@@ -3249,6 +3242,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleS
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetDisabledContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetDisabledContext.GDObjectObjects1.length ;i < len;++i) {
@@ -3332,25 +3326,17 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetCheckedContex
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetCheckedContext.GDObjectObjects1= [];
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetCheckedContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetCheckedContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetCheckedContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetCheckedContext.condition1IsTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetCheckedContext.conditionTrue_1 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetCheckedContext.condition0IsTrue_1 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetCheckedContext.condition1IsTrue_1 = {val:false};
-
 
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetCheckedContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetCheckedContext.condition0IsTrue_0.val = false;
-{
-{gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetCheckedContext.conditionTrue_1 = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetCheckedContext.condition0IsTrue_0;
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetCheckedContext.conditionTrue_1.val = !(typeof eventsFunctionContext !== 'undefined' ? !!eventsFunctionContext.getArgument("State") : false);
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = !(typeof eventsFunctionContext !== 'undefined' ? !!eventsFunctionContext.getArgument("State") : false);
 }
-}if (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetCheckedContext.condition0IsTrue_0.val) {
+if (isConditionTrue_0) {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetCheckedContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetCheckedContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetCheckedContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setChecked(false);
@@ -3363,12 +3349,11 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleS
 {
 
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetCheckedContext.condition0IsTrue_0.val = false;
-{
-{gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetCheckedContext.conditionTrue_1 = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetCheckedContext.condition0IsTrue_0;
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetCheckedContext.conditionTrue_1.val = (typeof eventsFunctionContext !== 'undefined' ? !!eventsFunctionContext.getArgument("State") : false);
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (typeof eventsFunctionContext !== 'undefined' ? !!eventsFunctionContext.getArgument("State") : false);
 }
-}if (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetCheckedContext.condition0IsTrue_0.val) {
+if (isConditionTrue_0) {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetCheckedContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetCheckedContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetCheckedContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setChecked(true);
@@ -3381,6 +3366,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleS
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetCheckedContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.SetCheckedContext.GDObjectObjects1.length ;i < len;++i) {
@@ -3464,10 +3450,6 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsHoveredOverCon
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsHoveredOverContext.GDObjectObjects1= [];
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsHoveredOverContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsHoveredOverContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsHoveredOverContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsHoveredOverContext.condition1IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsHoveredOverContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
@@ -3481,6 +3463,7 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsHoveredOverCon
 {
 
 
+let isConditionTrue_0 = false;
 {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = false; }}}
 
@@ -3498,16 +3481,17 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsHoveredOverCon
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsHoveredOverContext.GDObjectObjects1);
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsHoveredOverContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsHoveredOverContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsHoveredOverContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsHoveredOverContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIsHovered() ) {
-        gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsHoveredOverContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsHoveredOverContext.GDObjectObjects1[k] = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsHoveredOverContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsHoveredOverContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsHoveredOverContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsHoveredOverContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = true; }}}
 
 }
@@ -3585,15 +3569,13 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.TrackWidthContex
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.TrackWidthContext.GDObjectObjects1= [];
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.TrackWidthContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.TrackWidthContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.TrackWidthContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.TrackWidthContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.TrackWidthContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.TrackWidthContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.TrackWidthContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getTrackWidth()); }}}
@@ -3673,15 +3655,13 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.TrackHeightConte
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.TrackHeightContext.GDObjectObjects1= [];
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.TrackHeightContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.TrackHeightContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.TrackHeightContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.TrackHeightContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.TrackHeightContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.TrackHeightContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.TrackHeightContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getTrackHeight()); }}}
@@ -3761,15 +3741,13 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ThumbShadowOffse
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ThumbShadowOffsetYContext.GDObjectObjects1= [];
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ThumbShadowOffsetYContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ThumbShadowOffsetYContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ThumbShadowOffsetYContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ThumbShadowOffsetYContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ThumbShadowOffsetYContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ThumbShadowOffsetYContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ThumbShadowOffsetYContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getThumbShadowOffsetY()); }}}
@@ -3849,15 +3827,13 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ThumbShadowOffse
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ThumbShadowOffsetXContext.GDObjectObjects1= [];
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ThumbShadowOffsetXContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ThumbShadowOffsetXContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ThumbShadowOffsetXContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ThumbShadowOffsetXContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ThumbShadowOffsetXContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ThumbShadowOffsetXContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ThumbShadowOffsetXContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getThumbShadowOffsetX()); }}}
@@ -3937,15 +3913,13 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ThumbShadowOpaci
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ThumbShadowOpacityContext.GDObjectObjects1= [];
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ThumbShadowOpacityContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ThumbShadowOpacityContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ThumbShadowOpacityContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ThumbShadowOpacityContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ThumbShadowOpacityContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ThumbShadowOpacityContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ThumbShadowOpacityContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getThumbShadowOpacity()); }}}
@@ -4025,15 +3999,13 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ThumbOpacityCont
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ThumbOpacityContext.GDObjectObjects1= [];
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ThumbOpacityContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ThumbOpacityContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ThumbOpacityContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ThumbOpacityContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ThumbOpacityContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ThumbOpacityContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ThumbOpacityContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getThumbOpacity()); }}}
@@ -4113,15 +4085,13 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ActiveTrackOpaci
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ActiveTrackOpacityContext.GDObjectObjects1= [];
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ActiveTrackOpacityContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ActiveTrackOpacityContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ActiveTrackOpacityContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ActiveTrackOpacityContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ActiveTrackOpacityContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ActiveTrackOpacityContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ActiveTrackOpacityContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getActiveTrackOpacity()); }}}
@@ -4201,15 +4171,13 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.InactiveTrackOpa
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.InactiveTrackOpacityContext.GDObjectObjects1= [];
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.InactiveTrackOpacityContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.InactiveTrackOpacityContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.InactiveTrackOpacityContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.InactiveTrackOpacityContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.InactiveTrackOpacityContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.InactiveTrackOpacityContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.InactiveTrackOpacityContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getInactiveTrackOpacity()); }}}
@@ -4289,15 +4257,13 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.HaloOpacityPress
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.HaloOpacityPressedContext.GDObjectObjects1= [];
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.HaloOpacityPressedContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.HaloOpacityPressedContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.HaloOpacityPressedContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.HaloOpacityPressedContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.HaloOpacityPressedContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.HaloOpacityPressedContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.HaloOpacityPressedContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getHaloOpacityPressed()); }}}
@@ -4377,15 +4343,13 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.HaloOpacityHover
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.HaloOpacityHoverContext.GDObjectObjects1= [];
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.HaloOpacityHoverContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.HaloOpacityHoverContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.HaloOpacityHoverContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.HaloOpacityHoverContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.HaloOpacityHoverContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.HaloOpacityHoverContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.HaloOpacityHoverContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getHaloOpacityHover()); }}}
@@ -4465,15 +4429,13 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.HaloRadiusContex
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.HaloRadiusContext.GDObjectObjects1= [];
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.HaloRadiusContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.HaloRadiusContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.HaloRadiusContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.HaloRadiusContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.HaloRadiusContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.HaloRadiusContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.HaloRadiusContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getHaloRadius()); }}}
@@ -4553,15 +4515,13 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ActiveTrackColor
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ActiveTrackColorContext.GDObjectObjects1= [];
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ActiveTrackColorContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ActiveTrackColorContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ActiveTrackColorContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ActiveTrackColorContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ActiveTrackColorContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ActiveTrackColorContext.GDObjectObjects1.length === 0 ) ? "" :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ActiveTrackColorContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getActiveTrackColor()); }}}
@@ -4641,15 +4601,13 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.InactiveTrackCol
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.InactiveTrackColorContext.GDObjectObjects1= [];
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.InactiveTrackColorContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.InactiveTrackColorContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.InactiveTrackColorContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.InactiveTrackColorContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.InactiveTrackColorContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.InactiveTrackColorContext.GDObjectObjects1.length === 0 ) ? "" :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.InactiveTrackColorContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getInactiveTrackColor()); }}}
@@ -4729,15 +4687,13 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ActiveThumbColor
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ActiveThumbColorContext.GDObjectObjects1= [];
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ActiveThumbColorContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ActiveThumbColorContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ActiveThumbColorContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ActiveThumbColorContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ActiveThumbColorContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ActiveThumbColorContext.GDObjectObjects1.length === 0 ) ? "" :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.ActiveThumbColorContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getActiveThumbColor()); }}}
@@ -4817,10 +4773,6 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsDisabledContex
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsDisabledContext.GDObjectObjects1= [];
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsDisabledContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsDisabledContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsDisabledContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsDisabledContext.condition1IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsDisabledContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
@@ -4828,16 +4780,17 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsDisabledContex
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsDisabledContext.GDObjectObjects1);
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsDisabledContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsDisabledContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsDisabledContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsDisabledContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDisabled() ) {
-        gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsDisabledContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsDisabledContext.GDObjectObjects1[k] = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsDisabledContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsDisabledContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsDisabledContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsDisabledContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = true; }}}
 
 }
@@ -4847,16 +4800,17 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsDisabledContex
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsDisabledContext.GDObjectObjects1);
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsDisabledContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsDisabledContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsDisabledContext.GDObjectObjects1.length;i<l;++i) {
     if ( !(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsDisabledContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDisabled()) ) {
-        gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsDisabledContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsDisabledContext.GDObjectObjects1[k] = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsDisabledContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsDisabledContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsDisabledContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsDisabledContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = false; }}}
 
 }
@@ -4934,10 +4888,6 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsCheckedContext
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsCheckedContext.GDObjectObjects1= [];
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsCheckedContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsCheckedContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsCheckedContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsCheckedContext.condition1IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsCheckedContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
@@ -4945,16 +4895,17 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsCheckedContext
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsCheckedContext.GDObjectObjects1);
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsCheckedContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsCheckedContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsCheckedContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsCheckedContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getChecked() ) {
-        gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsCheckedContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsCheckedContext.GDObjectObjects1[k] = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsCheckedContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsCheckedContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsCheckedContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsCheckedContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = true; }}}
 
 }
@@ -4964,16 +4915,17 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsCheckedContext
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsCheckedContext.GDObjectObjects1);
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsCheckedContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsCheckedContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsCheckedContext.GDObjectObjects1.length;i<l;++i) {
     if ( !(gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsCheckedContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getChecked()) ) {
-        gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsCheckedContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsCheckedContext.GDObjectObjects1[k] = gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsCheckedContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsCheckedContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsCheckedContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.IsCheckedContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = false; }}}
 
 }
@@ -5051,15 +5003,13 @@ gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.InactiveThumbCol
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.InactiveThumbColorContext.GDObjectObjects1= [];
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.InactiveThumbColorContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.InactiveThumbColorContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.InactiveThumbColorContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.InactiveThumbColorContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.InactiveThumbColorContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.InactiveThumbColorContext.GDObjectObjects1.length === 0 ) ? "" :gdjs.evtsExt__ToggleSwitch__ToggleSwitch.ToggleSwitch.prototype.InactiveThumbColorContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getInactiveThumbColor()); }}}

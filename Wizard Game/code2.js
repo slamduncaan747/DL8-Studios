@@ -1,8 +1,31 @@
 gdjs.creditsCode = {};
-gdjs.creditsCode.repeatCount2 = 0;
-
-gdjs.creditsCode.repeatIndex2 = 0;
-
+gdjs.creditsCode.GDRedPotionObjects1= [];
+gdjs.creditsCode.GDRedPotionObjects2= [];
+gdjs.creditsCode.GDRedPotionObjects3= [];
+gdjs.creditsCode.GDNewObject2Objects1= [];
+gdjs.creditsCode.GDNewObject2Objects2= [];
+gdjs.creditsCode.GDNewObject2Objects3= [];
+gdjs.creditsCode.GDNewObject3Objects1= [];
+gdjs.creditsCode.GDNewObject3Objects2= [];
+gdjs.creditsCode.GDNewObject3Objects3= [];
+gdjs.creditsCode.GDNewObject4Objects1= [];
+gdjs.creditsCode.GDNewObject4Objects2= [];
+gdjs.creditsCode.GDNewObject4Objects3= [];
+gdjs.creditsCode.GDNewObjectObjects1= [];
+gdjs.creditsCode.GDNewObjectObjects2= [];
+gdjs.creditsCode.GDNewObjectObjects3= [];
+gdjs.creditsCode.GDSquareJoystickObjects1= [];
+gdjs.creditsCode.GDSquareJoystickObjects2= [];
+gdjs.creditsCode.GDSquareJoystickObjects3= [];
+gdjs.creditsCode.GDlivesObjects1= [];
+gdjs.creditsCode.GDlivesObjects2= [];
+gdjs.creditsCode.GDlivesObjects3= [];
+gdjs.creditsCode.GDflyingenemyObjects1= [];
+gdjs.creditsCode.GDflyingenemyObjects2= [];
+gdjs.creditsCode.GDflyingenemyObjects3= [];
+gdjs.creditsCode.GDduncanObjects1= [];
+gdjs.creditsCode.GDduncanObjects2= [];
+gdjs.creditsCode.GDduncanObjects3= [];
 gdjs.creditsCode.GDGrassPlatformObjects1= [];
 gdjs.creditsCode.GDGrassPlatformObjects2= [];
 gdjs.creditsCode.GDGrassPlatformObjects3= [];
@@ -180,63 +203,28 @@ gdjs.creditsCode.GDNewObject7Objects3= [];
 gdjs.creditsCode.GDtheleaderboardObjects1= [];
 gdjs.creditsCode.GDtheleaderboardObjects2= [];
 gdjs.creditsCode.GDtheleaderboardObjects3= [];
-gdjs.creditsCode.GDRedPotionObjects1= [];
-gdjs.creditsCode.GDRedPotionObjects2= [];
-gdjs.creditsCode.GDRedPotionObjects3= [];
-gdjs.creditsCode.GDNewObject2Objects1= [];
-gdjs.creditsCode.GDNewObject2Objects2= [];
-gdjs.creditsCode.GDNewObject2Objects3= [];
-gdjs.creditsCode.GDNewObject3Objects1= [];
-gdjs.creditsCode.GDNewObject3Objects2= [];
-gdjs.creditsCode.GDNewObject3Objects3= [];
-gdjs.creditsCode.GDNewObject4Objects1= [];
-gdjs.creditsCode.GDNewObject4Objects2= [];
-gdjs.creditsCode.GDNewObject4Objects3= [];
-gdjs.creditsCode.GDNewObjectObjects1= [];
-gdjs.creditsCode.GDNewObjectObjects2= [];
-gdjs.creditsCode.GDNewObjectObjects3= [];
-gdjs.creditsCode.GDSquareJoystickObjects1= [];
-gdjs.creditsCode.GDSquareJoystickObjects2= [];
-gdjs.creditsCode.GDSquareJoystickObjects3= [];
-gdjs.creditsCode.GDlivesObjects1= [];
-gdjs.creditsCode.GDlivesObjects2= [];
-gdjs.creditsCode.GDlivesObjects3= [];
-gdjs.creditsCode.GDflyingenemyObjects1= [];
-gdjs.creditsCode.GDflyingenemyObjects2= [];
-gdjs.creditsCode.GDflyingenemyObjects3= [];
-gdjs.creditsCode.GDduncanObjects1= [];
-gdjs.creditsCode.GDduncanObjects2= [];
-gdjs.creditsCode.GDduncanObjects3= [];
-
-gdjs.creditsCode.conditionTrue_0 = {val:false};
-gdjs.creditsCode.condition0IsTrue_0 = {val:false};
-gdjs.creditsCode.condition1IsTrue_0 = {val:false};
-gdjs.creditsCode.condition2IsTrue_0 = {val:false};
-gdjs.creditsCode.condition3IsTrue_0 = {val:false};
-gdjs.creditsCode.condition4IsTrue_0 = {val:false};
-gdjs.creditsCode.condition5IsTrue_0 = {val:false};
 
 
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDWizardMaleObjects1Objects = Hashtable.newFrom({"WizardMale": gdjs.creditsCode.GDWizardMaleObjects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDCheckpointObjects1Objects = Hashtable.newFrom({"Checkpoint": gdjs.creditsCode.GDCheckpointObjects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDenemy1Objects1Objects = Hashtable.newFrom({"enemy1": gdjs.creditsCode.GDenemy1Objects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDLeftObjects1Objects = Hashtable.newFrom({"Left": gdjs.creditsCode.GDLeftObjects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDenemy1Objects1Objects = Hashtable.newFrom({"enemy1": gdjs.creditsCode.GDenemy1Objects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDRightObjects1Objects = Hashtable.newFrom({"Right": gdjs.creditsCode.GDRightObjects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDenemy1Objects1Objects = Hashtable.newFrom({"enemy1": gdjs.creditsCode.GDenemy1Objects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDdownObjects1Objects = Hashtable.newFrom({"down": gdjs.creditsCode.GDdownObjects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDWizardMaleObjects1Objects = Hashtable.newFrom({"WizardMale": gdjs.creditsCode.GDWizardMaleObjects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDenemy1Objects1Objects = Hashtable.newFrom({"enemy1": gdjs.creditsCode.GDenemy1Objects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDWizardMaleObjects1Objects = Hashtable.newFrom({"WizardMale": gdjs.creditsCode.GDWizardMaleObjects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDflyingenemyObjects1Objects = Hashtable.newFrom({"flyingenemy": gdjs.creditsCode.GDflyingenemyObjects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDWizardMaleObjects1Objects = Hashtable.newFrom({"WizardMale": gdjs.creditsCode.GDWizardMaleObjects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDenemy1Objects1Objects = Hashtable.newFrom({"enemy1": gdjs.creditsCode.GDenemy1Objects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDWizardMaleObjects1Objects = Hashtable.newFrom({"WizardMale": gdjs.creditsCode.GDWizardMaleObjects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDfreezewandObjects1Objects = Hashtable.newFrom({"freezewand": gdjs.creditsCode.GDfreezewandObjects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDWizardMaleObjects1Objects = Hashtable.newFrom({"WizardMale": gdjs.creditsCode.GDWizardMaleObjects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDwandofharmObjects1Objects = Hashtable.newFrom({"wandofharm": gdjs.creditsCode.GDwandofharmObjects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDfireprojectileObjects2Objects = Hashtable.newFrom({"fireprojectile": gdjs.creditsCode.GDfireprojectileObjects2});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDfireprojectileObjects1Objects = Hashtable.newFrom({"fireprojectile": gdjs.creditsCode.GDfireprojectileObjects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDWizardMaleObjects1Objects = Hashtable.newFrom({"WizardMale": gdjs.creditsCode.GDWizardMaleObjects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDCheckpointObjects1Objects = Hashtable.newFrom({"Checkpoint": gdjs.creditsCode.GDCheckpointObjects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDenemy1Objects1Objects = Hashtable.newFrom({"enemy1": gdjs.creditsCode.GDenemy1Objects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDLeftObjects1Objects = Hashtable.newFrom({"Left": gdjs.creditsCode.GDLeftObjects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDenemy1Objects1Objects = Hashtable.newFrom({"enemy1": gdjs.creditsCode.GDenemy1Objects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDRightObjects1Objects = Hashtable.newFrom({"Right": gdjs.creditsCode.GDRightObjects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDenemy1Objects1Objects = Hashtable.newFrom({"enemy1": gdjs.creditsCode.GDenemy1Objects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDdownObjects1Objects = Hashtable.newFrom({"down": gdjs.creditsCode.GDdownObjects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDWizardMaleObjects1Objects = Hashtable.newFrom({"WizardMale": gdjs.creditsCode.GDWizardMaleObjects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDenemy1Objects1Objects = Hashtable.newFrom({"enemy1": gdjs.creditsCode.GDenemy1Objects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDWizardMaleObjects1Objects = Hashtable.newFrom({"WizardMale": gdjs.creditsCode.GDWizardMaleObjects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDflyingenemyObjects1Objects = Hashtable.newFrom({"flyingenemy": gdjs.creditsCode.GDflyingenemyObjects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDWizardMaleObjects1Objects = Hashtable.newFrom({"WizardMale": gdjs.creditsCode.GDWizardMaleObjects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDenemy1Objects1Objects = Hashtable.newFrom({"enemy1": gdjs.creditsCode.GDenemy1Objects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDWizardMaleObjects1Objects = Hashtable.newFrom({"WizardMale": gdjs.creditsCode.GDWizardMaleObjects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDfreezewandObjects1Objects = Hashtable.newFrom({"freezewand": gdjs.creditsCode.GDfreezewandObjects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDWizardMaleObjects1Objects = Hashtable.newFrom({"WizardMale": gdjs.creditsCode.GDWizardMaleObjects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDwandofharmObjects1Objects = Hashtable.newFrom({"wandofharm": gdjs.creditsCode.GDwandofharmObjects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDfireprojectileObjects2Objects = Hashtable.newFrom({"fireprojectile": gdjs.creditsCode.GDfireprojectileObjects2});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDfireprojectileObjects1Objects = Hashtable.newFrom({"fireprojectile": gdjs.creditsCode.GDfireprojectileObjects1});
 gdjs.creditsCode.eventsList0 = function(runtimeScene) {
 
 {
@@ -244,20 +232,21 @@ gdjs.creditsCode.eventsList0 = function(runtimeScene) {
 gdjs.copyArray(gdjs.creditsCode.GDWizardMaleObjects1, gdjs.creditsCode.GDWizardMaleObjects2);
 
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects2.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects2[i].getVariableString(gdjs.creditsCode.GDWizardMaleObjects2[i].getVariables().getFromIndex(3)) == "right" ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects2[k] = gdjs.creditsCode.GDWizardMaleObjects2[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects2.length = k;}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+gdjs.creditsCode.GDWizardMaleObjects2.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDWizardMaleObjects2 */
 gdjs.copyArray(runtimeScene.getObjects("fireprojectile"), gdjs.creditsCode.GDfireprojectileObjects2);
 {for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects2.length ;i < len;++i) {
-    gdjs.creditsCode.GDWizardMaleObjects2[i].getBehavior("FireBullet").Fire((gdjs.creditsCode.GDWizardMaleObjects2[i].getPointX("")), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("firingposition")), gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDfireprojectileObjects2Objects, 0, 500, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+    gdjs.creditsCode.GDWizardMaleObjects2[i].getBehavior("FireBullet").Fire((gdjs.creditsCode.GDWizardMaleObjects2[i].getPointX("")), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("firingposition")), gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDfireprojectileObjects2Objects, 0, 500, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
 }{for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects2.length ;i < len;++i) {
     gdjs.creditsCode.GDWizardMaleObjects2[i].setAnimationName("firehw");
@@ -271,20 +260,21 @@ gdjs.copyArray(runtimeScene.getObjects("fireprojectile"), gdjs.creditsCode.GDfir
 
 /* Reuse gdjs.creditsCode.GDWizardMaleObjects1 */
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getVariableString(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().getFromIndex(3)) == "left" ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDWizardMaleObjects1 */
 gdjs.copyArray(runtimeScene.getObjects("fireprojectile"), gdjs.creditsCode.GDfireprojectileObjects1);
 {for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects1.length ;i < len;++i) {
-    gdjs.creditsCode.GDWizardMaleObjects1[i].getBehavior("FireBullet").Fire((gdjs.creditsCode.GDWizardMaleObjects1[i].getPointX("")), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("firingposition")), gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDfireprojectileObjects1Objects, 180, 500, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+    gdjs.creditsCode.GDWizardMaleObjects1[i].getBehavior("FireBullet").Fire((gdjs.creditsCode.GDWizardMaleObjects1[i].getPointX("")), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("firingposition")), gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDfireprojectileObjects1Objects, 180, 500, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
 }{for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDWizardMaleObjects1[i].setAnimationName("firehw");
@@ -294,8 +284,8 @@ gdjs.copyArray(runtimeScene.getObjects("fireprojectile"), gdjs.creditsCode.GDfir
 }
 
 
-};gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDiceprojectileObjects2Objects = Hashtable.newFrom({"iceprojectile": gdjs.creditsCode.GDiceprojectileObjects2});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDiceprojectileObjects1Objects = Hashtable.newFrom({"iceprojectile": gdjs.creditsCode.GDiceprojectileObjects1});
+};gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDiceprojectileObjects2Objects = Hashtable.newFrom({"iceprojectile": gdjs.creditsCode.GDiceprojectileObjects2});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDiceprojectileObjects1Objects = Hashtable.newFrom({"iceprojectile": gdjs.creditsCode.GDiceprojectileObjects1});
 gdjs.creditsCode.eventsList1 = function(runtimeScene) {
 
 {
@@ -303,20 +293,21 @@ gdjs.creditsCode.eventsList1 = function(runtimeScene) {
 gdjs.copyArray(gdjs.creditsCode.GDWizardMaleObjects1, gdjs.creditsCode.GDWizardMaleObjects2);
 
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects2.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects2[i].getVariableString(gdjs.creditsCode.GDWizardMaleObjects2[i].getVariables().getFromIndex(3)) == "right" ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects2[k] = gdjs.creditsCode.GDWizardMaleObjects2[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects2.length = k;}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+gdjs.creditsCode.GDWizardMaleObjects2.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDWizardMaleObjects2 */
 gdjs.copyArray(runtimeScene.getObjects("iceprojectile"), gdjs.creditsCode.GDiceprojectileObjects2);
 {for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects2.length ;i < len;++i) {
-    gdjs.creditsCode.GDWizardMaleObjects2[i].getBehavior("FireBullet").Fire((gdjs.creditsCode.GDWizardMaleObjects2[i].getPointX("")), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("firingposition")), gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDiceprojectileObjects2Objects, 0, 500, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+    gdjs.creditsCode.GDWizardMaleObjects2[i].getBehavior("FireBullet").Fire((gdjs.creditsCode.GDWizardMaleObjects2[i].getPointX("")), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("firingposition")), gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDiceprojectileObjects2Objects, 0, 500, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
 }{for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects2.length ;i < len;++i) {
     gdjs.creditsCode.GDWizardMaleObjects2[i].setAnimationName("firefw");
@@ -330,20 +321,21 @@ gdjs.copyArray(runtimeScene.getObjects("iceprojectile"), gdjs.creditsCode.GDicep
 
 /* Reuse gdjs.creditsCode.GDWizardMaleObjects1 */
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getVariableString(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().getFromIndex(3)) == "left" ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDWizardMaleObjects1 */
 gdjs.copyArray(runtimeScene.getObjects("iceprojectile"), gdjs.creditsCode.GDiceprojectileObjects1);
 {for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects1.length ;i < len;++i) {
-    gdjs.creditsCode.GDWizardMaleObjects1[i].getBehavior("FireBullet").Fire((gdjs.creditsCode.GDWizardMaleObjects1[i].getPointX("")), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("firingposition")), gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDiceprojectileObjects1Objects, 180, 500, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+    gdjs.creditsCode.GDWizardMaleObjects1[i].getBehavior("FireBullet").Fire((gdjs.creditsCode.GDWizardMaleObjects1[i].getPointX("")), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("firingposition")), gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDiceprojectileObjects1Objects, 180, 500, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
 }{for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDWizardMaleObjects1[i].setAnimationName("firefw");
@@ -353,13 +345,13 @@ gdjs.copyArray(runtimeScene.getObjects("iceprojectile"), gdjs.creditsCode.GDicep
 }
 
 
-};gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDfireprojectileObjects1Objects = Hashtable.newFrom({"fireprojectile": gdjs.creditsCode.GDfireprojectileObjects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDenemy1Objects1Objects = Hashtable.newFrom({"enemy1": gdjs.creditsCode.GDenemy1Objects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDiceprojectileObjects1Objects = Hashtable.newFrom({"iceprojectile": gdjs.creditsCode.GDiceprojectileObjects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDenemy1Objects1Objects = Hashtable.newFrom({"enemy1": gdjs.creditsCode.GDenemy1Objects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDfrozenenemy1Objects1Objects = Hashtable.newFrom({"frozenenemy1": gdjs.creditsCode.GDfrozenenemy1Objects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDWizardMaleObjects1Objects = Hashtable.newFrom({"WizardMale": gdjs.creditsCode.GDWizardMaleObjects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDfrozenenemy1Objects1Objects = Hashtable.newFrom({"frozenenemy1": gdjs.creditsCode.GDfrozenenemy1Objects1});
+};gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDfireprojectileObjects1Objects = Hashtable.newFrom({"fireprojectile": gdjs.creditsCode.GDfireprojectileObjects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDenemy1Objects1Objects = Hashtable.newFrom({"enemy1": gdjs.creditsCode.GDenemy1Objects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDiceprojectileObjects1Objects = Hashtable.newFrom({"iceprojectile": gdjs.creditsCode.GDiceprojectileObjects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDenemy1Objects1Objects = Hashtable.newFrom({"enemy1": gdjs.creditsCode.GDenemy1Objects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDfrozenenemy1Objects1Objects = Hashtable.newFrom({"frozenenemy1": gdjs.creditsCode.GDfrozenenemy1Objects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDWizardMaleObjects1Objects = Hashtable.newFrom({"WizardMale": gdjs.creditsCode.GDWizardMaleObjects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDfrozenenemy1Objects1Objects = Hashtable.newFrom({"frozenenemy1": gdjs.creditsCode.GDfrozenenemy1Objects1});
 gdjs.creditsCode.eventsList2 = function(runtimeScene) {
 
 {
@@ -367,16 +359,17 @@ gdjs.creditsCode.eventsList2 = function(runtimeScene) {
 gdjs.copyArray(gdjs.creditsCode.GDWizardMaleObjects1, gdjs.creditsCode.GDWizardMaleObjects2);
 
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects2.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects2[i].getVariableString(gdjs.creditsCode.GDWizardMaleObjects2[i].getVariables().getFromIndex(3)) == "right" ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects2[k] = gdjs.creditsCode.GDWizardMaleObjects2[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects2.length = k;}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+gdjs.creditsCode.GDWizardMaleObjects2.length = k;
+if (isConditionTrue_0) {
 gdjs.copyArray(gdjs.creditsCode.GDfrozenenemy1Objects1, gdjs.creditsCode.GDfrozenenemy1Objects2);
 
 {for(var i = 0, len = gdjs.creditsCode.GDfrozenenemy1Objects2.length ;i < len;++i) {
@@ -391,16 +384,17 @@ gdjs.copyArray(gdjs.creditsCode.GDfrozenenemy1Objects1, gdjs.creditsCode.GDfroze
 
 /* Reuse gdjs.creditsCode.GDWizardMaleObjects1 */
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getVariableString(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().getFromIndex(3)) == "left" ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDfrozenenemy1Objects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDfrozenenemy1Objects1.length ;i < len;++i) {
     gdjs.creditsCode.GDfrozenenemy1Objects1[i].returnVariable(gdjs.creditsCode.GDfrozenenemy1Objects1[i].getVariables().get("slidingl")).setString("true");
@@ -410,16 +404,16 @@ gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if (gdjs.creditsCode.condition
 }
 
 
-};gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDfrozenenemy1Objects1Objects = Hashtable.newFrom({"frozenenemy1": gdjs.creditsCode.GDfrozenenemy1Objects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDenemy1Objects1Objects = Hashtable.newFrom({"enemy1": gdjs.creditsCode.GDenemy1Objects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDfrozenenemy1Objects1Objects = Hashtable.newFrom({"frozenenemy1": gdjs.creditsCode.GDfrozenenemy1Objects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDGrassPlatformObjects1Objects = Hashtable.newFrom({"GrassPlatform": gdjs.creditsCode.GDGrassPlatformObjects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDfrozenenemy1Objects1Objects = Hashtable.newFrom({"frozenenemy1": gdjs.creditsCode.GDfrozenenemy1Objects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDdirtObjects1Objects = Hashtable.newFrom({"dirt": gdjs.creditsCode.GDdirtObjects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDWizardMaleObjects1Objects = Hashtable.newFrom({"WizardMale": gdjs.creditsCode.GDWizardMaleObjects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDfirechestObjects1Objects = Hashtable.newFrom({"firechest": gdjs.creditsCode.GDfirechestObjects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDwandofharmObjects2Objects = Hashtable.newFrom({"wandofharm": gdjs.creditsCode.GDwandofharmObjects2});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDwandofharmObjects1Objects = Hashtable.newFrom({"wandofharm": gdjs.creditsCode.GDwandofharmObjects1});
+};gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDfrozenenemy1Objects1Objects = Hashtable.newFrom({"frozenenemy1": gdjs.creditsCode.GDfrozenenemy1Objects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDenemy1Objects1Objects = Hashtable.newFrom({"enemy1": gdjs.creditsCode.GDenemy1Objects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDfrozenenemy1Objects1Objects = Hashtable.newFrom({"frozenenemy1": gdjs.creditsCode.GDfrozenenemy1Objects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDGrassPlatformObjects1Objects = Hashtable.newFrom({"GrassPlatform": gdjs.creditsCode.GDGrassPlatformObjects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDfrozenenemy1Objects1Objects = Hashtable.newFrom({"frozenenemy1": gdjs.creditsCode.GDfrozenenemy1Objects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDdirtObjects1Objects = Hashtable.newFrom({"dirt": gdjs.creditsCode.GDdirtObjects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDWizardMaleObjects1Objects = Hashtable.newFrom({"WizardMale": gdjs.creditsCode.GDWizardMaleObjects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDfirechestObjects1Objects = Hashtable.newFrom({"firechest": gdjs.creditsCode.GDfirechestObjects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDwandofharmObjects2Objects = Hashtable.newFrom({"wandofharm": gdjs.creditsCode.GDwandofharmObjects2});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDwandofharmObjects1Objects = Hashtable.newFrom({"wandofharm": gdjs.creditsCode.GDwandofharmObjects1});
 gdjs.creditsCode.eventsList3 = function(runtimeScene) {
 
 {
@@ -427,23 +421,24 @@ gdjs.creditsCode.eventsList3 = function(runtimeScene) {
 gdjs.copyArray(gdjs.creditsCode.GDfirechestObjects1, gdjs.creditsCode.GDfirechestObjects2);
 
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDfirechestObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDfirechestObjects2.length;i<l;++i) {
     if ( gdjs.creditsCode.GDfirechestObjects2[i].getVariableNumber(gdjs.creditsCode.GDfirechestObjects2[i].getVariables().getFromIndex(1)) == 1 ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDfirechestObjects2[k] = gdjs.creditsCode.GDfirechestObjects2[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDfirechestObjects2.length = k;}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+gdjs.creditsCode.GDfirechestObjects2.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDfirechestObjects2 */
 gdjs.creditsCode.GDwandofharmObjects2.length = 0;
 
 {for(var i = 0, len = gdjs.creditsCode.GDfirechestObjects2.length ;i < len;++i) {
     gdjs.creditsCode.GDfirechestObjects2[i].setAnimationName("open");
 }
-}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDwandofharmObjects2Objects, (( gdjs.creditsCode.GDfirechestObjects2.length === 0 ) ? 0 :gdjs.creditsCode.GDfirechestObjects2[0].getPointX("")), (( gdjs.creditsCode.GDfirechestObjects2.length === 0 ) ? 0 :gdjs.creditsCode.GDfirechestObjects2[0].getPointY("")) - 50, "");
+}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDwandofharmObjects2Objects, (( gdjs.creditsCode.GDfirechestObjects2.length === 0 ) ? 0 :gdjs.creditsCode.GDfirechestObjects2[0].getPointX("")), (( gdjs.creditsCode.GDfirechestObjects2.length === 0 ) ? 0 :gdjs.creditsCode.GDfirechestObjects2[0].getPointY("")) - 50, "");
 }}
 
 }
@@ -453,23 +448,24 @@ gdjs.creditsCode.GDwandofharmObjects2.length = 0;
 
 /* Reuse gdjs.creditsCode.GDfirechestObjects1 */
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDfirechestObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDfirechestObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDfirechestObjects1[i].getVariableNumber(gdjs.creditsCode.GDfirechestObjects1[i].getVariables().getFromIndex(1)) == 2 ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDfirechestObjects1[k] = gdjs.creditsCode.GDfirechestObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDfirechestObjects1.length = k;}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+gdjs.creditsCode.GDfirechestObjects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDfirechestObjects1 */
 gdjs.creditsCode.GDwandofharmObjects1.length = 0;
 
 {for(var i = 0, len = gdjs.creditsCode.GDfirechestObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDfirechestObjects1[i].setAnimationName("open");
 }
-}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDwandofharmObjects1Objects, (( gdjs.creditsCode.GDfirechestObjects1.length === 0 ) ? 0 :gdjs.creditsCode.GDfirechestObjects1[0].getPointX("")), (( gdjs.creditsCode.GDfirechestObjects1.length === 0 ) ? 0 :gdjs.creditsCode.GDfirechestObjects1[0].getPointY("")) - 50, "");
+}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDwandofharmObjects1Objects, (( gdjs.creditsCode.GDfirechestObjects1.length === 0 ) ? 0 :gdjs.creditsCode.GDfirechestObjects1[0].getPointX("")), (( gdjs.creditsCode.GDfirechestObjects1.length === 0 ) ? 0 :gdjs.creditsCode.GDfirechestObjects1[0].getPointY("")) - 50, "");
 }{for(var i = 0, len = gdjs.creditsCode.GDwandofharmObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDwandofharmObjects1[i].addForce(100, 100, 1);
 }
@@ -478,10 +474,10 @@ gdjs.creditsCode.GDwandofharmObjects1.length = 0;
 }
 
 
-};gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDWizardMaleObjects1Objects = Hashtable.newFrom({"WizardMale": gdjs.creditsCode.GDWizardMaleObjects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDicechestObjects1Objects = Hashtable.newFrom({"icechest": gdjs.creditsCode.GDicechestObjects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDfreezewandObjects2Objects = Hashtable.newFrom({"freezewand": gdjs.creditsCode.GDfreezewandObjects2});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDfreezewandObjects1Objects = Hashtable.newFrom({"freezewand": gdjs.creditsCode.GDfreezewandObjects1});
+};gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDWizardMaleObjects1Objects = Hashtable.newFrom({"WizardMale": gdjs.creditsCode.GDWizardMaleObjects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDicechestObjects1Objects = Hashtable.newFrom({"icechest": gdjs.creditsCode.GDicechestObjects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDfreezewandObjects2Objects = Hashtable.newFrom({"freezewand": gdjs.creditsCode.GDfreezewandObjects2});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDfreezewandObjects1Objects = Hashtable.newFrom({"freezewand": gdjs.creditsCode.GDfreezewandObjects1});
 gdjs.creditsCode.eventsList4 = function(runtimeScene) {
 
 {
@@ -489,23 +485,24 @@ gdjs.creditsCode.eventsList4 = function(runtimeScene) {
 gdjs.copyArray(gdjs.creditsCode.GDicechestObjects1, gdjs.creditsCode.GDicechestObjects2);
 
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDicechestObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDicechestObjects2.length;i<l;++i) {
     if ( gdjs.creditsCode.GDicechestObjects2[i].getVariableNumber(gdjs.creditsCode.GDicechestObjects2[i].getVariables().getFromIndex(1)) == 1 ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDicechestObjects2[k] = gdjs.creditsCode.GDicechestObjects2[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDicechestObjects2.length = k;}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+gdjs.creditsCode.GDicechestObjects2.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDicechestObjects2 */
 gdjs.creditsCode.GDfreezewandObjects2.length = 0;
 
 {for(var i = 0, len = gdjs.creditsCode.GDicechestObjects2.length ;i < len;++i) {
     gdjs.creditsCode.GDicechestObjects2[i].setAnimationName("open");
 }
-}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDfreezewandObjects2Objects, (( gdjs.creditsCode.GDicechestObjects2.length === 0 ) ? 0 :gdjs.creditsCode.GDicechestObjects2[0].getPointX("")), (( gdjs.creditsCode.GDicechestObjects2.length === 0 ) ? 0 :gdjs.creditsCode.GDicechestObjects2[0].getPointY("")) - 50, "");
+}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDfreezewandObjects2Objects, (( gdjs.creditsCode.GDicechestObjects2.length === 0 ) ? 0 :gdjs.creditsCode.GDicechestObjects2[0].getPointX("")), (( gdjs.creditsCode.GDicechestObjects2.length === 0 ) ? 0 :gdjs.creditsCode.GDicechestObjects2[0].getPointY("")) - 50, "");
 }{for(var i = 0, len = gdjs.creditsCode.GDfreezewandObjects2.length ;i < len;++i) {
     gdjs.creditsCode.GDfreezewandObjects2[i].addForce(-(100), -(100), 1);
 }
@@ -518,23 +515,24 @@ gdjs.creditsCode.GDfreezewandObjects2.length = 0;
 
 /* Reuse gdjs.creditsCode.GDicechestObjects1 */
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDicechestObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDicechestObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDicechestObjects1[i].getVariableNumber(gdjs.creditsCode.GDicechestObjects1[i].getVariables().getFromIndex(1)) == 2 ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDicechestObjects1[k] = gdjs.creditsCode.GDicechestObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDicechestObjects1.length = k;}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+gdjs.creditsCode.GDicechestObjects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDicechestObjects1 */
 gdjs.creditsCode.GDfreezewandObjects1.length = 0;
 
 {for(var i = 0, len = gdjs.creditsCode.GDicechestObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDicechestObjects1[i].setAnimationName("open");
 }
-}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDfreezewandObjects1Objects, (( gdjs.creditsCode.GDicechestObjects1.length === 0 ) ? 0 :gdjs.creditsCode.GDicechestObjects1[0].getPointX("")), (( gdjs.creditsCode.GDicechestObjects1.length === 0 ) ? 0 :gdjs.creditsCode.GDicechestObjects1[0].getPointY("")) - 50, "");
+}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDfreezewandObjects1Objects, (( gdjs.creditsCode.GDicechestObjects1.length === 0 ) ? 0 :gdjs.creditsCode.GDicechestObjects1[0].getPointX("")), (( gdjs.creditsCode.GDicechestObjects1.length === 0 ) ? 0 :gdjs.creditsCode.GDicechestObjects1[0].getPointY("")) - 50, "");
 }{for(var i = 0, len = gdjs.creditsCode.GDfreezewandObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDfreezewandObjects1[i].addForce(100, 100, 1);
 }
@@ -543,39 +541,40 @@ gdjs.creditsCode.GDfreezewandObjects1.length = 0;
 }
 
 
-};gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDWizardMaleObjects1Objects = Hashtable.newFrom({"WizardMale": gdjs.creditsCode.GDWizardMaleObjects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDfakedirtObjects1Objects = Hashtable.newFrom({"fakedirt": gdjs.creditsCode.GDfakedirtObjects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDWizardMaleObjects1Objects = Hashtable.newFrom({"WizardMale": gdjs.creditsCode.GDWizardMaleObjects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDfakedirtObjects1Objects = Hashtable.newFrom({"fakedirt": gdjs.creditsCode.GDfakedirtObjects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDWizardMaleObjects1Objects = Hashtable.newFrom({"WizardMale": gdjs.creditsCode.GDWizardMaleObjects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDjumpingpowerupObjects1Objects = Hashtable.newFrom({"jumpingpowerup": gdjs.creditsCode.GDjumpingpowerupObjects1});
+};gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDWizardMaleObjects1Objects = Hashtable.newFrom({"WizardMale": gdjs.creditsCode.GDWizardMaleObjects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDfakedirtObjects1Objects = Hashtable.newFrom({"fakedirt": gdjs.creditsCode.GDfakedirtObjects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDWizardMaleObjects1Objects = Hashtable.newFrom({"WizardMale": gdjs.creditsCode.GDWizardMaleObjects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDfakedirtObjects1Objects = Hashtable.newFrom({"fakedirt": gdjs.creditsCode.GDfakedirtObjects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDWizardMaleObjects1Objects = Hashtable.newFrom({"WizardMale": gdjs.creditsCode.GDWizardMaleObjects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDjumpingpowerupObjects1Objects = Hashtable.newFrom({"jumpingpowerup": gdjs.creditsCode.GDjumpingpowerupObjects1});
 gdjs.creditsCode.eventsList5 = function(runtimeScene) {
 
 {
 
 /* Reuse gdjs.creditsCode.GDWizardMaleObjects1 */
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-gdjs.creditsCode.condition1IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getBehavior("PlatformerObject").isJumping() ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if ( gdjs.creditsCode.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getVariableNumber(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().getFromIndex(5)) < 50 ) {
-        gdjs.creditsCode.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}}
-if (gdjs.creditsCode.condition1IsTrue_0.val) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDWizardMaleObjects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDWizardMaleObjects1[i].getBehavior("PlatformerObject").setCanJump();
@@ -588,44 +587,45 @@ if (gdjs.creditsCode.condition1IsTrue_0.val) {
 }
 
 
-};gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDWizardMaleObjects1Objects = Hashtable.newFrom({"WizardMale": gdjs.creditsCode.GDWizardMaleObjects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDportalObjects1Objects = Hashtable.newFrom({"portal": gdjs.creditsCode.GDportalObjects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDFireRoundButtonObjects1Objects = Hashtable.newFrom({"FireRoundButton": gdjs.creditsCode.GDFireRoundButtonObjects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDfireprojectileObjects2Objects = Hashtable.newFrom({"fireprojectile": gdjs.creditsCode.GDfireprojectileObjects2});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDfireprojectileObjects2Objects = Hashtable.newFrom({"fireprojectile": gdjs.creditsCode.GDfireprojectileObjects2});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDiceprojectileObjects2Objects = Hashtable.newFrom({"iceprojectile": gdjs.creditsCode.GDiceprojectileObjects2});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDiceprojectileObjects1Objects = Hashtable.newFrom({"iceprojectile": gdjs.creditsCode.GDiceprojectileObjects1});
+};gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDWizardMaleObjects1Objects = Hashtable.newFrom({"WizardMale": gdjs.creditsCode.GDWizardMaleObjects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDportalObjects1Objects = Hashtable.newFrom({"portal": gdjs.creditsCode.GDportalObjects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDFireRoundButtonObjects1Objects = Hashtable.newFrom({"FireRoundButton": gdjs.creditsCode.GDFireRoundButtonObjects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDfireprojectileObjects2Objects = Hashtable.newFrom({"fireprojectile": gdjs.creditsCode.GDfireprojectileObjects2});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDfireprojectileObjects2Objects = Hashtable.newFrom({"fireprojectile": gdjs.creditsCode.GDfireprojectileObjects2});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDiceprojectileObjects2Objects = Hashtable.newFrom({"iceprojectile": gdjs.creditsCode.GDiceprojectileObjects2});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDiceprojectileObjects1Objects = Hashtable.newFrom({"iceprojectile": gdjs.creditsCode.GDiceprojectileObjects1});
 gdjs.creditsCode.eventsList6 = function(runtimeScene) {
 
 {
 
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects2);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-gdjs.creditsCode.condition1IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects2.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects2[i].getVariableString(gdjs.creditsCode.GDWizardMaleObjects2[i].getVariables().getFromIndex(3)) == "right" ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects2[k] = gdjs.creditsCode.GDWizardMaleObjects2[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects2.length = k;}if ( gdjs.creditsCode.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects2.length;i<l;++i) {
+gdjs.creditsCode.GDWizardMaleObjects2.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects2.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects2[i].getVariableString(gdjs.creditsCode.GDWizardMaleObjects2[i].getVariables().getFromIndex(2)) == "true" ) {
-        gdjs.creditsCode.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects2[k] = gdjs.creditsCode.GDWizardMaleObjects2[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects2.length = k;}}
-if (gdjs.creditsCode.condition1IsTrue_0.val) {
+gdjs.creditsCode.GDWizardMaleObjects2.length = k;
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDWizardMaleObjects2 */
 gdjs.copyArray(runtimeScene.getObjects("fireprojectile"), gdjs.creditsCode.GDfireprojectileObjects2);
 {for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects2.length ;i < len;++i) {
-    gdjs.creditsCode.GDWizardMaleObjects2[i].getBehavior("FireBullet").Fire((gdjs.creditsCode.GDWizardMaleObjects2[i].getPointX("")), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("firingposition")), gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDfireprojectileObjects2Objects, 0, 500, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+    gdjs.creditsCode.GDWizardMaleObjects2[i].getBehavior("FireBullet").Fire((gdjs.creditsCode.GDWizardMaleObjects2[i].getPointX("")), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("firingposition")), gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDfireprojectileObjects2Objects, 0, 500, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
 }{for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects2.length ;i < len;++i) {
     gdjs.creditsCode.GDWizardMaleObjects2[i].setAnimationName("firehw");
@@ -639,31 +639,32 @@ gdjs.copyArray(runtimeScene.getObjects("fireprojectile"), gdjs.creditsCode.GDfir
 
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects2);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-gdjs.creditsCode.condition1IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects2.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects2[i].getVariableString(gdjs.creditsCode.GDWizardMaleObjects2[i].getVariables().getFromIndex(3)) == "left" ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects2[k] = gdjs.creditsCode.GDWizardMaleObjects2[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects2.length = k;}if ( gdjs.creditsCode.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects2.length;i<l;++i) {
+gdjs.creditsCode.GDWizardMaleObjects2.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects2.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects2[i].getVariableString(gdjs.creditsCode.GDWizardMaleObjects2[i].getVariables().getFromIndex(2)) == "true" ) {
-        gdjs.creditsCode.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects2[k] = gdjs.creditsCode.GDWizardMaleObjects2[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects2.length = k;}}
-if (gdjs.creditsCode.condition1IsTrue_0.val) {
+gdjs.creditsCode.GDWizardMaleObjects2.length = k;
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDWizardMaleObjects2 */
 gdjs.copyArray(runtimeScene.getObjects("fireprojectile"), gdjs.creditsCode.GDfireprojectileObjects2);
 {for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects2.length ;i < len;++i) {
-    gdjs.creditsCode.GDWizardMaleObjects2[i].getBehavior("FireBullet").Fire((gdjs.creditsCode.GDWizardMaleObjects2[i].getPointX("")), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("firingposition")), gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDfireprojectileObjects2Objects, 180, 500, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+    gdjs.creditsCode.GDWizardMaleObjects2[i].getBehavior("FireBullet").Fire((gdjs.creditsCode.GDWizardMaleObjects2[i].getPointX("")), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("firingposition")), gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDfireprojectileObjects2Objects, 180, 500, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
 }{for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects2.length ;i < len;++i) {
     gdjs.creditsCode.GDWizardMaleObjects2[i].setAnimationName("firehw");
@@ -677,31 +678,32 @@ gdjs.copyArray(runtimeScene.getObjects("fireprojectile"), gdjs.creditsCode.GDfir
 
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects2);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-gdjs.creditsCode.condition1IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects2.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects2[i].getVariableString(gdjs.creditsCode.GDWizardMaleObjects2[i].getVariables().getFromIndex(3)) == "right" ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects2[k] = gdjs.creditsCode.GDWizardMaleObjects2[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects2.length = k;}if ( gdjs.creditsCode.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects2.length;i<l;++i) {
+gdjs.creditsCode.GDWizardMaleObjects2.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects2.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects2[i].getVariableString(gdjs.creditsCode.GDWizardMaleObjects2[i].getVariables().getFromIndex(1)) == "true" ) {
-        gdjs.creditsCode.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects2[k] = gdjs.creditsCode.GDWizardMaleObjects2[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects2.length = k;}}
-if (gdjs.creditsCode.condition1IsTrue_0.val) {
+gdjs.creditsCode.GDWizardMaleObjects2.length = k;
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDWizardMaleObjects2 */
 gdjs.copyArray(runtimeScene.getObjects("iceprojectile"), gdjs.creditsCode.GDiceprojectileObjects2);
 {for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects2.length ;i < len;++i) {
-    gdjs.creditsCode.GDWizardMaleObjects2[i].getBehavior("FireBullet").Fire((gdjs.creditsCode.GDWizardMaleObjects2[i].getPointX("")), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("firingposition")), gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDiceprojectileObjects2Objects, 0, 500, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+    gdjs.creditsCode.GDWizardMaleObjects2[i].getBehavior("FireBullet").Fire((gdjs.creditsCode.GDWizardMaleObjects2[i].getPointX("")), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("firingposition")), gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDiceprojectileObjects2Objects, 0, 500, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
 }{for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects2.length ;i < len;++i) {
     gdjs.creditsCode.GDWizardMaleObjects2[i].setAnimationName("firefw");
@@ -715,31 +717,32 @@ gdjs.copyArray(runtimeScene.getObjects("iceprojectile"), gdjs.creditsCode.GDicep
 
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-gdjs.creditsCode.condition1IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getVariableString(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().getFromIndex(3)) == "left" ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if ( gdjs.creditsCode.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getVariableString(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().getFromIndex(1)) == "true" ) {
-        gdjs.creditsCode.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}}
-if (gdjs.creditsCode.condition1IsTrue_0.val) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDWizardMaleObjects1 */
 gdjs.copyArray(runtimeScene.getObjects("iceprojectile"), gdjs.creditsCode.GDiceprojectileObjects1);
 {for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects1.length ;i < len;++i) {
-    gdjs.creditsCode.GDWizardMaleObjects1[i].getBehavior("FireBullet").Fire((gdjs.creditsCode.GDWizardMaleObjects1[i].getPointX("")), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("firingposition")), gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDiceprojectileObjects1Objects, 180, 500, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+    gdjs.creditsCode.GDWizardMaleObjects1[i].getBehavior("FireBullet").Fire((gdjs.creditsCode.GDWizardMaleObjects1[i].getPointX("")), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("firingposition")), gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDiceprojectileObjects1Objects, 180, 500, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
 }{for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDWizardMaleObjects1[i].setAnimationName("firefw");
@@ -749,11 +752,11 @@ gdjs.copyArray(runtimeScene.getObjects("iceprojectile"), gdjs.creditsCode.GDicep
 }
 
 
-};gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDDPadRightObjects1Objects = Hashtable.newFrom({"DPadRight": gdjs.creditsCode.GDDPadRightObjects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDDPadUpObjects1Objects = Hashtable.newFrom({"DPadUp": gdjs.creditsCode.GDDPadUpObjects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDDPadLeftObjects1Objects = Hashtable.newFrom({"DPadLeft": gdjs.creditsCode.GDDPadLeftObjects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDDPadUp2Objects1Objects = Hashtable.newFrom({"DPadUp2": gdjs.creditsCode.GDDPadUp2Objects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDDPadBottomObjects1Objects = Hashtable.newFrom({"DPadBottom": gdjs.creditsCode.GDDPadBottomObjects1});
+};gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDDPadRightObjects1Objects = Hashtable.newFrom({"DPadRight": gdjs.creditsCode.GDDPadRightObjects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDDPadUpObjects1Objects = Hashtable.newFrom({"DPadUp": gdjs.creditsCode.GDDPadUpObjects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDDPadLeftObjects1Objects = Hashtable.newFrom({"DPadLeft": gdjs.creditsCode.GDDPadLeftObjects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDDPadUp2Objects1Objects = Hashtable.newFrom({"DPadUp2": gdjs.creditsCode.GDDPadUp2Objects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDDPadBottomObjects1Objects = Hashtable.newFrom({"DPadBottom": gdjs.creditsCode.GDDPadBottomObjects1});
 gdjs.creditsCode.eventsList7 = function(runtimeScene) {
 
 };gdjs.creditsCode.eventsList8 = function(runtimeScene) {
@@ -761,8 +764,8 @@ gdjs.creditsCode.eventsList7 = function(runtimeScene) {
 {
 
 
-gdjs.creditsCode.repeatCount2 = 1;
-for(gdjs.creditsCode.repeatIndex2 = 0;gdjs.creditsCode.repeatIndex2 < gdjs.creditsCode.repeatCount2;++gdjs.creditsCode.repeatIndex2) {
+const repeatCount2 = 1;
+for (let repeatIndex2 = 0;repeatIndex2 < repeatCount2;++repeatIndex2) {
 gdjs.copyArray(runtimeScene.getObjects("DPadBottom"), gdjs.creditsCode.GDDPadBottomObjects2);
 gdjs.copyArray(runtimeScene.getObjects("DPadLeft"), gdjs.creditsCode.GDDPadLeftObjects2);
 gdjs.copyArray(runtimeScene.getObjects("DPadRight"), gdjs.creditsCode.GDDPadRightObjects2);
@@ -772,25 +775,26 @@ gdjs.copyArray(runtimeScene.getObjects("FireRoundButton"), gdjs.creditsCode.GDFi
 gdjs.copyArray(gdjs.creditsCode.GDsettingsObjects1, gdjs.creditsCode.GDsettingsObjects2);
 
 
+let isConditionTrue_0 = false;
 if (true)
 {
 {for(var i = 0, len = gdjs.creditsCode.GDDPadBottomObjects2.length ;i < len;++i) {
-    gdjs.creditsCode.GDDPadBottomObjects2[i].setScale(gdjs.creditsCode.GDDPadBottomObjects2[i].getScale() * (1.5));
+    gdjs.creditsCode.GDDPadBottomObjects2[i].setScale(gdjs.creditsCode.GDDPadBottomObjects2[i].getScaleMean() * (1.5));
 }
 }{for(var i = 0, len = gdjs.creditsCode.GDDPadUpObjects2.length ;i < len;++i) {
-    gdjs.creditsCode.GDDPadUpObjects2[i].setScale(gdjs.creditsCode.GDDPadUpObjects2[i].getScale() * (1.5));
+    gdjs.creditsCode.GDDPadUpObjects2[i].setScale(gdjs.creditsCode.GDDPadUpObjects2[i].getScaleMean() * (1.5));
 }
 }{for(var i = 0, len = gdjs.creditsCode.GDDPadLeftObjects2.length ;i < len;++i) {
-    gdjs.creditsCode.GDDPadLeftObjects2[i].setScale(gdjs.creditsCode.GDDPadLeftObjects2[i].getScale() * (1.5));
+    gdjs.creditsCode.GDDPadLeftObjects2[i].setScale(gdjs.creditsCode.GDDPadLeftObjects2[i].getScaleMean() * (1.5));
 }
 }{for(var i = 0, len = gdjs.creditsCode.GDDPadRightObjects2.length ;i < len;++i) {
-    gdjs.creditsCode.GDDPadRightObjects2[i].setScale(gdjs.creditsCode.GDDPadRightObjects2[i].getScale() * (1.5));
+    gdjs.creditsCode.GDDPadRightObjects2[i].setScale(gdjs.creditsCode.GDDPadRightObjects2[i].getScaleMean() * (1.5));
 }
 }{for(var i = 0, len = gdjs.creditsCode.GDDPadUp2Objects2.length ;i < len;++i) {
-    gdjs.creditsCode.GDDPadUp2Objects2[i].setScale(gdjs.creditsCode.GDDPadUp2Objects2[i].getScale() * (1.5));
+    gdjs.creditsCode.GDDPadUp2Objects2[i].setScale(gdjs.creditsCode.GDDPadUp2Objects2[i].getScaleMean() * (1.5));
 }
 }{for(var i = 0, len = gdjs.creditsCode.GDFireRoundButtonObjects2.length ;i < len;++i) {
-    gdjs.creditsCode.GDFireRoundButtonObjects2[i].setScale(gdjs.creditsCode.GDFireRoundButtonObjects2[i].getScale() * (1.5));
+    gdjs.creditsCode.GDFireRoundButtonObjects2[i].setScale(gdjs.creditsCode.GDFireRoundButtonObjects2[i].getScaleMean() * (1.5));
 }
 }{for(var i = 0, len = gdjs.creditsCode.GDsettingsObjects2.length ;i < len;++i) {
     gdjs.creditsCode.GDsettingsObjects2[i].setVariableBoolean(gdjs.creditsCode.GDsettingsObjects2[i].getVariables().get("buttonsizebig"), true);
@@ -801,18 +805,19 @@ if (true)
 }
 
 
-};gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDsettingsObjects1Objects = Hashtable.newFrom({"settings": gdjs.creditsCode.GDsettingsObjects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDflyingenemyObjects1Objects = Hashtable.newFrom({"flyingenemy": gdjs.creditsCode.GDflyingenemyObjects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDLeftObjects1Objects = Hashtable.newFrom({"Left": gdjs.creditsCode.GDLeftObjects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDflyingenemyObjects1Objects = Hashtable.newFrom({"flyingenemy": gdjs.creditsCode.GDflyingenemyObjects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDRightObjects1Objects = Hashtable.newFrom({"Right": gdjs.creditsCode.GDRightObjects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDWizardMaleObjects1Objects = Hashtable.newFrom({"WizardMale": gdjs.creditsCode.GDWizardMaleObjects1});
-gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDflyingenemyObjects1Objects = Hashtable.newFrom({"flyingenemy": gdjs.creditsCode.GDflyingenemyObjects1});
+};gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDsettingsObjects1Objects = Hashtable.newFrom({"settings": gdjs.creditsCode.GDsettingsObjects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDflyingenemyObjects1Objects = Hashtable.newFrom({"flyingenemy": gdjs.creditsCode.GDflyingenemyObjects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDLeftObjects1Objects = Hashtable.newFrom({"Left": gdjs.creditsCode.GDLeftObjects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDflyingenemyObjects1Objects = Hashtable.newFrom({"flyingenemy": gdjs.creditsCode.GDflyingenemyObjects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDRightObjects1Objects = Hashtable.newFrom({"Right": gdjs.creditsCode.GDRightObjects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDWizardMaleObjects1Objects = Hashtable.newFrom({"WizardMale": gdjs.creditsCode.GDWizardMaleObjects1});
+gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDflyingenemyObjects1Objects = Hashtable.newFrom({"flyingenemy": gdjs.creditsCode.GDflyingenemyObjects1});
 gdjs.creditsCode.eventsList9 = function(runtimeScene) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 gdjs.copyArray(runtimeScene.getObjects("lives"), gdjs.creditsCode.GDlivesObjects1);
@@ -820,9 +825,9 @@ gdjs.copyArray(runtimeScene.getObjects("lives"), gdjs.creditsCode.GDlivesObjects
 }{for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDWizardMaleObjects1[i].returnVariable(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().getFromIndex(0)).setString("false");
 }
-}{runtimeScene.getVariables().get("firingposition").setNumber((( gdjs.creditsCode.GDWizardMaleObjects1.length === 0 ) ? 0 :gdjs.creditsCode.GDWizardMaleObjects1[0].getPointY("")) + 30);
+}{runtimeScene.getScene().getVariables().get("firingposition").setNumber((( gdjs.creditsCode.GDWizardMaleObjects1.length === 0 ) ? 0 :gdjs.creditsCode.GDWizardMaleObjects1[0].getPointY("")) + 30);
 }{for(var i = 0, len = gdjs.creditsCode.GDlivesObjects1.length ;i < len;++i) {
-    gdjs.creditsCode.GDlivesObjects1[i].setString(gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("lives"))));
+    gdjs.creditsCode.GDlivesObjects1[i].setString(gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("lives"))));
 }
 }}
 
@@ -833,60 +838,61 @@ gdjs.copyArray(runtimeScene.getObjects("lives"), gdjs.creditsCode.GDlivesObjects
 
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-gdjs.creditsCode.condition1IsTrue_0.val = false;
-gdjs.creditsCode.condition2IsTrue_0.val = false;
-gdjs.creditsCode.condition3IsTrue_0.val = false;
-gdjs.creditsCode.condition4IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getBehavior("PlatformerObject").isOnFloor() ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if ( gdjs.creditsCode.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getBehavior("PlatformerObject").isMoving() ) {
-        gdjs.creditsCode.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if ( gdjs.creditsCode.condition1IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getVariableString(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().getFromIndex(0)) == "false" ) {
-        gdjs.creditsCode.condition2IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if ( gdjs.creditsCode.condition2IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getVariableString(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().getFromIndex(2)) == "false" ) {
-        gdjs.creditsCode.condition3IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if ( gdjs.creditsCode.condition3IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getVariableString(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().getFromIndex(1)) == "false" ) {
-        gdjs.creditsCode.condition4IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}}
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
 }
 }
 }
-if (gdjs.creditsCode.condition4IsTrue_0.val) {
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDWizardMaleObjects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDWizardMaleObjects1[i].setAnimationName("Run");
@@ -900,49 +906,50 @@ if (gdjs.creditsCode.condition4IsTrue_0.val) {
 
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-gdjs.creditsCode.condition1IsTrue_0.val = false;
-gdjs.creditsCode.condition2IsTrue_0.val = false;
-gdjs.creditsCode.condition3IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( !(gdjs.creditsCode.GDWizardMaleObjects1[i].getBehavior("PlatformerObject").isMoving()) ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if ( gdjs.creditsCode.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getVariableString(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().getFromIndex(0)) == "false" ) {
-        gdjs.creditsCode.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if ( gdjs.creditsCode.condition1IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getVariableString(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().getFromIndex(2)) == "false" ) {
-        gdjs.creditsCode.condition2IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if ( gdjs.creditsCode.condition2IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getVariableString(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().getFromIndex(1)) == "false" ) {
-        gdjs.creditsCode.condition3IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}}
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
 }
 }
-if (gdjs.creditsCode.condition3IsTrue_0.val) {
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDWizardMaleObjects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDWizardMaleObjects1[i].setAnimationName("Idle");
@@ -956,49 +963,50 @@ if (gdjs.creditsCode.condition3IsTrue_0.val) {
 
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-gdjs.creditsCode.condition1IsTrue_0.val = false;
-gdjs.creditsCode.condition2IsTrue_0.val = false;
-gdjs.creditsCode.condition3IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( !(gdjs.creditsCode.GDWizardMaleObjects1[i].getBehavior("PlatformerObject").isOnFloor()) ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if ( gdjs.creditsCode.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getVariableString(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().getFromIndex(0)) == "false" ) {
-        gdjs.creditsCode.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if ( gdjs.creditsCode.condition1IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getVariableString(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().getFromIndex(2)) == "false" ) {
-        gdjs.creditsCode.condition2IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if ( gdjs.creditsCode.condition2IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getVariableString(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().getFromIndex(1)) == "false" ) {
-        gdjs.creditsCode.condition3IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}}
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
 }
 }
-if (gdjs.creditsCode.condition3IsTrue_0.val) {
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDWizardMaleObjects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDWizardMaleObjects1[i].setAnimationName("Idle");
@@ -1012,38 +1020,39 @@ if (gdjs.creditsCode.condition3IsTrue_0.val) {
 
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-gdjs.creditsCode.condition1IsTrue_0.val = false;
-gdjs.creditsCode.condition2IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getBehavior("PlatformerObject").isMoving() ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if ( gdjs.creditsCode.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getVariableString(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().getFromIndex(1)) == "true" ) {
-        gdjs.creditsCode.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if ( gdjs.creditsCode.condition1IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getVariableString(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().getFromIndex(2)) == "false" ) {
-        gdjs.creditsCode.condition2IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}}
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
 }
-if (gdjs.creditsCode.condition2IsTrue_0.val) {
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDWizardMaleObjects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDWizardMaleObjects1[i].setAnimationName("runwithfw");
@@ -1057,49 +1066,50 @@ if (gdjs.creditsCode.condition2IsTrue_0.val) {
 
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-gdjs.creditsCode.condition1IsTrue_0.val = false;
-gdjs.creditsCode.condition2IsTrue_0.val = false;
-gdjs.creditsCode.condition3IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( !(gdjs.creditsCode.GDWizardMaleObjects1[i].getBehavior("PlatformerObject").isMoving()) ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if ( gdjs.creditsCode.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getBehavior("PlatformerObject").isOnFloor() ) {
-        gdjs.creditsCode.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if ( gdjs.creditsCode.condition1IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getVariableString(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().getFromIndex(1)) == "true" ) {
-        gdjs.creditsCode.condition2IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if ( gdjs.creditsCode.condition2IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getVariableString(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().getFromIndex(2)) == "false" ) {
-        gdjs.creditsCode.condition3IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}}
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
 }
 }
-if (gdjs.creditsCode.condition3IsTrue_0.val) {
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDWizardMaleObjects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDWizardMaleObjects1[i].setAnimationName("idlewithfw");
@@ -1113,38 +1123,39 @@ if (gdjs.creditsCode.condition3IsTrue_0.val) {
 
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-gdjs.creditsCode.condition1IsTrue_0.val = false;
-gdjs.creditsCode.condition2IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( !(gdjs.creditsCode.GDWizardMaleObjects1[i].getBehavior("PlatformerObject").isOnFloor()) ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if ( gdjs.creditsCode.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getVariableString(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().getFromIndex(1)) == "true" ) {
-        gdjs.creditsCode.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if ( gdjs.creditsCode.condition1IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getVariableString(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().getFromIndex(2)) == "false" ) {
-        gdjs.creditsCode.condition2IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}}
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
 }
-if (gdjs.creditsCode.condition2IsTrue_0.val) {
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDWizardMaleObjects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDWizardMaleObjects1[i].setAnimationName("idlewithfw");
@@ -1158,49 +1169,50 @@ if (gdjs.creditsCode.condition2IsTrue_0.val) {
 
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-gdjs.creditsCode.condition1IsTrue_0.val = false;
-gdjs.creditsCode.condition2IsTrue_0.val = false;
-gdjs.creditsCode.condition3IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getBehavior("PlatformerObject").isMoving() ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if ( gdjs.creditsCode.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getBehavior("PlatformerObject").isOnFloor() ) {
-        gdjs.creditsCode.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if ( gdjs.creditsCode.condition1IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getVariableString(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().getFromIndex(2)) == "true" ) {
-        gdjs.creditsCode.condition2IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if ( gdjs.creditsCode.condition2IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getVariableString(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().getFromIndex(1)) == "false" ) {
-        gdjs.creditsCode.condition3IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}}
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
 }
 }
-if (gdjs.creditsCode.condition3IsTrue_0.val) {
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDWizardMaleObjects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDWizardMaleObjects1[i].setAnimationName("runwithhw");
@@ -1214,49 +1226,50 @@ if (gdjs.creditsCode.condition3IsTrue_0.val) {
 
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-gdjs.creditsCode.condition1IsTrue_0.val = false;
-gdjs.creditsCode.condition2IsTrue_0.val = false;
-gdjs.creditsCode.condition3IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( !(gdjs.creditsCode.GDWizardMaleObjects1[i].getBehavior("PlatformerObject").isMoving()) ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if ( gdjs.creditsCode.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getBehavior("PlatformerObject").isOnFloor() ) {
-        gdjs.creditsCode.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if ( gdjs.creditsCode.condition1IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getVariableString(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().getFromIndex(2)) == "true" ) {
-        gdjs.creditsCode.condition2IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if ( gdjs.creditsCode.condition2IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getVariableString(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().getFromIndex(1)) == "false" ) {
-        gdjs.creditsCode.condition3IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}}
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
 }
 }
-if (gdjs.creditsCode.condition3IsTrue_0.val) {
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDWizardMaleObjects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDWizardMaleObjects1[i].setAnimationName("idlewithhw");
@@ -1270,38 +1283,39 @@ if (gdjs.creditsCode.condition3IsTrue_0.val) {
 
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-gdjs.creditsCode.condition1IsTrue_0.val = false;
-gdjs.creditsCode.condition2IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( !(gdjs.creditsCode.GDWizardMaleObjects1[i].getBehavior("PlatformerObject").isOnFloor()) ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if ( gdjs.creditsCode.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getVariableString(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().getFromIndex(2)) == "true" ) {
-        gdjs.creditsCode.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if ( gdjs.creditsCode.condition1IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getVariableString(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().getFromIndex(1)) == "false" ) {
-        gdjs.creditsCode.condition2IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}}
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
 }
-if (gdjs.creditsCode.condition2IsTrue_0.val) {
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDWizardMaleObjects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDWizardMaleObjects1[i].setAnimationName("idlewithhw");
@@ -1314,11 +1328,11 @@ if (gdjs.creditsCode.condition2IsTrue_0.val) {
 {
 
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-/* Unknown object - skipped. */}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+/* Unknown object - skipped. */if (isConditionTrue_0) {
 {/* Unknown object - skipped. */}{gdjs.evtTools.sound.playSound(runtimeScene, "coin.wav", false, 100, 1);
-}{runtimeScene.getVariables().get("Score").add(1);
+}{runtimeScene.getScene().getVariables().get("Score").add(1);
 }}
 
 }
@@ -1327,10 +1341,11 @@ gdjs.creditsCode.condition0IsTrue_0.val = false;
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(runtimeScene.getObjects("Score"), gdjs.creditsCode.GDScoreObjects1);
 {for(var i = 0, len = gdjs.creditsCode.GDScoreObjects1.length ;i < len;++i) {
-    gdjs.creditsCode.GDScoreObjects1[i].setString("Score: " + gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("Score"))));
+    gdjs.creditsCode.GDScoreObjects1[i].setString("Score: " + gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("Score"))));
 }
 }}
 
@@ -1340,10 +1355,10 @@ gdjs.copyArray(runtimeScene.getObjects("Score"), gdjs.creditsCode.GDScoreObjects
 {
 
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
-}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("Left"), gdjs.creditsCode.GDLeftObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Right"), gdjs.creditsCode.GDRightObjects1);
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
@@ -1360,8 +1375,8 @@ gdjs.copyArray(runtimeScene.getObjects("lives"), gdjs.creditsCode.GDlivesObjects
 }{for(var i = 0, len = gdjs.creditsCode.GDdownObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDdownObjects1[i].hide();
 }
-}{runtimeScene.getVariables().get("checkpointx").setNumber((( gdjs.creditsCode.GDWizardMaleObjects1.length === 0 ) ? 0 :gdjs.creditsCode.GDWizardMaleObjects1[0].getPointX("")));
-}{runtimeScene.getVariables().get("checkpointy").setNumber((( gdjs.creditsCode.GDWizardMaleObjects1.length === 0 ) ? 0 :gdjs.creditsCode.GDWizardMaleObjects1[0].getPointY("")));
+}{runtimeScene.getScene().getVariables().get("checkpointx").setNumber((( gdjs.creditsCode.GDWizardMaleObjects1.length === 0 ) ? 0 :gdjs.creditsCode.GDWizardMaleObjects1[0].getPointX("")));
+}{runtimeScene.getScene().getVariables().get("checkpointy").setNumber((( gdjs.creditsCode.GDWizardMaleObjects1.length === 0 ) ? 0 :gdjs.creditsCode.GDWizardMaleObjects1[0].getPointY("")));
 }{for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDWizardMaleObjects1[i].returnVariable(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().getFromIndex(0)).setString("false");
 }
@@ -1375,16 +1390,16 @@ gdjs.copyArray(runtimeScene.getObjects("lives"), gdjs.creditsCode.GDlivesObjects
     gdjs.creditsCode.GDfireprojectileObjects1[i].returnVariable(gdjs.creditsCode.GDfireprojectileObjects1[i].getVariables().getFromIndex(0)).setString("true");
 }
 }{for(var i = 0, len = gdjs.creditsCode.GDfireprojectileObjects1.length ;i < len;++i) {
-    gdjs.creditsCode.GDfireprojectileObjects1[i].setScale(gdjs.creditsCode.GDfireprojectileObjects1[i].getScale() / (3));
+    gdjs.creditsCode.GDfireprojectileObjects1[i].setScale(gdjs.creditsCode.GDfireprojectileObjects1[i].getScaleMean() / (3));
 }
 }{for(var i = 0, len = gdjs.creditsCode.GDcoinObjects1.length ;i < len;++i) {
-    gdjs.creditsCode.GDcoinObjects1[i].setScale(gdjs.creditsCode.GDcoinObjects1[i].getScale() / (2));
+    gdjs.creditsCode.GDcoinObjects1[i].setScale(gdjs.creditsCode.GDcoinObjects1[i].getScaleMean() / (2));
 }
 }{gdjs.evtTools.input.touchSimulateMouse(runtimeScene, false);
 }{for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDWizardMaleObjects1[i].setVariableBoolean(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().get("isdead"), false);
 }
-}{runtimeScene.getVariables().get("lives").setNumber(3);
+}{runtimeScene.getScene().getVariables().get("lives").setNumber(3);
 }{for(var i = 0, len = gdjs.creditsCode.GDlivesObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDlivesObjects1[i].hide();
 }
@@ -1401,13 +1416,13 @@ gdjs.copyArray(runtimeScene.getObjects("lives"), gdjs.creditsCode.GDlivesObjects
 gdjs.copyArray(runtimeScene.getObjects("Checkpoint"), gdjs.creditsCode.GDCheckpointObjects1);
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDWizardMaleObjects1Objects, gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDCheckpointObjects1Objects, false, runtimeScene, false);
-}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDWizardMaleObjects1Objects, gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDCheckpointObjects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDCheckpointObjects1 */
-{runtimeScene.getVariables().get("checkpointx").setNumber((( gdjs.creditsCode.GDCheckpointObjects1.length === 0 ) ? 0 :gdjs.creditsCode.GDCheckpointObjects1[0].getPointX("")));
-}{runtimeScene.getVariables().get("checkpointy").setNumber((( gdjs.creditsCode.GDCheckpointObjects1.length === 0 ) ? 0 :gdjs.creditsCode.GDCheckpointObjects1[0].getPointY("")));
+{runtimeScene.getScene().getVariables().get("checkpointx").setNumber((( gdjs.creditsCode.GDCheckpointObjects1.length === 0 ) ? 0 :gdjs.creditsCode.GDCheckpointObjects1[0].getPointX("")));
+}{runtimeScene.getScene().getVariables().get("checkpointy").setNumber((( gdjs.creditsCode.GDCheckpointObjects1.length === 0 ) ? 0 :gdjs.creditsCode.GDCheckpointObjects1[0].getPointY("")));
 }{for(var i = 0, len = gdjs.creditsCode.GDCheckpointObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDCheckpointObjects1[i].setAnimationName("Flag Out");
 }
@@ -1420,16 +1435,17 @@ gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollision
 
 gdjs.copyArray(runtimeScene.getObjects("enemy1"), gdjs.creditsCode.GDenemy1Objects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDenemy1Objects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDenemy1Objects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDenemy1Objects1[i].getVariableString(gdjs.creditsCode.GDenemy1Objects1[i].getVariables().getFromIndex(0)) == "right" ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDenemy1Objects1[k] = gdjs.creditsCode.GDenemy1Objects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDenemy1Objects1.length = k;}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+gdjs.creditsCode.GDenemy1Objects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDenemy1Objects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDenemy1Objects1.length ;i < len;++i) {
     gdjs.creditsCode.GDenemy1Objects1[i].addPolarForce(0, 25, 0);
@@ -1446,16 +1462,17 @@ gdjs.creditsCode.GDenemy1Objects1.length = k;}if (gdjs.creditsCode.condition0IsT
 
 gdjs.copyArray(runtimeScene.getObjects("enemy1"), gdjs.creditsCode.GDenemy1Objects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDenemy1Objects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDenemy1Objects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDenemy1Objects1[i].getVariableString(gdjs.creditsCode.GDenemy1Objects1[i].getVariables().getFromIndex(0)) == "left" ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDenemy1Objects1[k] = gdjs.creditsCode.GDenemy1Objects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDenemy1Objects1.length = k;}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+gdjs.creditsCode.GDenemy1Objects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDenemy1Objects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDenemy1Objects1.length ;i < len;++i) {
     gdjs.creditsCode.GDenemy1Objects1[i].addPolarForce(180, 25, 0);
@@ -1472,16 +1489,17 @@ gdjs.creditsCode.GDenemy1Objects1.length = k;}if (gdjs.creditsCode.condition0IsT
 
 gdjs.copyArray(runtimeScene.getObjects("enemy1"), gdjs.creditsCode.GDenemy1Objects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDenemy1Objects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDenemy1Objects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDenemy1Objects1[i].getVariableString(gdjs.creditsCode.GDenemy1Objects1[i].getVariables().getFromIndex(0)) == "down" ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDenemy1Objects1[k] = gdjs.creditsCode.GDenemy1Objects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDenemy1Objects1.length = k;}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+gdjs.creditsCode.GDenemy1Objects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDenemy1Objects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDenemy1Objects1.length ;i < len;++i) {
     gdjs.creditsCode.GDenemy1Objects1[i].addPolarForce(90, 100, 0);
@@ -1498,16 +1516,17 @@ gdjs.creditsCode.GDenemy1Objects1.length = k;}if (gdjs.creditsCode.condition0IsT
 
 gdjs.copyArray(runtimeScene.getObjects("enemy1"), gdjs.creditsCode.GDenemy1Objects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDenemy1Objects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDenemy1Objects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDenemy1Objects1[i].getVariableString(gdjs.creditsCode.GDenemy1Objects1[i].getVariables().getFromIndex(0)) == "frozen" ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDenemy1Objects1[k] = gdjs.creditsCode.GDenemy1Objects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDenemy1Objects1.length = k;}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+gdjs.creditsCode.GDenemy1Objects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDenemy1Objects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDenemy1Objects1.length ;i < len;++i) {
     gdjs.creditsCode.GDenemy1Objects1[i].clearForces();
@@ -1522,10 +1541,10 @@ gdjs.creditsCode.GDenemy1Objects1.length = k;}if (gdjs.creditsCode.condition0IsT
 gdjs.copyArray(runtimeScene.getObjects("Left"), gdjs.creditsCode.GDLeftObjects1);
 gdjs.copyArray(runtimeScene.getObjects("enemy1"), gdjs.creditsCode.GDenemy1Objects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDenemy1Objects1Objects, gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDLeftObjects1Objects, false, runtimeScene, false);
-}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDenemy1Objects1Objects, gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDLeftObjects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDenemy1Objects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDenemy1Objects1.length ;i < len;++i) {
     gdjs.creditsCode.GDenemy1Objects1[i].returnVariable(gdjs.creditsCode.GDenemy1Objects1[i].getVariables().getFromIndex(0)).setString("left");
@@ -1540,10 +1559,10 @@ gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollision
 gdjs.copyArray(runtimeScene.getObjects("Right"), gdjs.creditsCode.GDRightObjects1);
 gdjs.copyArray(runtimeScene.getObjects("enemy1"), gdjs.creditsCode.GDenemy1Objects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDenemy1Objects1Objects, gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDRightObjects1Objects, false, runtimeScene, false);
-}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDenemy1Objects1Objects, gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDRightObjects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDenemy1Objects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDenemy1Objects1.length ;i < len;++i) {
     gdjs.creditsCode.GDenemy1Objects1[i].returnVariable(gdjs.creditsCode.GDenemy1Objects1[i].getVariables().getFromIndex(0)).setString("right");
@@ -1558,10 +1577,10 @@ gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollision
 gdjs.copyArray(runtimeScene.getObjects("down"), gdjs.creditsCode.GDdownObjects1);
 gdjs.copyArray(runtimeScene.getObjects("enemy1"), gdjs.creditsCode.GDenemy1Objects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDenemy1Objects1Objects, gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDdownObjects1Objects, false, runtimeScene, false);
-}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDenemy1Objects1Objects, gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDdownObjects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDenemy1Objects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDenemy1Objects1.length ;i < len;++i) {
     gdjs.creditsCode.GDenemy1Objects1[i].returnVariable(gdjs.creditsCode.GDenemy1Objects1[i].getVariables().getFromIndex(0)).setString("down");
@@ -1576,37 +1595,37 @@ gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollision
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 gdjs.copyArray(runtimeScene.getObjects("enemy1"), gdjs.creditsCode.GDenemy1Objects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-gdjs.creditsCode.condition1IsTrue_0.val = false;
-gdjs.creditsCode.condition2IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getBehavior("PlatformerObject").isOnFloor() ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if ( gdjs.creditsCode.condition0IsTrue_0.val ) {
-{
-gdjs.creditsCode.condition1IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDWizardMaleObjects1Objects, gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDenemy1Objects1Objects, false, runtimeScene, false);
-}if ( gdjs.creditsCode.condition1IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDWizardMaleObjects1Objects, gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDenemy1Objects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getVariableBoolean(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().get("invincible"), false) ) {
-        gdjs.creditsCode.condition2IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}}
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
 }
-if (gdjs.creditsCode.condition2IsTrue_0.val) {
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDWizardMaleObjects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDWizardMaleObjects1[i].setVariableBoolean(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().get("invincible"), true);
 }
-}{runtimeScene.getVariables().get("lives").sub(1);
+}{runtimeScene.getScene().getVariables().get("lives").sub(1);
 }}
 
 }
@@ -1617,37 +1636,37 @@ if (gdjs.creditsCode.condition2IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 gdjs.copyArray(runtimeScene.getObjects("flyingenemy"), gdjs.creditsCode.GDflyingenemyObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-gdjs.creditsCode.condition1IsTrue_0.val = false;
-gdjs.creditsCode.condition2IsTrue_0.val = false;
-{
-gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDWizardMaleObjects1Objects, gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDflyingenemyObjects1Objects, false, runtimeScene, false);
-}if ( gdjs.creditsCode.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDWizardMaleObjects1Objects, gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDflyingenemyObjects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getBehavior("PlatformerObject").isJumping() ) {
-        gdjs.creditsCode.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if ( gdjs.creditsCode.condition1IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getVariableBoolean(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().get("invincible"), false) ) {
-        gdjs.creditsCode.condition2IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}}
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
 }
-if (gdjs.creditsCode.condition2IsTrue_0.val) {
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDWizardMaleObjects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDWizardMaleObjects1[i].setVariableBoolean(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().get("invincible"), true);
 }
-}{runtimeScene.getVariables().get("lives").sub(1);
+}{runtimeScene.getScene().getVariables().get("lives").sub(1);
 }}
 
 }
@@ -1658,27 +1677,28 @@ if (gdjs.creditsCode.condition2IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 gdjs.copyArray(runtimeScene.getObjects("lives"), gdjs.creditsCode.GDlivesObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-gdjs.creditsCode.condition1IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getVariableBoolean(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().get("invincible"), true) ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if ( gdjs.creditsCode.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDlivesObjects1.length;i<l;++i) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDlivesObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDlivesObjects1[i].getVariableBoolean(gdjs.creditsCode.GDlivesObjects1[i].getVariables().get("timerstarted"), false) ) {
-        gdjs.creditsCode.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDlivesObjects1[k] = gdjs.creditsCode.GDlivesObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDlivesObjects1.length = k;}}
-if (gdjs.creditsCode.condition1IsTrue_0.val) {
+gdjs.creditsCode.GDlivesObjects1.length = k;
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDlivesObjects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDlivesObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDlivesObjects1[i].resetTimer("invincible");
@@ -1698,16 +1718,17 @@ if (gdjs.creditsCode.condition1IsTrue_0.val) {
 
 gdjs.copyArray(runtimeScene.getObjects("lives"), gdjs.creditsCode.GDlivesObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDlivesObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDlivesObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDlivesObjects1[i].timerElapsedTime("invincible", 1.5) ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDlivesObjects1[k] = gdjs.creditsCode.GDlivesObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDlivesObjects1.length = k;}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+gdjs.creditsCode.GDlivesObjects1.length = k;
+if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 /* Reuse gdjs.creditsCode.GDlivesObjects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects1.length ;i < len;++i) {
@@ -1730,10 +1751,10 @@ gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardM
 {
 
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("lives")) == 0;
-}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("lives")) == 0;
+if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 {for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDWizardMaleObjects1[i].setVariableBoolean(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().get("isdead"), true);
@@ -1747,22 +1768,23 @@ gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardM
 
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getVariableBoolean(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().get("isdead"), true) ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDWizardMaleObjects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects1.length ;i < len;++i) {
-    gdjs.creditsCode.GDWizardMaleObjects1[i].setX(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("checkpointx")));
+    gdjs.creditsCode.GDWizardMaleObjects1[i].setX(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("checkpointx")));
 }
 }{for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects1.length ;i < len;++i) {
-    gdjs.creditsCode.GDWizardMaleObjects1[i].setY(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("checkpointy")));
+    gdjs.creditsCode.GDWizardMaleObjects1[i].setY(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("checkpointy")));
 }
 }{for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDWizardMaleObjects1[i].returnVariable(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().getFromIndex(1)).setString("false");
@@ -1787,21 +1809,21 @@ gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if (gdjs.creditsCode.condition
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 gdjs.copyArray(runtimeScene.getObjects("enemy1"), gdjs.creditsCode.GDenemy1Objects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-gdjs.creditsCode.condition1IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getBehavior("PlatformerObject").isFalling() ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if ( gdjs.creditsCode.condition0IsTrue_0.val ) {
-{
-gdjs.creditsCode.condition1IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDWizardMaleObjects1Objects, gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDenemy1Objects1Objects, false, runtimeScene, false);
-}}
-if (gdjs.creditsCode.condition1IsTrue_0.val) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDWizardMaleObjects1Objects, gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDenemy1Objects1Objects, false, runtimeScene, false);
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDWizardMaleObjects1 */
 /* Reuse gdjs.creditsCode.GDenemy1Objects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDenemy1Objects1.length ;i < len;++i) {
@@ -1823,10 +1845,10 @@ if (gdjs.creditsCode.condition1IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 gdjs.copyArray(runtimeScene.getObjects("freezewand"), gdjs.creditsCode.GDfreezewandObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDWizardMaleObjects1Objects, gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDfreezewandObjects1Objects, false, runtimeScene, false);
-}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDWizardMaleObjects1Objects, gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDfreezewandObjects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDWizardMaleObjects1 */
 /* Reuse gdjs.creditsCode.GDfreezewandObjects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects1.length ;i < len;++i) {
@@ -1860,10 +1882,10 @@ gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollision
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 gdjs.copyArray(runtimeScene.getObjects("wandofharm"), gdjs.creditsCode.GDwandofharmObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDWizardMaleObjects1Objects, gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDwandofharmObjects1Objects, false, runtimeScene, false);
-}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDWizardMaleObjects1Objects, gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDwandofharmObjects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDWizardMaleObjects1 */
 /* Reuse gdjs.creditsCode.GDwandofharmObjects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects1.length ;i < len;++i) {
@@ -1896,21 +1918,21 @@ gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollision
 
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-gdjs.creditsCode.condition1IsTrue_0.val = false;
-{
-gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtimeScene, "f");
-}if ( gdjs.creditsCode.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "f");
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getVariableString(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().getFromIndex(2)) == "true" ) {
-        gdjs.creditsCode.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}}
-if (gdjs.creditsCode.condition1IsTrue_0.val) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+}
+if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.creditsCode.eventsList0(runtimeScene);} //End of subevents
@@ -1923,21 +1945,21 @@ gdjs.creditsCode.eventsList0(runtimeScene);} //End of subevents
 
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-gdjs.creditsCode.condition1IsTrue_0.val = false;
-{
-gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtimeScene, "f");
-}if ( gdjs.creditsCode.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "f");
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getVariableString(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().getFromIndex(1)) == "true" ) {
-        gdjs.creditsCode.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}}
-if (gdjs.creditsCode.condition1IsTrue_0.val) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+}
+if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.creditsCode.eventsList1(runtimeScene);} //End of subevents
@@ -1951,10 +1973,10 @@ gdjs.creditsCode.eventsList1(runtimeScene);} //End of subevents
 gdjs.copyArray(runtimeScene.getObjects("enemy1"), gdjs.creditsCode.GDenemy1Objects1);
 gdjs.copyArray(runtimeScene.getObjects("fireprojectile"), gdjs.creditsCode.GDfireprojectileObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDfireprojectileObjects1Objects, gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDenemy1Objects1Objects, false, runtimeScene, false);
-}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDfireprojectileObjects1Objects, gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDenemy1Objects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDenemy1Objects1 */
 /* Reuse gdjs.creditsCode.GDfireprojectileObjects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDfireprojectileObjects1.length ;i < len;++i) {
@@ -1972,27 +1994,28 @@ gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollision
 
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-gdjs.creditsCode.condition1IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
-    if ( gdjs.creditsCode.GDWizardMaleObjects1[i].hasAnimationEnded() ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+    if ( gdjs.creditsCode.GDWizardMaleObjects1[i].hasAnimationEndedLegacy() ) {
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if ( gdjs.creditsCode.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getVariableString(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().getFromIndex(2)) == "true" ) {
-        gdjs.creditsCode.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}}
-if (gdjs.creditsCode.condition1IsTrue_0.val) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDWizardMaleObjects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDWizardMaleObjects1[i].setAnimationName("idlewithfw");
@@ -2005,10 +2028,10 @@ if (gdjs.creditsCode.condition1IsTrue_0.val) {
 {
 
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Right");
-}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Right");
+if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 {for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDWizardMaleObjects1[i].returnVariable(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().getFromIndex(3)).setString("right");
@@ -2021,10 +2044,10 @@ gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardM
 {
 
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Left");
-}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Left");
+if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 {for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDWizardMaleObjects1[i].returnVariable(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().getFromIndex(3)).setString("left");
@@ -2038,16 +2061,17 @@ gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardM
 
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getVariableString(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().getFromIndex(3)) == "right" ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDWizardMaleObjects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDWizardMaleObjects1[i].flipX(false);
@@ -2061,16 +2085,17 @@ gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if (gdjs.creditsCode.condition
 
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getVariableString(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().getFromIndex(3)) == "left" ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDWizardMaleObjects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDWizardMaleObjects1[i].flipX(true);
@@ -2083,13 +2108,14 @@ gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if (gdjs.creditsCode.condition
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 {for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects1.length ;i < len;++i) {
-    gdjs.creditsCode.GDWizardMaleObjects1[i].setX(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("checkpointx")));
+    gdjs.creditsCode.GDWizardMaleObjects1[i].setX(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("checkpointx")));
 }
 }{for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects1.length ;i < len;++i) {
-    gdjs.creditsCode.GDWizardMaleObjects1[i].setY(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("checkpointy")));
+    gdjs.creditsCode.GDWizardMaleObjects1[i].setY(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("checkpointy")));
 }
 }}
 
@@ -2101,10 +2127,10 @@ gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardM
 gdjs.copyArray(runtimeScene.getObjects("enemy1"), gdjs.creditsCode.GDenemy1Objects1);
 gdjs.copyArray(runtimeScene.getObjects("iceprojectile"), gdjs.creditsCode.GDiceprojectileObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDiceprojectileObjects1Objects, gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDenemy1Objects1Objects, false, runtimeScene, false);
-}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDiceprojectileObjects1Objects, gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDenemy1Objects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDenemy1Objects1 */
 /* Reuse gdjs.creditsCode.GDiceprojectileObjects1 */
 gdjs.creditsCode.GDfrozenenemy1Objects1.length = 0;
@@ -2115,9 +2141,9 @@ gdjs.creditsCode.GDfrozenenemy1Objects1.length = 0;
 }{for(var i = 0, len = gdjs.creditsCode.GDenemy1Objects1.length ;i < len;++i) {
     gdjs.creditsCode.GDenemy1Objects1[i].deleteFromScene(runtimeScene);
 }
-}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDfrozenenemy1Objects1Objects, (( gdjs.creditsCode.GDenemy1Objects1.length === 0 ) ? 0 :gdjs.creditsCode.GDenemy1Objects1[0].getPointX("")), (( gdjs.creditsCode.GDenemy1Objects1.length === 0 ) ? 0 :gdjs.creditsCode.GDenemy1Objects1[0].getPointY("")), "");
+}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDfrozenenemy1Objects1Objects, (( gdjs.creditsCode.GDenemy1Objects1.length === 0 ) ? 0 :gdjs.creditsCode.GDenemy1Objects1[0].getPointX("")), (( gdjs.creditsCode.GDenemy1Objects1.length === 0 ) ? 0 :gdjs.creditsCode.GDenemy1Objects1[0].getPointY("")), "");
 }{for(var i = 0, len = gdjs.creditsCode.GDfrozenenemy1Objects1.length ;i < len;++i) {
-    gdjs.creditsCode.GDfrozenenemy1Objects1[i].setScale(gdjs.creditsCode.GDfrozenenemy1Objects1[i].getScale() * (3));
+    gdjs.creditsCode.GDfrozenenemy1Objects1[i].setScale(gdjs.creditsCode.GDfrozenenemy1Objects1[i].getScaleMean() * (3));
 }
 }}
 
@@ -2129,21 +2155,21 @@ gdjs.creditsCode.GDfrozenenemy1Objects1.length = 0;
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 gdjs.copyArray(runtimeScene.getObjects("frozenenemy1"), gdjs.creditsCode.GDfrozenenemy1Objects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-gdjs.creditsCode.condition1IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getBehavior("PlatformerObject").isOnFloor() ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if ( gdjs.creditsCode.condition0IsTrue_0.val ) {
-{
-gdjs.creditsCode.condition1IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDWizardMaleObjects1Objects, gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDfrozenenemy1Objects1Objects, false, runtimeScene, false);
-}}
-if (gdjs.creditsCode.condition1IsTrue_0.val) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDWizardMaleObjects1Objects, gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDfrozenenemy1Objects1Objects, false, runtimeScene, false);
+}
+if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.creditsCode.eventsList2(runtimeScene);} //End of subevents
@@ -2157,10 +2183,10 @@ gdjs.creditsCode.eventsList2(runtimeScene);} //End of subevents
 gdjs.copyArray(runtimeScene.getObjects("enemy1"), gdjs.creditsCode.GDenemy1Objects1);
 gdjs.copyArray(runtimeScene.getObjects("frozenenemy1"), gdjs.creditsCode.GDfrozenenemy1Objects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDfrozenenemy1Objects1Objects, gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDenemy1Objects1Objects, false, runtimeScene, false);
-}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDfrozenenemy1Objects1Objects, gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDenemy1Objects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDenemy1Objects1 */
 /* Reuse gdjs.creditsCode.GDfrozenenemy1Objects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDenemy1Objects1.length ;i < len;++i) {
@@ -2178,16 +2204,17 @@ gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollision
 
 gdjs.copyArray(runtimeScene.getObjects("frozenenemy1"), gdjs.creditsCode.GDfrozenenemy1Objects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDfrozenenemy1Objects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDfrozenenemy1Objects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDfrozenenemy1Objects1[i].getVariableString(gdjs.creditsCode.GDfrozenenemy1Objects1[i].getVariables().get("slidingr")) == "true" ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDfrozenenemy1Objects1[k] = gdjs.creditsCode.GDfrozenenemy1Objects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDfrozenenemy1Objects1.length = k;}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+gdjs.creditsCode.GDfrozenenemy1Objects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDfrozenenemy1Objects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDfrozenenemy1Objects1.length ;i < len;++i) {
     gdjs.creditsCode.GDfrozenenemy1Objects1[i].addPolarForce(0, 300, 0);
@@ -2201,16 +2228,17 @@ gdjs.creditsCode.GDfrozenenemy1Objects1.length = k;}if (gdjs.creditsCode.conditi
 
 gdjs.copyArray(runtimeScene.getObjects("frozenenemy1"), gdjs.creditsCode.GDfrozenenemy1Objects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDfrozenenemy1Objects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDfrozenenemy1Objects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDfrozenenemy1Objects1[i].getVariableString(gdjs.creditsCode.GDfrozenenemy1Objects1[i].getVariables().get("slidingl")) == "true" ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDfrozenenemy1Objects1[k] = gdjs.creditsCode.GDfrozenenemy1Objects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDfrozenenemy1Objects1.length = k;}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+gdjs.creditsCode.GDfrozenenemy1Objects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDfrozenenemy1Objects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDfrozenenemy1Objects1.length ;i < len;++i) {
     gdjs.creditsCode.GDfrozenenemy1Objects1[i].addPolarForce(180, 300, 0);
@@ -2225,10 +2253,10 @@ gdjs.creditsCode.GDfrozenenemy1Objects1.length = k;}if (gdjs.creditsCode.conditi
 gdjs.copyArray(runtimeScene.getObjects("GrassPlatform"), gdjs.creditsCode.GDGrassPlatformObjects1);
 gdjs.copyArray(runtimeScene.getObjects("frozenenemy1"), gdjs.creditsCode.GDfrozenenemy1Objects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDfrozenenemy1Objects1Objects, gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDGrassPlatformObjects1Objects, false, runtimeScene, false);
-}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDfrozenenemy1Objects1Objects, gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDGrassPlatformObjects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDfrozenenemy1Objects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDfrozenenemy1Objects1.length ;i < len;++i) {
     gdjs.creditsCode.GDfrozenenemy1Objects1[i].deleteFromScene(runtimeScene);
@@ -2243,10 +2271,10 @@ gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollision
 gdjs.copyArray(runtimeScene.getObjects("dirt"), gdjs.creditsCode.GDdirtObjects1);
 gdjs.copyArray(runtimeScene.getObjects("frozenenemy1"), gdjs.creditsCode.GDfrozenenemy1Objects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDfrozenenemy1Objects1Objects, gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDdirtObjects1Objects, false, runtimeScene, false);
-}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDfrozenenemy1Objects1Objects, gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDdirtObjects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDfrozenenemy1Objects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDfrozenenemy1Objects1.length ;i < len;++i) {
     gdjs.creditsCode.GDfrozenenemy1Objects1[i].deleteFromScene(runtimeScene);
@@ -2261,21 +2289,21 @@ gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollision
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 gdjs.copyArray(runtimeScene.getObjects("firechest"), gdjs.creditsCode.GDfirechestObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-gdjs.creditsCode.condition1IsTrue_0.val = false;
-{
-gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDWizardMaleObjects1Objects, gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDfirechestObjects1Objects, false, runtimeScene, false);
-}if ( gdjs.creditsCode.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDfirechestObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDWizardMaleObjects1Objects, gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDfirechestObjects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDfirechestObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDfirechestObjects1[i].getVariableBoolean(gdjs.creditsCode.GDfirechestObjects1[i].getVariables().getFromIndex(0), false) ) {
-        gdjs.creditsCode.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDfirechestObjects1[k] = gdjs.creditsCode.GDfirechestObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDfirechestObjects1.length = k;}}
-if (gdjs.creditsCode.condition1IsTrue_0.val) {
+gdjs.creditsCode.GDfirechestObjects1.length = k;
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDfirechestObjects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDfirechestObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDfirechestObjects1[i].toggleVariableBoolean(gdjs.creditsCode.GDfirechestObjects1[i].getVariables().getFromIndex(0));
@@ -2296,16 +2324,17 @@ gdjs.creditsCode.eventsList3(runtimeScene);} //End of subevents
 gdjs.copyArray(runtimeScene.getObjects("firechest"), gdjs.creditsCode.GDfirechestObjects1);
 gdjs.copyArray(runtimeScene.getObjects("wandofharm"), gdjs.creditsCode.GDwandofharmObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDwandofharmObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDwandofharmObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDwandofharmObjects1[i].getY() >= (( gdjs.creditsCode.GDfirechestObjects1.length === 0 ) ? 0 :gdjs.creditsCode.GDfirechestObjects1[0].getPointY("")) ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDwandofharmObjects1[k] = gdjs.creditsCode.GDwandofharmObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDwandofharmObjects1.length = k;}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+gdjs.creditsCode.GDwandofharmObjects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDwandofharmObjects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDwandofharmObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDwandofharmObjects1[i].clearForces();
@@ -2320,21 +2349,21 @@ gdjs.creditsCode.GDwandofharmObjects1.length = k;}if (gdjs.creditsCode.condition
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 gdjs.copyArray(runtimeScene.getObjects("icechest"), gdjs.creditsCode.GDicechestObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-gdjs.creditsCode.condition1IsTrue_0.val = false;
-{
-gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDWizardMaleObjects1Objects, gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDicechestObjects1Objects, false, runtimeScene, false);
-}if ( gdjs.creditsCode.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDicechestObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDWizardMaleObjects1Objects, gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDicechestObjects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDicechestObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDicechestObjects1[i].getVariableBoolean(gdjs.creditsCode.GDicechestObjects1[i].getVariables().getFromIndex(0), false) ) {
-        gdjs.creditsCode.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDicechestObjects1[k] = gdjs.creditsCode.GDicechestObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDicechestObjects1.length = k;}}
-if (gdjs.creditsCode.condition1IsTrue_0.val) {
+gdjs.creditsCode.GDicechestObjects1.length = k;
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDicechestObjects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDicechestObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDicechestObjects1[i].toggleVariableBoolean(gdjs.creditsCode.GDicechestObjects1[i].getVariables().getFromIndex(0));
@@ -2355,16 +2384,17 @@ gdjs.creditsCode.eventsList4(runtimeScene);} //End of subevents
 gdjs.copyArray(runtimeScene.getObjects("firechest"), gdjs.creditsCode.GDfirechestObjects1);
 gdjs.copyArray(runtimeScene.getObjects("freezewand"), gdjs.creditsCode.GDfreezewandObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDfreezewandObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDfreezewandObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDfreezewandObjects1[i].getY() >= (( gdjs.creditsCode.GDfirechestObjects1.length === 0 ) ? 0 :gdjs.creditsCode.GDfirechestObjects1[0].getPointY("")) ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDfreezewandObjects1[k] = gdjs.creditsCode.GDfreezewandObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDfreezewandObjects1.length = k;}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+gdjs.creditsCode.GDfreezewandObjects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDfreezewandObjects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDfreezewandObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDfreezewandObjects1[i].clearForces();
@@ -2379,10 +2409,10 @@ gdjs.creditsCode.GDfreezewandObjects1.length = k;}if (gdjs.creditsCode.condition
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 gdjs.copyArray(runtimeScene.getObjects("fakedirt"), gdjs.creditsCode.GDfakedirtObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDWizardMaleObjects1Objects, gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDfakedirtObjects1Objects, false, runtimeScene, false);
-}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDWizardMaleObjects1Objects, gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDfakedirtObjects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
 {/* Mismatched object type - skipped. */}}
 
 }
@@ -2393,10 +2423,10 @@ gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollision
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 gdjs.copyArray(runtimeScene.getObjects("fakedirt"), gdjs.creditsCode.GDfakedirtObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDWizardMaleObjects1Objects, gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDfakedirtObjects1Objects, true, runtimeScene, false);
-}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDWizardMaleObjects1Objects, gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDfakedirtObjects1Objects, true, runtimeScene, false);
+if (isConditionTrue_0) {
 {/* Mismatched object type - skipped. */}}
 
 }
@@ -2407,10 +2437,10 @@ gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollision
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 gdjs.copyArray(runtimeScene.getObjects("jumpingpowerup"), gdjs.creditsCode.GDjumpingpowerupObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDWizardMaleObjects1Objects, gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDjumpingpowerupObjects1Objects, false, runtimeScene, false);
-}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDWizardMaleObjects1Objects, gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDjumpingpowerupObjects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDWizardMaleObjects1 */
 /* Reuse gdjs.creditsCode.GDjumpingpowerupObjects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDjumpingpowerupObjects1.length ;i < len;++i) {
@@ -2437,16 +2467,17 @@ gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollision
 
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getVariableString(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().getFromIndex(4)) == "true" ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.creditsCode.eventsList5(runtimeScene);} //End of subevents
@@ -2459,16 +2490,17 @@ gdjs.creditsCode.eventsList5(runtimeScene);} //End of subevents
 
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getBehavior("PlatformerObject").isOnFloor() ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDWizardMaleObjects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDWizardMaleObjects1[i].returnVariable(gdjs.creditsCode.GDWizardMaleObjects1[i].getVariables().getFromIndex(5)).setNumber(0);
@@ -2483,10 +2515,10 @@ gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if (gdjs.creditsCode.condition
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 gdjs.copyArray(runtimeScene.getObjects("portal"), gdjs.creditsCode.GDportalObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDWizardMaleObjects1Objects, gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDportalObjects1Objects, false, runtimeScene, false);
-}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDWizardMaleObjects1Objects, gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDportalObjects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "levels", true);
 }}
 
@@ -2497,10 +2529,10 @@ gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollision
 
 gdjs.copyArray(runtimeScene.getObjects("FireRoundButton"), gdjs.creditsCode.GDFireRoundButtonObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDFireRoundButtonObjects1Objects, runtimeScene, true, false);
-}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDFireRoundButtonObjects1Objects, runtimeScene, true, false);
+if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.creditsCode.eventsList6(runtimeScene);} //End of subevents
@@ -2513,10 +2545,10 @@ gdjs.creditsCode.eventsList6(runtimeScene);} //End of subevents
 
 gdjs.copyArray(runtimeScene.getObjects("DPadRight"), gdjs.creditsCode.GDDPadRightObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDDPadRightObjects1Objects, runtimeScene, true, false);
-}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDDPadRightObjects1Objects, runtimeScene, true, false);
+if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 {for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDWizardMaleObjects1[i].getBehavior("PlatformerObject").simulateRightKey();
@@ -2533,10 +2565,10 @@ gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardM
 
 gdjs.copyArray(runtimeScene.getObjects("DPadUp"), gdjs.creditsCode.GDDPadUpObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDDPadUpObjects1Objects, runtimeScene, true, false);
-}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDDPadUpObjects1Objects, runtimeScene, true, false);
+if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 {for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDWizardMaleObjects1[i].getBehavior("PlatformerObject").simulateLadderKey();
@@ -2553,10 +2585,10 @@ gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardM
 
 gdjs.copyArray(runtimeScene.getObjects("DPadLeft"), gdjs.creditsCode.GDDPadLeftObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDDPadLeftObjects1Objects, runtimeScene, true, false);
-}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDDPadLeftObjects1Objects, runtimeScene, true, false);
+if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 {for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDWizardMaleObjects1[i].getBehavior("PlatformerObject").simulateLeftKey();
@@ -2573,10 +2605,10 @@ gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardM
 
 gdjs.copyArray(runtimeScene.getObjects("DPadUp2"), gdjs.creditsCode.GDDPadUp2Objects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDDPadUp2Objects1Objects, runtimeScene, true, false);
-}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDDPadUp2Objects1Objects, runtimeScene, true, false);
+if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 {for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDWizardMaleObjects1[i].getBehavior("PlatformerObject").simulateJumpKey();
@@ -2590,10 +2622,10 @@ gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardM
 
 gdjs.copyArray(runtimeScene.getObjects("DPadBottom"), gdjs.creditsCode.GDDPadBottomObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDDPadBottomObjects1Objects, runtimeScene, true, false);
-}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDDPadBottomObjects1Objects, runtimeScene, true, false);
+if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 {for(var i = 0, len = gdjs.creditsCode.GDWizardMaleObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDWizardMaleObjects1[i].getBehavior("PlatformerObject").simulateDownKey();
@@ -2606,10 +2638,10 @@ gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardM
 {
 
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-gdjs.creditsCode.condition0IsTrue_0.val = !(gdjs.evtTools.systemInfo.isMobile());
-}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = !(gdjs.evtTools.systemInfo.isMobile());
+if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("DPadBottom"), gdjs.creditsCode.GDDPadBottomObjects1);
 gdjs.copyArray(runtimeScene.getObjects("DPadLeft"), gdjs.creditsCode.GDDPadLeftObjects1);
 gdjs.copyArray(runtimeScene.getObjects("DPadRight"), gdjs.creditsCode.GDDPadRightObjects1);
@@ -2643,21 +2675,21 @@ gdjs.copyArray(runtimeScene.getObjects("FireRoundButton"), gdjs.creditsCode.GDFi
 
 gdjs.copyArray(runtimeScene.getObjects("settings"), gdjs.creditsCode.GDsettingsObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-gdjs.creditsCode.condition1IsTrue_0.val = false;
-{
-gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().get("buttonsize")) == 2;
-}if ( gdjs.creditsCode.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDsettingsObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().get("buttonsize")) == 2;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDsettingsObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDsettingsObjects1[i].getVariableBoolean(gdjs.creditsCode.GDsettingsObjects1[i].getVariables().get("buttonsizebig"), false) ) {
-        gdjs.creditsCode.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDsettingsObjects1[k] = gdjs.creditsCode.GDsettingsObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDsettingsObjects1.length = k;}}
-if (gdjs.creditsCode.condition1IsTrue_0.val) {
+gdjs.creditsCode.GDsettingsObjects1.length = k;
+}
+if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.creditsCode.eventsList8(runtimeScene);} //End of subevents
@@ -2670,15 +2702,14 @@ gdjs.creditsCode.eventsList8(runtimeScene);} //End of subevents
 
 gdjs.copyArray(runtimeScene.getObjects("settings"), gdjs.creditsCode.GDsettingsObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-gdjs.creditsCode.condition1IsTrue_0.val = false;
-{
-gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
-}if ( gdjs.creditsCode.condition0IsTrue_0.val ) {
-{
-gdjs.creditsCode.condition1IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDsettingsObjects1Objects, runtimeScene, true, false);
-}}
-if (gdjs.creditsCode.condition1IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDsettingsObjects1Objects, runtimeScene, true, false);
+}
+if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.pushScene(runtimeScene, "settings");
 }}
 
@@ -2688,10 +2719,10 @@ if (gdjs.creditsCode.condition1IsTrue_0.val) {
 {
 
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("lives")) == 3;
-}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("lives")) == 3;
+if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("heart2"), gdjs.creditsCode.GDheart2Objects1);
 gdjs.copyArray(runtimeScene.getObjects("heart3"), gdjs.creditsCode.GDheart3Objects1);
 {for(var i = 0, len = gdjs.creditsCode.GDheart2Objects1.length ;i < len;++i) {
@@ -2708,10 +2739,10 @@ gdjs.copyArray(runtimeScene.getObjects("heart3"), gdjs.creditsCode.GDheart3Objec
 {
 
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("lives")) == 2;
-}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("lives")) == 2;
+if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("heart2"), gdjs.creditsCode.GDheart2Objects1);
 gdjs.copyArray(runtimeScene.getObjects("heart3"), gdjs.creditsCode.GDheart3Objects1);
 {for(var i = 0, len = gdjs.creditsCode.GDheart2Objects1.length ;i < len;++i) {
@@ -2728,10 +2759,10 @@ gdjs.copyArray(runtimeScene.getObjects("heart3"), gdjs.creditsCode.GDheart3Objec
 {
 
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("lives")) == 1;
-}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("lives")) == 1;
+if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("heart2"), gdjs.creditsCode.GDheart2Objects1);
 gdjs.copyArray(runtimeScene.getObjects("heart3"), gdjs.creditsCode.GDheart3Objects1);
 {for(var i = 0, len = gdjs.creditsCode.GDheart3Objects1.length ;i < len;++i) {
@@ -2749,16 +2780,17 @@ gdjs.copyArray(runtimeScene.getObjects("heart3"), gdjs.creditsCode.GDheart3Objec
 
 gdjs.copyArray(runtimeScene.getObjects("flyingenemy"), gdjs.creditsCode.GDflyingenemyObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDflyingenemyObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDflyingenemyObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDflyingenemyObjects1[i].getVariableBoolean(gdjs.creditsCode.GDflyingenemyObjects1[i].getVariables().get("right"), false) ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDflyingenemyObjects1[k] = gdjs.creditsCode.GDflyingenemyObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDflyingenemyObjects1.length = k;}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+gdjs.creditsCode.GDflyingenemyObjects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDflyingenemyObjects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDflyingenemyObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDflyingenemyObjects1[i].addPolarForce(180, 75, 0);
@@ -2775,16 +2807,17 @@ gdjs.creditsCode.GDflyingenemyObjects1.length = k;}if (gdjs.creditsCode.conditio
 
 gdjs.copyArray(runtimeScene.getObjects("flyingenemy"), gdjs.creditsCode.GDflyingenemyObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDflyingenemyObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDflyingenemyObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDflyingenemyObjects1[i].getVariableBoolean(gdjs.creditsCode.GDflyingenemyObjects1[i].getVariables().get("right"), true) ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDflyingenemyObjects1[k] = gdjs.creditsCode.GDflyingenemyObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDflyingenemyObjects1.length = k;}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+gdjs.creditsCode.GDflyingenemyObjects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDflyingenemyObjects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDflyingenemyObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDflyingenemyObjects1[i].addPolarForce(0, 75, 0);
@@ -2802,10 +2835,10 @@ gdjs.creditsCode.GDflyingenemyObjects1.length = k;}if (gdjs.creditsCode.conditio
 gdjs.copyArray(runtimeScene.getObjects("Left"), gdjs.creditsCode.GDLeftObjects1);
 gdjs.copyArray(runtimeScene.getObjects("flyingenemy"), gdjs.creditsCode.GDflyingenemyObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDflyingenemyObjects1Objects, gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDLeftObjects1Objects, false, runtimeScene, false);
-}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDflyingenemyObjects1Objects, gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDLeftObjects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDflyingenemyObjects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDflyingenemyObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDflyingenemyObjects1[i].setVariableBoolean(gdjs.creditsCode.GDflyingenemyObjects1[i].getVariables().get("right"), false);
@@ -2820,10 +2853,10 @@ gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollision
 gdjs.copyArray(runtimeScene.getObjects("Right"), gdjs.creditsCode.GDRightObjects1);
 gdjs.copyArray(runtimeScene.getObjects("flyingenemy"), gdjs.creditsCode.GDflyingenemyObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDflyingenemyObjects1Objects, gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDRightObjects1Objects, false, runtimeScene, false);
-}if (gdjs.creditsCode.condition0IsTrue_0.val) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDflyingenemyObjects1Objects, gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDRightObjects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDflyingenemyObjects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDflyingenemyObjects1.length ;i < len;++i) {
     gdjs.creditsCode.GDflyingenemyObjects1[i].setVariableBoolean(gdjs.creditsCode.GDflyingenemyObjects1[i].getVariables().get("right"), true);
@@ -2838,21 +2871,21 @@ gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollision
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 gdjs.copyArray(runtimeScene.getObjects("flyingenemy"), gdjs.creditsCode.GDflyingenemyObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-gdjs.creditsCode.condition1IsTrue_0.val = false;
-{
-gdjs.creditsCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDWizardMaleObjects1Objects, gdjs.creditsCode.mapOfGDgdjs_46creditsCode_46GDflyingenemyObjects1Objects, false, runtimeScene, false);
-}if ( gdjs.creditsCode.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDWizardMaleObjects1Objects, gdjs.creditsCode.mapOfGDgdjs_9546creditsCode_9546GDflyingenemyObjects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getBehavior("PlatformerObject").isFalling() ) {
-        gdjs.creditsCode.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}}
-if (gdjs.creditsCode.condition1IsTrue_0.val) {
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.creditsCode.GDWizardMaleObjects1 */
 /* Reuse gdjs.creditsCode.GDflyingenemyObjects1 */
 {for(var i = 0, len = gdjs.creditsCode.GDflyingenemyObjects1.length ;i < len;++i) {
@@ -2876,17 +2909,18 @@ if (gdjs.creditsCode.condition1IsTrue_0.val) {
 
 gdjs.copyArray(runtimeScene.getObjects("WizardMale"), gdjs.creditsCode.GDWizardMaleObjects1);
 
-gdjs.creditsCode.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.creditsCode.GDWizardMaleObjects1.length;i<l;++i) {
     if ( gdjs.creditsCode.GDWizardMaleObjects1[i].getY() > 1000 ) {
-        gdjs.creditsCode.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.creditsCode.GDWizardMaleObjects1[k] = gdjs.creditsCode.GDWizardMaleObjects1[i];
         ++k;
     }
 }
-gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if (gdjs.creditsCode.condition0IsTrue_0.val) {
-{runtimeScene.getVariables().get("lives").setNumber(0);
+gdjs.creditsCode.GDWizardMaleObjects1.length = k;
+if (isConditionTrue_0) {
+{runtimeScene.getScene().getVariables().get("lives").setNumber(0);
 }}
 
 }
@@ -2895,6 +2929,7 @@ gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if (gdjs.creditsCode.condition
 {
 
 
+let isConditionTrue_0 = false;
 {
 }
 
@@ -2904,6 +2939,7 @@ gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if (gdjs.creditsCode.condition
 {
 
 
+let isConditionTrue_0 = false;
 {
 }
 
@@ -2913,6 +2949,7 @@ gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if (gdjs.creditsCode.condition
 {
 
 
+let isConditionTrue_0 = false;
 {
 }
 
@@ -2922,6 +2959,7 @@ gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if (gdjs.creditsCode.condition
 {
 
 
+let isConditionTrue_0 = false;
 {
 }
 
@@ -2933,6 +2971,33 @@ gdjs.creditsCode.GDWizardMaleObjects1.length = k;}if (gdjs.creditsCode.condition
 gdjs.creditsCode.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
+gdjs.creditsCode.GDRedPotionObjects1.length = 0;
+gdjs.creditsCode.GDRedPotionObjects2.length = 0;
+gdjs.creditsCode.GDRedPotionObjects3.length = 0;
+gdjs.creditsCode.GDNewObject2Objects1.length = 0;
+gdjs.creditsCode.GDNewObject2Objects2.length = 0;
+gdjs.creditsCode.GDNewObject2Objects3.length = 0;
+gdjs.creditsCode.GDNewObject3Objects1.length = 0;
+gdjs.creditsCode.GDNewObject3Objects2.length = 0;
+gdjs.creditsCode.GDNewObject3Objects3.length = 0;
+gdjs.creditsCode.GDNewObject4Objects1.length = 0;
+gdjs.creditsCode.GDNewObject4Objects2.length = 0;
+gdjs.creditsCode.GDNewObject4Objects3.length = 0;
+gdjs.creditsCode.GDNewObjectObjects1.length = 0;
+gdjs.creditsCode.GDNewObjectObjects2.length = 0;
+gdjs.creditsCode.GDNewObjectObjects3.length = 0;
+gdjs.creditsCode.GDSquareJoystickObjects1.length = 0;
+gdjs.creditsCode.GDSquareJoystickObjects2.length = 0;
+gdjs.creditsCode.GDSquareJoystickObjects3.length = 0;
+gdjs.creditsCode.GDlivesObjects1.length = 0;
+gdjs.creditsCode.GDlivesObjects2.length = 0;
+gdjs.creditsCode.GDlivesObjects3.length = 0;
+gdjs.creditsCode.GDflyingenemyObjects1.length = 0;
+gdjs.creditsCode.GDflyingenemyObjects2.length = 0;
+gdjs.creditsCode.GDflyingenemyObjects3.length = 0;
+gdjs.creditsCode.GDduncanObjects1.length = 0;
+gdjs.creditsCode.GDduncanObjects2.length = 0;
+gdjs.creditsCode.GDduncanObjects3.length = 0;
 gdjs.creditsCode.GDGrassPlatformObjects1.length = 0;
 gdjs.creditsCode.GDGrassPlatformObjects2.length = 0;
 gdjs.creditsCode.GDGrassPlatformObjects3.length = 0;
@@ -3110,33 +3175,6 @@ gdjs.creditsCode.GDNewObject7Objects3.length = 0;
 gdjs.creditsCode.GDtheleaderboardObjects1.length = 0;
 gdjs.creditsCode.GDtheleaderboardObjects2.length = 0;
 gdjs.creditsCode.GDtheleaderboardObjects3.length = 0;
-gdjs.creditsCode.GDRedPotionObjects1.length = 0;
-gdjs.creditsCode.GDRedPotionObjects2.length = 0;
-gdjs.creditsCode.GDRedPotionObjects3.length = 0;
-gdjs.creditsCode.GDNewObject2Objects1.length = 0;
-gdjs.creditsCode.GDNewObject2Objects2.length = 0;
-gdjs.creditsCode.GDNewObject2Objects3.length = 0;
-gdjs.creditsCode.GDNewObject3Objects1.length = 0;
-gdjs.creditsCode.GDNewObject3Objects2.length = 0;
-gdjs.creditsCode.GDNewObject3Objects3.length = 0;
-gdjs.creditsCode.GDNewObject4Objects1.length = 0;
-gdjs.creditsCode.GDNewObject4Objects2.length = 0;
-gdjs.creditsCode.GDNewObject4Objects3.length = 0;
-gdjs.creditsCode.GDNewObjectObjects1.length = 0;
-gdjs.creditsCode.GDNewObjectObjects2.length = 0;
-gdjs.creditsCode.GDNewObjectObjects3.length = 0;
-gdjs.creditsCode.GDSquareJoystickObjects1.length = 0;
-gdjs.creditsCode.GDSquareJoystickObjects2.length = 0;
-gdjs.creditsCode.GDSquareJoystickObjects3.length = 0;
-gdjs.creditsCode.GDlivesObjects1.length = 0;
-gdjs.creditsCode.GDlivesObjects2.length = 0;
-gdjs.creditsCode.GDlivesObjects3.length = 0;
-gdjs.creditsCode.GDflyingenemyObjects1.length = 0;
-gdjs.creditsCode.GDflyingenemyObjects2.length = 0;
-gdjs.creditsCode.GDflyingenemyObjects3.length = 0;
-gdjs.creditsCode.GDduncanObjects1.length = 0;
-gdjs.creditsCode.GDduncanObjects2.length = 0;
-gdjs.creditsCode.GDduncanObjects3.length = 0;
 
 gdjs.creditsCode.eventsList9(runtimeScene);
 

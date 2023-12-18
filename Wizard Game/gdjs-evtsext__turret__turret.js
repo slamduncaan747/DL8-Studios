@@ -90,6 +90,9 @@ gdjs.evtsExt__Turret__Turret.Turret = class Turret extends gdjs.RuntimeBehavior 
   _setRotate(newValue) {
     this._behaviorData.Rotate = newValue;
   }
+  _toggleRotate() {
+    this._setRotate(!this._getRotate());
+  }
   _getAngleMax() {
     return this._behaviorData.AngleMax !== undefined ? this._behaviorData.AngleMax : Number("0") || 0;
   }
@@ -120,17 +123,26 @@ gdjs.evtsExt__Turret__Turret.Turret = class Turret extends gdjs.RuntimeBehavior 
   _setMustMoveClockwise(newValue) {
     this._behaviorData.MustMoveClockwise = newValue;
   }
+  _toggleMustMoveClockwise() {
+    this._setMustMoveClockwise(!this._getMustMoveClockwise());
+  }
   _getMustMoveCounterClockwise() {
     return this._behaviorData.MustMoveCounterClockwise !== undefined ? this._behaviorData.MustMoveCounterClockwise : false;
   }
   _setMustMoveCounterClockwise(newValue) {
     this._behaviorData.MustMoveCounterClockwise = newValue;
   }
+  _toggleMustMoveCounterClockwise() {
+    this._setMustMoveCounterClockwise(!this._getMustMoveCounterClockwise());
+  }
   _getHasMoved() {
     return this._behaviorData.HasMoved !== undefined ? this._behaviorData.HasMoved : false;
   }
   _setHasMoved(newValue) {
     this._behaviorData.HasMoved = newValue;
+  }
+  _toggleHasMoved() {
+    this._setHasMoved(!this._getHasMoved());
   }
   _getTargetAngle() {
     return this._behaviorData.TargetAngle !== undefined ? this._behaviorData.TargetAngle : Number("") || 0;
@@ -178,19 +190,6 @@ gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectOb
 gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2= [];
 gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects3= [];
 
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition1IsTrue_0 = {val:false};
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition2IsTrue_0 = {val:false};
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.conditionTrue_1 = {val:false};
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_1 = {val:false};
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition1IsTrue_1 = {val:false};
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition2IsTrue_1 = {val:false};
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.conditionTrue_2 = {val:false};
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_2 = {val:false};
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition1IsTrue_2 = {val:false};
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition2IsTrue_2 = {val:false};
-
 
 gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
@@ -198,16 +197,17 @@ gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.eventsList
 
 /* Reuse gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2 */
 
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getSpeed() < 0 ) {
-        gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;}if (gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setSpeed(0);
@@ -223,16 +223,17 @@ gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectOb
 
 /* Reuse gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1 */
 
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getSpeed() > 0 ) {
-        gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1[k] = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1 */
 {for(var i = 0, len = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setSpeed(0);
@@ -249,16 +250,17 @@ gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectOb
 gdjs.copyArray(gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1, gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2);
 
 
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getSpeed() > 0 ) {
-        gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;}if (gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setSpeed(gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getSpeed() - ((gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDeceleration()) * gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(runtimeScene)));
@@ -275,16 +277,17 @@ gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.eventsList
 
 /* Reuse gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1 */
 
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getSpeed() < 0 ) {
-        gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1[k] = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1 */
 {for(var i = 0, len = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setSpeed(gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getSpeed() + ((gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDeceleration()) * gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(runtimeScene)));
@@ -304,39 +307,39 @@ gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.eventsList
 gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1.length = 0;
 
 
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-{
-{gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.conditionTrue_1 = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_0;
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1_1final.length = 0;gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_1.val = false;
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition1IsTrue_1.val = false;
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1_1final.length = 0;
+let isConditionTrue_1 = false;
+isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2);
-{gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.conditionTrue_2 = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_1;
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_2.val = false;
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition1IsTrue_2.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
+{let isConditionTrue_2 = false;
+isConditionTrue_2 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMustMoveClockwise() ) {
-        gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_2.val = true;
+        isConditionTrue_2 = true;
         gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;}if ( gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_2.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
+gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
+if (isConditionTrue_2) {
+isConditionTrue_2 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMustMoveCounterClockwise() ) {
-        gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition1IsTrue_2.val = true;
+        isConditionTrue_2 = true;
         gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;}}
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.conditionTrue_2.val = true && gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_2.val && gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition1IsTrue_2.val;
+gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
 }
-if( gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_1.val ) {
-    gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.conditionTrue_1.val = true;
-    for(var j = 0, jLen = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length;j<jLen;++j) {
+isConditionTrue_1 = isConditionTrue_2;
+}
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+    for (let j = 0, jLen = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length; j < jLen ; ++j) {
         if ( gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1_1final.indexOf(gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2[j]) === -1 )
             gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1_1final.push(gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2[j]);
     }
@@ -344,32 +347,32 @@ if( gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condit
 }
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2);
-{gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.conditionTrue_2 = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition1IsTrue_1;
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_2.val = false;
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition1IsTrue_2.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
+{let isConditionTrue_2 = false;
+isConditionTrue_2 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( !(gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMustMoveClockwise()) ) {
-        gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_2.val = true;
+        isConditionTrue_2 = true;
         gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;}if ( gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_2.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
+gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
+if (isConditionTrue_2) {
+isConditionTrue_2 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( !(gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMustMoveCounterClockwise()) ) {
-        gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition1IsTrue_2.val = true;
+        isConditionTrue_2 = true;
         gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;}}
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.conditionTrue_2.val = true && gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_2.val && gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition1IsTrue_2.val;
+gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
 }
-if( gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition1IsTrue_1.val ) {
-    gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.conditionTrue_1.val = true;
-    for(var j = 0, jLen = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length;j<jLen;++j) {
+isConditionTrue_1 = isConditionTrue_2;
+}
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+    for (let j = 0, jLen = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length; j < jLen ; ++j) {
         if ( gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1_1final.indexOf(gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2[j]) === -1 )
             gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1_1final.push(gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2[j]);
     }
@@ -379,7 +382,7 @@ if( gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condit
 gdjs.copyArray(gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1_1final, gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1);
 }
 }
-}if (gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_0.val) {
+if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.eventsList2(runtimeScene, eventsFunctionContext);} //End of subevents
@@ -394,16 +397,17 @@ gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.eventsList
 
 /* Reuse gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2 */
 
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getSpeed() > (gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getSpeedMax()) ) {
-        gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;}if (gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setSpeed((gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getSpeedMax()));
@@ -419,16 +423,17 @@ gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectOb
 
 /* Reuse gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1 */
 
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getSpeed() < -((gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getSpeedMax())) ) {
-        gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1[k] = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1 */
 {for(var i = 0, len = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setSpeed(-((gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getSpeedMax())));
@@ -444,27 +449,28 @@ gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectOb
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2);
 
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition1IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMustMoveClockwise() ) {
-        gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;}if ( gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
+gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( !(gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMustMoveCounterClockwise()) ) {
-        gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;}}
-if (gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition1IsTrue_0.val) {
+gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setSpeed(gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getSpeed() + ((gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAcceleration()) * gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(runtimeScene)));
@@ -481,27 +487,28 @@ gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.eventsList
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1);
 
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition1IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMustMoveCounterClockwise() ) {
-        gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1[k] = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1.length = k;}if ( gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1.length;i<l;++i) {
+gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1.length;i<l;++i) {
     if ( !(gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMustMoveClockwise()) ) {
-        gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1[k] = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1.length = k;}}
-if (gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition1IsTrue_0.val) {
+gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1.length = k;
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1 */
 {for(var i = 0, len = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setSpeed(gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getSpeed() - ((gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAcceleration()) * gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(runtimeScene)));
@@ -519,6 +526,7 @@ gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.eventsList
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2);
 {for(var i = 0, len = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length ;i < len;++i) {
@@ -532,6 +540,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Turret_
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2);
 {for(var i = 0, len = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects2.length ;i < len;++i) {
@@ -546,16 +555,17 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Turret_
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1);
 
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getSpeed() != 0 ) {
-        gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1[k] = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1 */
 {for(var i = 0, len = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setHasMoved(true);
@@ -570,6 +580,7 @@ gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectOb
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Turret__Turret.Turret.prototype.doStepPostEventsContext.GDObjectObjects1.length ;i < len;++i) {
@@ -686,10 +697,6 @@ gdjs.evtsExt__Turret__Turret.Turret.prototype.IsMovingContext = {};
 gdjs.evtsExt__Turret__Turret.Turret.prototype.IsMovingContext.GDObjectObjects1= [];
 gdjs.evtsExt__Turret__Turret.Turret.prototype.IsMovingContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Turret__Turret.Turret.prototype.IsMovingContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Turret__Turret.Turret.prototype.IsMovingContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__Turret__Turret.Turret.prototype.IsMovingContext.condition1IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Turret__Turret.Turret.prototype.IsMovingContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
@@ -697,16 +704,17 @@ gdjs.evtsExt__Turret__Turret.Turret.prototype.IsMovingContext.eventsList0 = func
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Turret__Turret.Turret.prototype.IsMovingContext.GDObjectObjects1);
 
-gdjs.evtsExt__Turret__Turret.Turret.prototype.IsMovingContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.IsMovingContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.IsMovingContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__Turret__Turret.Turret.prototype.IsMovingContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getHasMoved() ) {
-        gdjs.evtsExt__Turret__Turret.Turret.prototype.IsMovingContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Turret__Turret.Turret.prototype.IsMovingContext.GDObjectObjects1[k] = gdjs.evtsExt__Turret__Turret.Turret.prototype.IsMovingContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__Turret__Turret.Turret.prototype.IsMovingContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__Turret__Turret.Turret.prototype.IsMovingContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__Turret__Turret.Turret.prototype.IsMovingContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = true; }}}
 
 }
@@ -784,15 +792,13 @@ gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveClockwiseContext = {};
 gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveClockwiseContext.GDObjectObjects1= [];
 gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveClockwiseContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveClockwiseContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveClockwiseContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveClockwiseContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveClockwiseContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveClockwiseContext.GDObjectObjects1.length ;i < len;++i) {
@@ -875,15 +881,13 @@ gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveCounterClockwiseContext = {};
 gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveCounterClockwiseContext.GDObjectObjects1= [];
 gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveCounterClockwiseContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveCounterClockwiseContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveCounterClockwiseContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveCounterClockwiseContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveCounterClockwiseContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveCounterClockwiseContext.GDObjectObjects1.length ;i < len;++i) {
@@ -966,15 +970,13 @@ gdjs.evtsExt__Turret__Turret.Turret.prototype.onCreatedContext = {};
 gdjs.evtsExt__Turret__Turret.Turret.prototype.onCreatedContext.GDObjectObjects1= [];
 gdjs.evtsExt__Turret__Turret.Turret.prototype.onCreatedContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Turret__Turret.Turret.prototype.onCreatedContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Turret__Turret.Turret.prototype.onCreatedContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Turret__Turret.Turret.prototype.onCreatedContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Turret__Turret.Turret.prototype.onCreatedContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Turret__Turret.Turret.prototype.onCreatedContext.GDObjectObjects1.length ;i < len;++i) {
@@ -995,6 +997,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Turret_
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Turret__Turret.Turret.prototype.onCreatedContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Turret__Turret.Turret.prototype.onCreatedContext.GDObjectObjects1.length ;i < len;++i) {
@@ -1078,13 +1081,6 @@ gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1
 gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects2= [];
 gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects3= [];
 
-gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.condition1IsTrue_0 = {val:false};
-gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.conditionTrue_1 = {val:false};
-gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.condition0IsTrue_1 = {val:false};
-gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.condition1IsTrue_1 = {val:false};
-
 
 gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
@@ -1093,16 +1089,17 @@ gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.eventsList0 = fu
 gdjs.copyArray(gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1, gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects2);
 
 
-gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAimingAngle() > (gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getTargetAngle()) + (typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("AngleMargin")) || 0 : 0) ) {
-        gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects2[k] = gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects2.length = k;}if (gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).MoveCounterClockwise((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
@@ -1116,16 +1113,17 @@ gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects2
 
 /* Reuse gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1 */
 
-gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAimingAngle() < (gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getTargetAngle()) - (typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("AngleMargin")) || 0 : 0) ) {
-        gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1[k] = gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1 */
 {for(var i = 0, len = gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).MoveClockwise((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
@@ -1142,12 +1140,11 @@ gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1
 gdjs.copyArray(gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1, gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects2);
 
 
-gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.condition0IsTrue_0.val = false;
-{
-{gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.conditionTrue_1 = gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.condition0IsTrue_0;
-gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.conditionTrue_1.val = (gdjs.evtTools.common.mod(180 + (( gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects2.length === 0 ) ? 0 :gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects2[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getTargetAngle()) - (( gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects2.length === 0 ) ? 0 :gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects2[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAimingAngle()), 360) < 180 - (typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("AngleMargin")) || 0 : 0));
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (gdjs.evtTools.common.mod(180 + (( gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects2.length === 0 ) ? 0 :gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects2[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getTargetAngle()) - (( gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects2.length === 0 ) ? 0 :gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects2[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAimingAngle()), 360) < 180 - (typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("AngleMargin")) || 0 : 0));
 }
-}if (gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.condition0IsTrue_0.val) {
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).MoveCounterClockwise((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
@@ -1161,12 +1158,11 @@ gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.conditionTrue_1.
 
 /* Reuse gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1 */
 
-gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.condition0IsTrue_0.val = false;
-{
-{gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.conditionTrue_1 = gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.condition0IsTrue_0;
-gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.conditionTrue_1.val = (gdjs.evtTools.common.mod(180 + (( gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAimingAngle()) - (( gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getTargetAngle()), 360) < 180 - (typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("AngleMargin")) || 0 : 0));
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (gdjs.evtTools.common.mod(180 + (( gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAimingAngle()) - (( gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getTargetAngle()), 360) < 180 - (typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("AngleMargin")) || 0 : 0));
 }
-}if (gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.condition0IsTrue_0.val) {
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1 */
 {for(var i = 0, len = gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).MoveClockwise((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
@@ -1188,6 +1184,7 @@ gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.conditionTrue_1.
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1.length ;i < len;++i) {
@@ -1209,12 +1206,11 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Turret_
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1);
 
-gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.condition0IsTrue_0.val = false;
-{
-{gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.conditionTrue_1 = gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.condition0IsTrue_0;
-gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.conditionTrue_1.val = ((( gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAngleMin()) < (( gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAngleMax()));
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = ((( gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAngleMin()) < (( gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAngleMax()));
 }
-}if (gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.condition0IsTrue_0.val) {
+if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.eventsList0(runtimeScene, eventsFunctionContext);} //End of subevents
@@ -1234,12 +1230,11 @@ gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.eventsList0(runt
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1);
 
-gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.condition0IsTrue_0.val = false;
-{
-{gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.conditionTrue_1 = gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.condition0IsTrue_0;
-gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.conditionTrue_1.val = ((( gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAngleMin()) == (( gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAngleMax()));
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = ((( gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAngleMin()) == (( gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAngleMax()));
 }
-}if (gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.condition0IsTrue_0.val) {
+if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.evtsExt__Turret__Turret.Turret.prototype.MoveTowardContext.eventsList1(runtimeScene, eventsFunctionContext);} //End of subevents
@@ -1325,13 +1320,6 @@ gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObje
 gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects2= [];
 gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects3= [];
 
-gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.condition1IsTrue_0 = {val:false};
-gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.conditionTrue_1 = {val:false};
-gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.condition0IsTrue_1 = {val:false};
-gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.condition1IsTrue_1 = {val:false};
-
 
 gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
@@ -1340,16 +1328,17 @@ gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.eventsList0 
 gdjs.copyArray(gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1, gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects2);
 
 
-gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAimingAngle() > (gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAngleMax()) ) {
-        gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects2[k] = gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects2.length = k;}if (gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setAimingAngle((gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAngleMax()));
@@ -1363,16 +1352,17 @@ gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObje
 
 /* Reuse gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1 */
 
-gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAimingAngle() < (gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAngleMin()) ) {
-        gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1[k] = gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1 */
 {for(var i = 0, len = gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setAimingAngle((gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAngleMin()));
@@ -1387,6 +1377,7 @@ gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObje
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1.length ;i < len;++i) {
@@ -1408,12 +1399,11 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Turret_
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1);
 
-gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.condition0IsTrue_0.val = false;
-{
-{gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.conditionTrue_1 = gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.condition0IsTrue_0;
-gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.conditionTrue_1.val = ((( gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAngleMin()) == (( gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAngleMax()));
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = ((( gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAngleMin()) == (( gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAngleMax()));
 }
-}if (gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.condition0IsTrue_0.val) {
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1 */
 {for(var i = 0, len = gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setAimingAngle(gdjs.evtTools.common.mod((gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAimingAngle()), 360));
@@ -1434,12 +1424,11 @@ gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.conditionTru
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1);
 
-gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.condition0IsTrue_0.val = false;
-{
-{gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.conditionTrue_1 = gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.condition0IsTrue_0;
-gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.conditionTrue_1.val = ((( gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAngleMin()) < (( gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAngleMax()));
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = ((( gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAngleMin()) < (( gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAngleMax()));
 }
-}if (gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.condition0IsTrue_0.val) {
+if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.eventsList0(runtimeScene, eventsFunctionContext);} //End of subevents
@@ -1452,16 +1441,17 @@ gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.eventsList0(
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1);
 
-gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getRotate() ) {
-        gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1[k] = gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1 */
 {for(var i = 0, len = gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1[i].setAngle((gdjs.evtsExt__Turret__Turret.Turret.prototype.SetAimingAngleContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAimingAngle()));
@@ -1545,15 +1535,13 @@ gdjs.evtsExt__Turret__Turret.Turret.prototype.AimingAngleContext = {};
 gdjs.evtsExt__Turret__Turret.Turret.prototype.AimingAngleContext.GDObjectObjects1= [];
 gdjs.evtsExt__Turret__Turret.Turret.prototype.AimingAngleContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Turret__Turret.Turret.prototype.AimingAngleContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Turret__Turret.Turret.prototype.AimingAngleContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Turret__Turret.Turret.prototype.AimingAngleContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Turret__Turret.Turret.prototype.AimingAngleContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__Turret__Turret.Turret.prototype.AimingAngleContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Turret__Turret.Turret.prototype.AimingAngleContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAimingAngle()); }}}
