@@ -9,6 +9,7 @@
 
 body{
     background-color: #A5D7E8;
+    position: relative;
 }
 
 .announcements p {
