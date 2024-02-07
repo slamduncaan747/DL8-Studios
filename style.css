@@ -232,7 +232,7 @@ iframe {
 #video-container1 {
     position: absolute;
     top: 510px;
-    left: 30%;
+    left: 20%;
     transform: translate(-50%, -50%);
     width: 405px;
     height: 520px;
@@ -245,13 +245,13 @@ iframe {
 #video-container2 {
     position: absolute;
     top: 510px;
-    left: 70%;
+    left: 77%;
     transform: translate(-50%, -50%);
     width: 405px;
     height: 520px;
     overflow: hidden;
     border-radius: 20px;
-    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.7);
     margin: 20px;
 }
 video {
